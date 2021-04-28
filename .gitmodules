@@ -1,0 +1,3 @@
+[submodule "yahoo-finance"]
+	path = yahoo-finance
+	url = git://github.com/lukaszbanasiak/yahoo-finance.git
