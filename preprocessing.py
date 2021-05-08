@@ -27,7 +27,7 @@ def get_data(csv_file):
     from preprocessing import get_data
     returns a list of lists, each row represents [tweet, ticker, 7 day percent change]
     """
-    with open(csv_file, 'r') as f:
+    with open(csv_file, 'r', encoding='utf-8') as f:
         reader = csv.reader(f)
         result = list(reader)
     return result
@@ -82,10 +82,11 @@ def read_all_data(csv_file):
             print("%i rows completed, %i percent done" % (i + 1, j))
 
     # split to train, dev, test
+
     train_data = data[:-10000]
     dev_data = data[-10000:-5000]
     test_data = data[-5000:]
-
+    
     print("train data size: %i, dev data size: %i, test data size: %i" 
     % (len(train_data), len(dev_data), len(test_data)))
 
@@ -106,14 +107,13 @@ def name_to_ticker(name):
     """
     Searches a the keyword "yahoo finance stock_name" on google, 
     pulls the ticker from the yahoo finance page. 
-    Credit to https://github.com/MakonnenMak/company-name-to-ticker-yahoo-finance.git for this function.
+    Credit: 
+    This function is based off of https://github.com/MakonnenMak/company-name-to-ticker-yahoo-finance.git
     """
     searchval = 'yahoo finance ' + name
     link = []
-
     for url in search(searchval, tld='es', lang='es', stop=1):
         link.append(url)
-
     link = str(link[0])
     link=link.split("/")
     if link[-1]=='':
@@ -129,6 +129,8 @@ def write_name_ticker_dict_csv():
         writer = csv.writer(f)
         for key, value in name_ticker_dict.items():
             writer.writerow([key, value])
+    print("name_ticker_dict.csv file written")
+    return
 
 def write_csv(data, csv_file):
     with open(csv_file, "w", newline="", encoding="utf-8") as f:
@@ -140,10 +142,10 @@ def write_csv(data, csv_file):
 def main():
     train, dev, test = read_days_data("stockreturnpred/Dataset-release version/reduced_dataset-release.csv", 7)
     write_name_ticker_dict_csv()
-    write_csv(train, train.csv)
-    write_csv(dev, dev.csv)
-    write_csv(test, test.csv)
-
-
+    write_csv(train, "train.csv")
+    rite_csv(dev, "dev.csv")
+    write_csv(test, "test.csv")
+    
+    
 if __name__=="__main__":
     main()
