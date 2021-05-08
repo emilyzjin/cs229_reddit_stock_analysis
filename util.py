@@ -16,22 +16,6 @@ def get_tweets_change(filename):
     return tweets, change
 
 
-def get_text_matrix(train_tweets, dev_tweets, test_tweets, train_file, dev_file, test_file, create_text_matrix, dictionary):
-    if create_text_matrix:
-        train_matrix = util.transform_text(train_tweets, dictionary)
-        write_csv(train_matrix, train_file)
-        dev_matrix = util.transform_text(dev_tweets, dictionary)
-        write_csv(dev_matrix, dev_file)
-        test_matrix = util.transform_text(test_tweets, dictionary)
-        write_csv(test_matrix, test_file)
-    else:
-        train_matrix = np.asarray(get_data(train_file), dtype=float)
-        dev_matrix = np.asarray(get_data(dev_file), dtype=float)
-        test_matrix = np.asarray(get_data(test_file), dtype=float)
-
-    return train_matrix, dev_matrix, test_matrix
-
-
 def get_words(tweet):
     """Convert to lowercase and remove punctuation, articles and extra whitespace."""
     def remove_articles(text):
