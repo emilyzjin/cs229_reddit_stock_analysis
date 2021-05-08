@@ -6,6 +6,8 @@ import util
 
 create_text_matrix = True
 num_words = 100
+num_epochs = 10
+batch_size = 64
 
 def main():
     train_tweets, train_change = util.get_tweets_change('train.csv')
@@ -36,8 +38,8 @@ def main():
 
     for lr in learning_rates:
         model = linearRegression(learning_rate=lr,
-                                 num_epochs=1,
-                                 batch_size=64,
+                                 num_epochs=num_epochs,
+                                 batch_size=batch_size,
                                  theta=None)
         model.train(train_matrix, train_change, verbose=True)
         results[lr] = model.evaluate(dev_matrix, dev_change)
