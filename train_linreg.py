@@ -5,16 +5,18 @@ import matplotlib.pyplot as plt
 import util
 
 create_text_matrix = True
-num_words = 100
+num_top_words = 100
 num_epochs = 10
 batch_size = 64
+learning_rates = [1e-4, 1e-3, 1e-2, 1e-1, 1e1]
+num_occurrences = 10
 
 def main():
     train_tweets, train_change = util.get_tweets_change('train.csv')
     dev_tweets, dev_change = util.get_tweets_change('dev.csv')
     test_tweets, test_change = util.get_tweets_change('test.csv')
 
-    dictionary = util.create_dict(train_tweets, 10)
+    dictionary = util.create_dict(train_tweets, num_occurrences)
     print('Size of dictionary: ', len(dictionary))
 
     if create_text_matrix:
@@ -29,7 +31,6 @@ def main():
         dev_matrix = np.asarray(get_data('dev_matrix.csv'), dtype=float)
         test_matrix = np.asarray(get_data('test_matrix.csv'), dtype=float)
 
-    learning_rates = [1e-4, 1e-3, 1e-2, 1e-1, 1e1, 1e2]
     results = {}
 
     best_deviation_model, best_deviation = None, None
@@ -60,7 +61,7 @@ def main():
     np.savetxt('best_mag_deviation_results.csv', best_mag_deviation_results['Preds'])
     np.savetxt('best_rmse_results.csv', best_rmse_results['Preds'])
 
-    top_words = util.get_top_words(num_words, train_matrix, train_change, dictionary)
+    top_words = util.get_top_words(num_top_words, train_matrix, train_change, dictionary)
     util.write_json('top_words', top_words)
 
 
