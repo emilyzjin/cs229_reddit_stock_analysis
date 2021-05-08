@@ -3,12 +3,13 @@ from util import data_iter
 
 
 class linearRegression:
-    def __init__(self, learning_rate, num_epochs, batch_size=32, theta=None):
+    def __init__(self, learning_rate, num_epochs, batch_size=32, theta=None, epsilon=1e-5):
         self.learning_rate = learning_rate
         self.theta = theta
         self.num_epochs = num_epochs
         self.batch_size = batch_size
         self.loss = None
+        self.epsilon = epsilon
 
     def train(self, x_train, y_train, verbose=False):
         x_train = np.insert(x_train, 0, 1, axis=1)
@@ -19,12 +20,15 @@ class linearRegression:
         for epoch in range(self.num_epochs):
             for x, y in data_iter(self.batch_size, x_train, y_train):
                 grad = np.mean((y - x.dot(theta))[:, np.newaxis] * x, axis=0)
-                theta += self.learning_rate * grad
+                update = self.learning_rate * grad
+                theta += update
                 loss = np.sum(np.square(x_train.dot(theta) - y_train)) / 2
                 if np.isnan(loss):
                     self.theta = theta
             if verbose:
                 print(f'epoch {epoch + 1}, loss {float(loss.mean()):f}')
+            if update <= self.epsilon:
+                break
 
         self.theta = theta
         self.loss = loss
