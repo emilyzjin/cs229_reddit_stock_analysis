@@ -8,7 +8,8 @@ create_text_matrix = True
 num_top_words = 100
 num_epochs = 10
 batch_size = 64
-learning_rates = [1e-4, 1e-3, 1e-2, 1e-1, 1e1]
+learning_rates = [1e-4, 1e-3, 1e-2, 1e-1, 0.5, 1]
+#learning_rates = [1e-4, 1e-3]
 num_occurrences = 10
 
 def main():
@@ -33,9 +34,9 @@ def main():
 
     results = {}
 
-    best_deviation_model, best_deviation = None, None
-    best_mag_deviation_model, best_mag_deviation = None, None
-    best_rmse_model, best_rmse = None, None
+    models, deviation = [], []
+    mag_deviation = []
+    rmse = []
 
     for lr in learning_rates:
         model = linearRegression(learning_rate=lr,
@@ -44,6 +45,7 @@ def main():
                                  theta=None)
         model.train(train_matrix, train_change, verbose=True)
         results[lr] = model.evaluate(dev_matrix, dev_change)
+        """
         if best_deviation is None or results[lr].get('Dev') < best_deviation:
             best_deviation_model = model
             best_deviation = results[lr].get('Dev')
@@ -53,13 +55,18 @@ def main():
         if best_rmse is None or results[lr].get('RMSE') < best_rmse:
             best_rmse_model = model
             best_rmse = results[lr].get('RMSE')
+        """
+        models.append(model)
+        deviation.append(results[lr].get('Dev'))
+        mag_deviation.append(results[lr].get('Mag_dev'))
+        rmse.append(results[lr].get('RMSE'))
+    
+    results = []
 
-    best_deviation_results = best_deviation_model.evaluate(test_matrix, test_change)
-    best_mag_deviation_results = best_mag_deviation_model.evaluate(test_matrix, test_change)
-    best_rmse_results = best_rmse_model.evaluate(test_matrix, test_change)
-    np.savetxt('best_deviation_results.csv', best_deviation_results['Preds'])
-    np.savetxt('best_mag_deviation_results.csv', best_mag_deviation_results['Preds'])
-    np.savetxt('best_rmse_results.csv', best_rmse_results['Preds'])
+    for i, model in enumerate(models):
+        results.append(model.evaluate(test_matrix, test_change))
+        
+        np.savetxt('results_learn_rate=' + str(learning_rates[i]) + '.csv' , results[i]['Preds'])
 
     top_words = util.get_top_words(num_top_words, train_matrix, train_change, dictionary)
     util.write_json('top_words', top_words)

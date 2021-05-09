@@ -1,4 +1,5 @@
 import numpy as np
+from numpy import linalg
 from util import data_iter
 
 
@@ -27,7 +28,7 @@ class linearRegression:
                     self.theta = theta
             if verbose:
                 print(f'epoch {epoch + 1}, loss {float(loss.mean()):f}')
-            if update <= self.epsilon:
+            if np.linalg.norm(update) <= self.epsilon:
                 break
 
         self.theta = theta
