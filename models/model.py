@@ -38,6 +38,7 @@ class linearRegression:
         x = np.insert(x, 0, 1, axis=1)
         x.setflags(write=False)
         preds = x.dot(self.theta)
+
         return preds
 
     def evaluate(self, x, y):
@@ -54,3 +55,4 @@ class linearRegression:
                    'Preds': y_hat
                    }
         return results
+

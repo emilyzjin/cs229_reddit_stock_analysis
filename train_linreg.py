@@ -1,25 +1,27 @@
 import numpy as np
-from model import linearRegression
+from models.model import linearRegression
 from preprocessing import write_csv, get_data
-import matplotlib.pyplot as plt
-import util
+from utils import util
 
 create_text_matrix = True
 num_top_words = 100
 num_epochs = 10
 batch_size = 64
-learning_rates = [1e-4, 1e-3, 1e-2, 1e-1, 0.5, 1]
-#learning_rates = [1e-4, 1e-3]
-num_occurrences = 10
+learning_rates = [1e-4, 1e-3, 1e-2, 1e-1, 0.5, 1] # hyperparameter
+num_occurrences = 10 # hyperparameter
+
 
 def main():
-    train_tweets, train_change = util.get_tweets_change('train.csv')
-    dev_tweets, dev_change = util.get_tweets_change('dev.csv')
-    test_tweets, test_change = util.get_tweets_change('test.csv')
+    # Load data
+    train_tweets, train_change = util.get_tweets_change('../train.csv')
+    dev_tweets, dev_change = util.get_tweets_change('../dev.csv')
+    test_tweets, test_change = util.get_tweets_change('../test.csv')
 
+    # Create dictionary of words that are used at least 'num_occurrences' times
     dictionary = util.create_dict(train_tweets, num_occurrences)
     print('Size of dictionary: ', len(dictionary))
 
+    # Create / load the text matrix
     if create_text_matrix:
         train_matrix = util.transform_text(train_tweets, dictionary)
         write_csv(train_matrix, 'train_matrix.csv')
@@ -38,6 +40,7 @@ def main():
     mag_deviation = []
     rmse = []
 
+    # Training loop
     for lr in learning_rates:
         model = linearRegression(learning_rate=lr,
                                  num_epochs=num_epochs,
@@ -63,9 +66,9 @@ def main():
     
     results = []
 
+    # Testing
     for i, model in enumerate(models):
         results.append(model.evaluate(test_matrix, test_change))
-        
         np.savetxt('results_learn_rate=' + str(learning_rates[i]) + '.csv' , results[i]['Preds'])
 
     top_words = util.get_top_words(num_top_words, train_matrix, train_change, dictionary)

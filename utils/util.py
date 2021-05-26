@@ -77,6 +77,7 @@ def write_json(filename, value):
     with open(filename, 'w') as f:
         json.dump(value, f)
 
+
 def get_top_words(num_words, tweet_matrix, change, dict):
     """Returns list of words with highest expected percent change in price (in increasing order), given the word appears in a message
        num_words = number of top words to get
@@ -90,3 +91,12 @@ def get_top_words(num_words, tweet_matrix, change, dict):
     top_words = [dict.get(i) for i in reversed(top_words)]
     return top_words
 
+
+def create_buckets(y):
+    y = np.where(y < -0.03, 5, y)
+    y = np.where(y < -0.01, 4, y)
+    y = np.where(y < 0.01, 3, y)
+    y = np.where(y < 0.03, 2, y)
+    y = np.where(y < 1, 1, y)
+
+    return y.astype('int32')
