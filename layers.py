@@ -28,14 +28,14 @@ class SentimentAnalysis(nn.Module):
 
 class OutputLayer(nn.Module):
     """
-    Two-stack of fully-connected output layers with 7 neurons. 
+    Two-stack of fully-connected output layers with 5 neurons. 
     To be used after sentiment analysis.
     """
     def __init__(self, input_size, hidden_size, alpha):
         self.model = nn.Sequential(
             nn.Linear(input_size, hidden_size),
             nn.ELU(alpha),
-            nn.Linear(hidden_size, 7),
+            nn.Linear(hidden_size, 5),
             nn.Softmax()
         )
 
