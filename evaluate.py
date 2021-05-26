@@ -1,8 +1,6 @@
 import numpy as np
 from preprocessing import get_data
-from util import create_buckets, get_tweets_change
-import os
-
+from utils.util import create_buckets, get_tweets_change
 
 results_files = ['results_learn_rate=0.1', 'results_learn_rate=0.01',
                  'results_learn_rate=0.001', 'results_learn_rate=0.0001']

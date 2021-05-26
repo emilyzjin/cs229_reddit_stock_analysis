@@ -13,9 +13,9 @@ num_occurrences = 10 # hyperparameter
 
 def main():
     # Load data
-    train_tweets, train_change = util.get_tweets_change('../train.csv')
-    dev_tweets, dev_change = util.get_tweets_change('../dev.csv')
-    test_tweets, test_change = util.get_tweets_change('../test.csv')
+    train_tweets, train_change = util.get_tweets_change('train.csv')
+    dev_tweets, dev_change = util.get_tweets_change('dev.csv')
+    test_tweets, test_change = util.get_tweets_change('test.csv')
 
     # Create dictionary of words that are used at least 'num_occurrences' times
     dictionary = util.create_dict(train_tweets, num_occurrences)
