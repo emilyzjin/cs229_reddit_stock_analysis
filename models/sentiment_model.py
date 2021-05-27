@@ -1,81 +1,67 @@
 # Sentiment Analysis Model from https://towardsdatascience.com/sentiment-analysis-using-lstm-step-by-step-50d074f09948
+# https://www.kaggle.com/arunmohan003/sentiment-analysis-using-lstm-pytorch
 
 from utils.sentiment_util import tokenize
 import torch.nn as nn
+import numpy as np # linear algebra
+import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
+import torch
 
 
-class SentimentAnalysis:
-    def __init__(self, vocab_size, output_size, embedding_dim, hidden_dim, num_layers, drop_prob=0.5):
-        """
-        Initialize the model by setting up the layers.
-        """
-        self.output_size = output_size
-        self.num_layers = num_layers
+class SentimentRNN(nn.Module):
+    def __init__(self, no_layers, vocab_size, hidden_dim, embedding_dim, output_dim, drop_prob=0.5):
+        super(SentimentRNN, self).__init__()
+
+        self.output_dim = output_dim
         self.hidden_dim = hidden_dim
+
+        self.no_layers = no_layers
+        self.vocab_size = vocab_size
 
         # embedding and LSTM layers
         self.embedding = nn.Embedding(vocab_size, embedding_dim)
-        self.lstm = nn.LSTM(embedding_dim, hidden_dim, num_layers,
-                            dropout=drop_prob, batch_first=True)
+
+        # lstm
+        self.lstm = nn.LSTM(input_size=embedding_dim, hidden_size=self.hidden_dim,
+                            num_layers=no_layers, batch_first=True)
 
         # dropout layer
         self.dropout = nn.Dropout(0.3)
 
-        # linear and sigmoid layers
-        self.fc = nn.Linear(hidden_dim, output_size)
+        # linear and sigmoid layer
+        self.fc = nn.Linear(self.hidden_dim, output_dim)
         self.sig = nn.Sigmoid()
 
-    def forward(self, input, hidden, stopwords=None):
-        """
-        Perform a forward pass given input and hidden state.
+    def forward(self, x, hidden):
+        batch_size = x.size(0)
+        # embeddings and lstm_out
+        embeds = self.embedding(x)  # shape: B x S x Feature   since batch = True
+        # print(embeds.shape)  #[50, 500, 1000]
+        lstm_out, hidden = self.lstm(embeds, hidden)
 
-        STEPS
-        0. Tokenize
-        1. Embedding Layer: that converts our word tokens (integers) into embedding of specific size
-        2. LSTM Layer: defined by hidden state dims and number of layers
-        3. Dropout
-        4. Fully Connected Layer: that maps output of LSTM layer to a desired output size
-        5. Sigmoid Activation Layer: that turns all output values in a value between 0 and 1
-        6. Output: Sigmoid output from the last timestep is considered as the final output of this network
-        """
-        batch_size = input.size(0)
+        lstm_out = lstm_out.contiguous().view(-1, self.hidden_dim)
 
-        # tokenize
-        if stopwords is None:
-            input = tokenize(input)
-        else:
-            input = tokenize(input, stopwords)
+        # dropout and fully connected layer
+        out = self.dropout(lstm_out)
+        out = self.fc(out)
 
-        # embedding and lstm
-        embeddings = self.embedding(input)
-        lstm_output, hidden = self.lstm(embeddings, hidden)
-        lstm_output = lstm_output.contiguous().view(-1, self.hidden_dim)
-
-        # dropout, fully-connected, sigmoid
-        output = self.dropout(lstm_output)
-        output = self.fc(output)
-        output = self.sig(output)
+        # sigmoid function
+        sig_out = self.sig(out)
 
         # reshape to be batch_size first
-        output = output.view(batch_size, -1)
-        output = output[:, -1]  # get last batch of labels
+        sig_out = sig_out.view(batch_size, -1)
+
+        sig_out = sig_out[:, -1]  # get last batch of labels
 
         # return last sigmoid output and hidden state
-        return output, hidden
+        return sig_out, hidden
 
     def init_hidden(self, batch_size):
-        """
-        Initializes hidden state
-        """
+        ''' Initializes hidden state '''
         # Create two new tensors with sizes n_layers x batch_size x hidden_dim,
         # initialized to zero, for hidden state and cell state of LSTM
-        weight = next(self.parameters()).data
-
-        if (train_on_gpu):
-            hidden = (weight.new(self.num_layers, batch_size, self.hidden_dim).zero_().cuda(),
-                      weight.new(self.num_layers, batch_size, self.hidden_dim).zero_().cuda())
-        else:
-            hidden = (weight.new(self.num_layers, batch_size, self.hidden_dim).zero_(),
-                      weight.new(self.num_layers, batch_size, self.hidden_dim).zero_())
-
+        h0 = torch.zeros((self.no_layers, batch_size, self.hidden_dim)).to(device)
+        c0 = torch.zeros((self.no_layers, batch_size, self.hidden_dim)).to(device)
+        hidden = (h0, c0)
         return hidden
+
