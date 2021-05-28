@@ -7,6 +7,8 @@ from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 import numpy as np
 import torch
+import spacy
+
 
 lemmatizer = WordNetLemmatizer()
 
