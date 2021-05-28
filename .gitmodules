@@ -4,3 +4,9 @@
 [submodule "stockreturnpred"]
 	path = stockreturnpred
 	url = git://github.com/ImperialNLP/stockreturnpred.git
+[submodule "sentiment140-biLSTM"]
+	path = sentiment140-biLSTM
+	url = https://github.com/yuanbit/sentiment140-biLSTM.git
+[submodule "pytorch-sentiment-analysis-classification"]
+	path = pytorch-sentiment-analysis-classification
+	url = https://github.com/slaysd/pytorch-sentiment-analysis-classification.git
