@@ -1,5 +1,4 @@
-# Sentiment Analysis Model from https://towardsdatascience.com/sentiment-analysis-using-lstm-step-by-step-50d074f09948
-# https://www.kaggle.com/arunmohan003/sentiment-analysis-using-lstm-pytorch
+# Sentiment Analysis Model from https://www.kaggle.com/arunmohan003/sentiment-analysis-using-lstm-pytorch
 
 from utils.sentiment_util import tokenize
 import torch.nn as nn
@@ -8,60 +7,75 @@ import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
 import torch
 
 
-class SentimentRNN(nn.Module):
-    def __init__(self, no_layers, vocab_size, hidden_dim, embedding_dim, output_dim, drop_prob=0.5):
-        super(SentimentRNN, self).__init__()
+class SentimentLSTM(nn.Module):
+    def __init__(self, vocab_size, embedding_dim, hidden_dim, output_dim, n_layers, 
+                 bidirectional, dropout, pad_idx):
+        """
+        Define the layers of the module.
 
-        self.output_dim = output_dim
-        self.hidden_dim = hidden_dim
+        vocab_size - vocabulary size
+        embedding_dim - size of the dense word vectors
+        hidden_dim - size of the hidden states
+        output_dim - number of classes
+        n_layers - number of multi-layer RNN
+        bidirectional - boolean - use both directions of LSTM
+        dropout - dropout probability
+        pad_idx -  string representing the pad token
+        """
+        
+        super().__init__()
 
-        self.no_layers = no_layers
-        self.vocab_size = vocab_size
+        # 1. Feed the tweets in the embedding layer
+        # padding_idx set to not learn the emedding for the <pad> token - irrelevant to determining sentiment
+        self.embedding = nn.Embedding(vocab_size, embedding_dim, padding_idx = pad_idx)
 
-        # embedding and LSTM layers
-        self.embedding = nn.Embedding(vocab_size, embedding_dim)
+        # 2. LSTM layer
+        # returns the output and a tuple of the final hidden state and final cell state
+        self.encoder = nn.LSTM(embedding_dim, 
+                               hidden_dim, 
+                               num_layers=n_layers,
+                               bidirectional=bidirectional,
+                               dropout=dropout)
+        
+        # 3. Fully-connected layer
+        # Final hidden state has both a forward and a backward component concatenated together
+        # The size of the input to the nn.Linear layer is twice that of the hidden dimension size
+        self.predictor = nn.Linear(hidden_dim*2, output_dim)
 
-        # lstm
-        self.lstm = nn.LSTM(input_size=embedding_dim, hidden_size=self.hidden_dim,
-                            num_layers=no_layers, batch_first=True)
+        # Initialize dropout layer for regularization
+        self.dropout = nn.Dropout(dropout)
+      
+    def forward(self, text, text_lengths):
+        """
+        The forward method is called when data is fed into the model.
 
-        # dropout layer
-        self.dropout = nn.Dropout(0.3)
+        text - [tweet length, batch size]
+        text_lengths - lengths of tweet
+        """
 
-        # linear and sigmoid layer
-        self.fc = nn.Linear(self.hidden_dim, output_dim)
-        self.sig = nn.Sigmoid()
+        # embedded = [sentence len, batch size, emb dim]
+        embedded = self.dropout(self.embedding(text))    
 
-    def forward(self, x, hidden):
-        batch_size = x.size(0)
-        # embeddings and lstm_out
-        embeds = self.embedding(x)  # shape: B x S x Feature   since batch = True
-        # print(embeds.shape)  #[50, 500, 1000]
-        lstm_out, hidden = self.lstm(embeds, hidden)
+        # Pack the embeddings - cause RNN to only process non-padded elements
+        # Speeds up computation
+        packed_embedded = nn.utils.rnn.pack_padded_sequence(embedded, text_lengths.cpu())
 
-        lstm_out = lstm_out.contiguous().view(-1, self.hidden_dim)
+        # output of encoder
+        packed_output, (hidden, cell) = self.encoder(packed_embedded)
 
-        # dropout and fully connected layer
-        out = self.dropout(lstm_out)
-        out = self.fc(out)
+        # unpack sequence - transform packed sequence to a tensor
+        output, output_lengths = nn.utils.rnn.pad_packed_sequence(packed_output)
 
-        # sigmoid function
-        sig_out = self.sig(out)
+        # output = [sentence len, batch size, hid dim * num directions]
+        # output over padding tokens are zero tensors
+        
+        # hidden = [num layers * num directions, batch size, hid dim]
+        # cell = [num layers * num directions, batch size, hid dim]
+        
+        # Get the final layer forward and backward hidden states  
+        # concat the final forward and backward hidden layers and apply dropout
+        hidden = self.dropout(torch.cat((hidden[-2,:,:], hidden[-1,:,:]), dim = 1))
 
-        # reshape to be batch_size first
-        sig_out = sig_out.view(batch_size, -1)
+        # hidden = [batch size, hid dim * num directions]
 
-        sig_out = sig_out[:, -1]  # get last batch of labels
-
-        # return last sigmoid output and hidden state
-        return sig_out, hidden
-
-    def init_hidden(self, batch_size):
-        ''' Initializes hidden state '''
-        # Create two new tensors with sizes n_layers x batch_size x hidden_dim,
-        # initialized to zero, for hidden state and cell state of LSTM
-        h0 = torch.zeros((self.no_layers, batch_size, self.hidden_dim)).to(device)
-        c0 = torch.zeros((self.no_layers, batch_size, self.hidden_dim)).to(device)
-        hidden = (h0, c0)
-        return hidden
-
+        return self.predictor(hidden)
