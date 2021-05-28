@@ -174,3 +174,40 @@ def evaluate(model, iterator, criterion):
             eval_acc += accuracy.item()
         
     return eval_loss / len(iterator), eval_acc / len(iterator)
+
+
+def predict(model, text, tokenized=True):
+    """
+    Given a tweet, predict the sentiment.
+
+    text - a string or a a list of tokens
+    tokenized - True if text is a list of tokens, False if passing in a string
+    """
+
+    # nlp = spacy.load('en')
+    nlp = spacy.blank("en")
+
+    # Sets the model to evaluation mode
+    model.eval()
+
+    if tokenized == False:
+        # Tokenizes the sentence
+        tokens = [token.text for token in nlp.tokenizer(text)]
+    else:
+        tokens = text
+
+    # Index the tokens by converting to the integer representation from the vocabulary
+    indexed_tokens = [TEXT.vocab.stoi[t] for t in tokens]
+    # Get the length of the text
+    length = [len(indexed_tokens)]
+    # Convert the indices to a tensor
+    tensor = torch.LongTensor(indexed_tokens).to(device)
+    # Add a batch dimension by unsqueezeing
+    tensor = tensor.unsqueeze(1)
+    # Converts the length into a tensor
+    length_tensor = torch.LongTensor(length)
+    # Convert prediction to be between 0 and 1 with the sigmoid function
+    prediction = torch.sigmoid(model(tensor, length_tensor))
+
+    # Return a single value from the prediction
+    return prediction.item()
