@@ -1,10 +1,10 @@
 # Sentiment Analysis Model from https://towardsdatascience.com/sentiment-analysis-using-lstm-step-by-step-50d074f09948
 
 from utils.sentiment_util import tokenize
+import torch
 import torch.nn as nn
 
-
-class SentimentAnalysis:
+class SentimentAnalysis(nn.Module):
     def __init__(self, vocab_size, output_size, embedding_dim, hidden_dim, num_layers, drop_prob=0.5):
         """
         Initialize the model by setting up the layers.
@@ -79,3 +79,23 @@ class SentimentAnalysis:
                       weight.new(self.num_layers, batch_size, self.hidden_dim).zero_())
 
         return hidden
+
+
+class OutputLayer(nn.Module):
+    """
+    Two-stack of fully-connected output layers with 5 neurons. 
+    To be used after sentiment analysis.
+    """
+    def __init__(self, input_size, hidden_size, alpha):
+        self.model = nn.Sequential(
+            nn.Linear(input_size, hidden_size),
+            nn.ELU(alpha),
+            nn.Linear(hidden_size, 5),
+            nn.Softmax()
+        )
+
+    def forward(self, sentiment_output, y):
+        # sentiment_output - output from sentiment analysis model
+        # y - other input
+        x = torch.cat(sentiment_output, y, dim=1)
+        return self.model(x)
