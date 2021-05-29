@@ -1,6 +1,7 @@
 # Sentiment Analysis Model from https://www.kaggle.com/arunmohan003/sentiment-analysis-using-lstm-pytorch
 
 from utils.sentiment_util import tokenize
+import torch
 import torch.nn as nn
 import numpy as np # linear algebra
 import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
@@ -79,3 +80,22 @@ class SentimentLSTM(nn.Module):
         # hidden = [batch size, hid dim * num directions]
 
         return self.predictor(hidden)
+
+class OutputLayer(nn.Module):
+    """
+    Two-stack of fully-connected output layers with 5 neurons. 
+    To be used after sentiment analysis.
+    """
+    def __init__(self, input_size, hidden_size, alpha):
+        self.model = nn.Sequential(
+            nn.Linear(input_size, hidden_size),
+            nn.ELU(alpha),
+            nn.Linear(hidden_size, 5),
+            nn.Softmax()
+        )
+
+    def forward(self, sentiment_output, y):
+        # sentiment_output - output from sentiment analysis model
+        # y - other input
+        x = torch.cat(sentiment_output, y, dim=1)
+        return self.model(x)
