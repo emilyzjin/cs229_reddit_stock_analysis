@@ -1,72 +1,53 @@
 # Utility functions for data preprocessing for deep learning sentiment analysis model.
 
+import csv
 import string
 from string import punctuation
 import nltk
+nltk.download('wordnet')
+nltk.download('stopwords')
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
-import numpy as np
 import torch
-import spacy
-
 
 lemmatizer = WordNetLemmatizer()
 
 
-# def tokenize(s, stopwords=stopwords):
-#     """
-#     Given a string, remove stop words, lowercase words,
-#     and remove words with non-alphanumeric characters.
-#     """
-#     tokenized = s.split()
-#     result = []
-#     for word in tokenized:
-#         word = word.strip(punctuation)
-#         if word.isalpha() and word not in stopwords:
-#             result.append(lemmatizer.lemmatize(word).lower())
-#     return result
+def tokenize(s, stopwords=stopwords):
+    """
+    Given a string, remove stop words, lowercase words,
+    and remove words with non-alphanumeric characters.
+    """
+    tokenized = s.split()
+    result = ""
+    for word in tokenized:
+        word = word.strip(punctuation)
+        if word.isalpha() and word not in stopwords.words('english'):
+            result += lemmatizer.lemmatize(word).lower()
+            result += " "
+    return result
 
 
-def preprocess_string(s):
-    # Remove all non-word characters (everything except numbers and letters)
-    s = nltk.re.sub(r"[^\w\s]", '', s)
-    # Replace all runs of whitespaces with no space
-    s = nltk.re.sub(r"\s+", '', s)
-    # replace digits with no space
-    s = nltk.re.sub(r"\d", '', s)
+def tokenize_csv(input_file, output_file):
+    with open(input_file, 'r') as f:
+        reader = csv.reader(f)
+        dataset_list = list(reader)
+        tokenized_data = []
+        i=0
+        for entry in dataset_list:
+            tokenized_entry = tokenize(entry[-1])
+            if len(tokenized_entry) > 0:
+                tokenized_data.append([entry[0], tokenized_entry])
+                i += 1 
+                if i % 20000 == 0:
+                    print(i / len(dataset_list))
+            
+    with open(output_file, 'w', newline='') as f:
+        write = csv.writer(f)
+        for entry in tokenized_data:
+            write.writerow(entry)
 
-    return s
-
-
-def tokenize(x_train, y_train, x_val, y_val):
-    word_list = []
-
-    stop_words = set(stopwords.words('english'))
-    for sent in x_train:
-        for word in sent.lower().split():
-            word = preprocess_string(word)
-            if word not in stop_words and word != '':
-                word_list.append(word)
-
-    corpus = nltk.Counter(word_list)
-    # sorting on the basis of most common words
-    corpus_ = sorted(corpus, key=corpus.get, reverse=True)[:1000]
-    # creating a dict
-    onehot_dict = {w: i + 1 for i, w in enumerate(corpus_)}
-
-    # tockenize
-    final_list_train, final_list_test = [], []
-    for sent in x_train:
-        final_list_train.append([onehot_dict[preprocess_string(word)] for word in sent.lower().split()
-                                 if preprocess_string(word) in onehot_dict.keys()])
-    for sent in x_val:
-        final_list_test.append([onehot_dict[preprocess_string(word)] for word in sent.lower().split()
-                                if preprocess_string(word) in onehot_dict.keys()])
-
-    encoded_train = [1 if label == 'positive' else 0 for label in y_train]
-    encoded_test = [1 if label == 'positive' else 0 for label in y_val]
-    return np.array(final_list_train), np.array(encoded_train), np.array(final_list_test), np.array(
-        encoded_test), onehot_dict
+    print('done')
 
 
 def batch_accuracy(predictions, label):
@@ -121,7 +102,7 @@ def train(model, iterator, optimizer, criterion):
         
         # batch.text is a tuple (tensor, len of seq)
         text, text_lengths = batch.text
-        
+
         # 2. Compute the predictions
         predictions = model(text, text_lengths).squeeze(1)
         

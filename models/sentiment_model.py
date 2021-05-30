@@ -53,7 +53,7 @@ class SentimentLSTM(nn.Module):
         text - [tweet length, batch size]
         text_lengths - lengths of tweet
         """
-
+        
         # embedded = [sentence len, batch size, emb dim]
         embedded = self.dropout(self.embedding(text))    
 
