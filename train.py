@@ -2,11 +2,16 @@ import torch
 import torch.nn as nn
 import torchtext
 import csv
-from models.sentiment_model import SentimentLSTM
+import util
+from models.sentiment_model import MovementPredictor
 from utils.sentiment_util import evaluate
 from torchtext.legacy import data
 import spacy
+import torch.optim as optim
+import torch.optim.lr_scheduler as sched
 from torchtext.vocab import GloVe
+import torch.nn.functional as F
+import pdb
 
 
 # def data_preprocess(csv_file):
@@ -99,11 +104,10 @@ def data_preprocess(max_vocab_size, device, batch_size):
         sort_key=lambda x: len(x.text),
         sort_within_batch=True)
 
-    return train_iterator, valid_iterator, test_iterator
+    return train_iterator, valid_iterator, test_iterator            
 
 
-def train():
-    # run train_iterator into the
+def evaluate():
     pass
 
 def test():
@@ -112,10 +116,65 @@ def test():
 
 def main():
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    train = True
     batch_size = 128
-    create_csv()
+    hidden_size = 200
+    drop_prob = 0.2
+    learning_rate = 1e-3
+    num_epochs = 100
+    save_dir = None # TODO: SET PATH.
+    beta1, beta2 = 0.9, 0.999 # for Adam
+    alpha = 0.2 # for ELU
+    max_grad_norm = None # TODO: ?? WHAT IS THIS
+    # create_csv()
+
+    # Initialize model.
+    model = MovementPredictor(
+        vocab_size=None, # TODO
+        embedding_dim=None, # TODO
+        hidden_dim=hidden_size,
+        output_dim=5, # TODO
+        n_layers=None, # TODO
+        bidirectional=True,
+        dropout=drop_prob,
+        pad_idx=None, # TODO
+        alpha=alpha
+    )
+    device, gpu_ids = util.get_available_devices()
+    model = nn.DataParallel(model, gpu_ids)
+
+    # Initialize optimizer and scheduler.
+    optimizer = optim.Adam(model.parameters, lr=learning_rate, betas=(beta1, beta2))
+    #scheduler = sched.LambdaLR(optimizer, lambda s: 1.)
+
     train_iterator, valid_iterator, test_iterator = data_preprocess(25000, device, batch_size)
 
+    # Training Loop
+    if train:
+        for epoch in range(num_epochs):
+            with torch.enable_grad():
+                # TODO: maybe we should split data and then use dataloader here?
+                for vector in train_iterator:
+                    # Grab labels.
+                    target = train_iterator[:, -1]
+                    # Grab other data for multimodal sentiment analysis.
+                    multimodal_data = train_iterator[:, -3:-2] # Upvotes + past week change
+                    # Apply model
+                    y = model(vector[:, :-4], multimodal_data)
+                    target = target.to(device) # TODO: Unsure if this line is needed?
+                    loss = F.BCELoss(y, target)
+                    loss_val = loss.item()
+
+                    # Backward
+                    loss.backward()
+                    nn.utils.clip_grad_norm_(model.parameters(), max_grad_norm)
+                    optimizer.step()
+                    #scheduler.step(step // batch_size)
+
+                    # TODO: Print + Log (not sure if needed rn)
+                    pass
+
+    pdb.set_trace()
     print(1)
 
 
