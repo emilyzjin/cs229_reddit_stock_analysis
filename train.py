@@ -1,17 +1,17 @@
-import torch
-import torch.nn as nn
-import torchtext
+# import torch
+# import torch.nn as nn
+# import torchtext
 import csv
-import util
-from models.sentiment_model import MovementPredictor
-from utils.sentiment_util import evaluate
-from torchtext.legacy import data
-import spacy
-import torch.optim as optim
-import torch.optim.lr_scheduler as sched
-from torchtext.vocab import GloVe
-import torch.nn.functional as F
-import pdb
+# import util
+# from models.sentiment_model import MovementPredictor
+# from utils.sentiment_util import evaluate
+# from torchtext.legacy import data
+# import spacy
+# import torch.optim as optim
+# import torch.optim.lr_scheduler as sched
+# from torchtext.vocab import GloVe
+# import torch.nn.functional as F
+# import pdb
 
 
 # def data_preprocess(csv_file):
@@ -61,22 +61,22 @@ def create_csv():
                     text = ' '.join(text)
                     text = [text]
                     other = row[-3:-1]
-                    label = row[-1]
+                    label = 1 - float(row[-1])
                     # Strong buy
-                    if label >= 3:
+                    if label >= .03:
                         label = 1
                     # Buy
-                    elif 1 < label < 3:
+                    elif .01 < label < .03:
                         label = 2
                     # Hold
-                    elif -1 <= label <= 1:
+                    elif -.01 <= label <= .01:
                         label = 3
                     # Sell
-                    elif -1 > label > -3:
+                    elif -.01 > label > -.03:
                         label = 4
                     else:
                         label = 5
-                    other = other.extend(label)
+                    other.extend([label])
                     writer_1.writerow(text)
                     writer_2.writerow(other)
     in_file.close()
