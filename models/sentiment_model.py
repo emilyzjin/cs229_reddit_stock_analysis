@@ -8,19 +8,6 @@ import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
 import torch
 
 
-class MovementPredictor(nn.Module):
-    """
-    Full model for predicting stock movements.
-    """
-    def __init__(self, vocab_size, embedding_dim, hidden_dim, n_layers, bidirectional, dropout, pad_idx, alpha):
-        self.sentiment_analysis = SentimentLSTM(vocab_size, embedding_dim, hidden_dim, n_layers, 
-                                                bidirectional, dropout, pad_idx)
-        self.out = OutputLayer(hidden_dim, hidden_dim, alpha)
-
-    def forward(self, converted_text, multimodal_data):
-        return self.out(self.sentiment_analysis(converted_text), multimodal_data)
-
-
 class SentimentLSTM(nn.Module):
     def __init__(self, vocab_size, embedding_dim, hidden_dim, n_layers, 
                  bidirectional, dropout, pad_idx):
@@ -112,3 +99,16 @@ class OutputLayer(nn.Module):
         # y - other input
         x = torch.cat(sentiment_output, y, dim=1)
         return self.model(x)
+
+
+class MovementPredictor(nn.Module):
+    """
+    Full model for predicting stock movements.
+    """
+    def __init__(self, vocab_size, embedding_dim, hidden_dim, n_layers, bidirectional, dropout, pad_idx, alpha):
+        self.sentiment_analysis = SentimentLSTM(vocab_size, embedding_dim, hidden_dim, n_layers, 
+                                                bidirectional, dropout, pad_idx)
+        self.out = OutputLayer(hidden_dim, hidden_dim, alpha)
+
+    def forward(self, converted_text, multimodal_data):
+        return self.out(self.sentiment_analysis(converted_text), multimodal_data)
