@@ -156,7 +156,8 @@ def main():
                 # TODO: maybe we should split data and then use dataloader here?
                 for vector in train_iterator:
                     # Grab labels.
-                    target = train_iterator[:, -1]
+                    target = torch.zeros((5,))
+                    target[train_iterator[:, -1]] = 1
                     # Grab other data for multimodal sentiment analysis.
                     multimodal_data = train_iterator[:, -3:-2] # Upvotes + past week change
                     # Apply model
