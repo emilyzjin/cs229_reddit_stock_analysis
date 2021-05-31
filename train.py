@@ -59,7 +59,23 @@ def create_csv():
                     text = row[0].split(', ')
                     text = ' '.join(text)
                     text = [text]
-                    other = row[-3:]
+                    other = row[-3:-1]
+                    label = row[-1]
+                    # Strong buy
+                    if label >= 3:
+                        label = 1
+                    # Buy
+                    elif 1 < label < 3:
+                        label = 2
+                    # Hold
+                    elif -1 <= label <= 1:
+                        label = 3
+                    # Sell
+                    elif -1 > label > -3:
+                        label = 4
+                    else:
+                        label = 5
+                    other = other.extend(label)
                     writer_1.writerow(text)
                     writer_2.writerow(other)
     in_file.close()
@@ -120,6 +136,8 @@ def test():
 
 
 def main():
+    create_csv()
+    pdb.set_trace()
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     train = True
     batch_size = 128
@@ -140,7 +158,6 @@ def main():
         vocab_size=None, # TODO
         embedding_dim=None, # TODO
         hidden_dim=hidden_size,
-        output_dim=5, # TODO
         n_layers=None, # TODO
         bidirectional=True,
         dropout=drop_prob,
@@ -163,6 +180,7 @@ def main():
         for epoch in range(num_epochs):
             with torch.enable_grad():
                 for vector in train_iterator:
+                    optimizer.zero_grad()
                     # Grab labels.
                     target = torch.zeros((5,))
                     target[train_iterator[:, -1]] = 1

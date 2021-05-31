@@ -63,7 +63,7 @@ def batch_accuracy(predictions, label):
     # Round predictions to the closest integer using the sigmoid function
     preds = torch.round(torch.sigmoid(predictions))
     # If prediction is equal to label
-    correct = 1 - (torch.abs(preds - label).float() / 4)
+    correct = 0.5 - (torch.abs(preds - label).float() / 8) + ((preds == label).float() / 2)
     # Average correct predictions
     accuracy = correct.sum() / len(correct)
 
