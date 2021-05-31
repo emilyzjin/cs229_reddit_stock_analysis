@@ -1,0 +1,940 @@
+"['maybe', 'tesla', 'puts', 'eod', 'wasn t', 'a', 'good', 'idea']",tsla,55,1.1399930639953388,1.2312266729278485
+"['i', 'could', 'be', 'a', 'millionaire', 'with', 'tesla', 'and', 'instead', 'i', 'bought', 'msft', 'i', 'just', 'loved', 'the', 'idea', 'of', 'working', 'another', '', 'years', 'so', 'much', 'anyway']",tsla,98,1.1399930639953388,1.2312266729278485
+"['i', 'could', 'be', 'a', 'millionaire', 'with', 'tesla', 'and', 'instead', 'i', 'bought', 'msft', 'i', 'just', 'loved', 'the', 'idea', 'of', 'working', 'another', '', 'years', 'so', 'much', 'anyway']",msft,98,0.9869136083831459,1.0228729034365864
+"['aapl', 'my', 'sweet', 'sexy', 'cougar', 'lady', 'you', 'do', 'what ever', 'you', 'like', 'today', 'you ve', 'been', 'working', 'your', 'tight', 'thick', 'ass', 'off', 'this', 'week']",aapl,34,1.0204928981374435,1.0830793290449314
+"['goldman', 'sachs', 'increase', 'ownership', 'in', 'nio', 'by', '', 'after', 'issuing', '', 'downgrades', 'in', '', 'months https fintel io so us nio goldman sachs group', 'if', 'this', 'shit', 'doesn t', 'make', 'your', 'blood', 'boil']",nio,31,0.9397418060115553,1.07132014860532
+"['haha', 'some', 'dumbass', 'just', 'paid', '', 'a', 'piece', 'for', 'the', 'prpl', 'options', 'i', 'bought', 'yesterday', 'for', '', 'a', 'piece', 'what', 'an', 'idiot']",prpl,26,0.8862889824154362,0.9012986732037256
+"['wsb', 'omfg', 'apple', 'mooning', 'apple', 'up', '', 'can', 'we', 'start', 'reserving', 'the', 'word', 'moon', 'for', 'a', '', 'or', 'more', 'move', 'y all', 'annoy', 'me', 'some', 'mornings', 'i', 'need', 'a', 'coffee']",aapl,89,1.0204928981374435,1.0830793290449314
+"['i', 'think', 'i m', 'starting', 'to', 'understand', 'the', 'rational', 'market', 'hypothesis', 'big', 'tech', 'went', 'through', 'the', 'roof', 'because', 'it ll', 'perform', 'well', 'when', 'everyone', 'is', 'forced', 'to', 'stay', 'at', 'home', 'we', 'opened', 'the', 'economy', 'everyone', 'went', 'outside', 'and', 'tech', 'set', 'new', 'all time', 'highs', 'moderna', 'published', 'the', 'same', 'vaccine', 'press', 'release', 'multiple', 'times', 'and', 'the', 'market', 'pumped', 'each', 'time', 'never', 'giving', 'up', 'the', 'gains', 'grubhub', 'went', 'through', 'the', 'roof', 'on', 'rumors', 'it', 'was', 'being', 'bought', 'out', 'by', 'uber', 'deal', 'fell', 'through', 'gh', 'never', 'gave', 'up', 'those', 'gains', 'and', 'is', 'even', 'higher', 'now', 'amc', 'theaters', 'pumped', 'on', 'rumors', 'amazon', 'was', 'looking', 'to', 'buy', 'it', 'came', 'out', 'the', 'next', 'day', 'that', 'it', 'was', 'the', 'amc', 'tv', 'channel', 'not', 'the', 'theater', 'chain', 'the', 'stock', 'gave', 'up', 'only', 'half', 'of', 'its', 'gains', 'from', 'the', 'rumor', 'free', '', 'on', 'a', 'nothingburger', 'hertz', 'hit', '', 'when', 'it', 'announced', 'bankruptcy', 'filings', 'bounced', 'to', '', 'and', 'stayed', 'there', 'a', 'while', 'following', 'the', 'most', 'autistic', 'pump', 'in', 'market', 'history', 'it s', 'leveled', 'out', 'at', 'motherfucking', 'x', 'the', 'low', 'and', 'been', 'there', 'for', 'two', 'months', 'you d', 'have', 'made', '', 'if', 'you', 'bought', 'the', 'low', 'and', 'diamond', 'handed', 'your', 'way', 'through', 'the', 'entire', 'pump', 'and', 'dump']",mrna,19,0.9310624027385696,0.976344392181832
+"['i', 'think', 'i m', 'starting', 'to', 'understand', 'the', 'rational', 'market', 'hypothesis', 'big', 'tech', 'went', 'through', 'the', 'roof', 'because', 'it ll', 'perform', 'well', 'when', 'everyone', 'is', 'forced', 'to', 'stay', 'at', 'home', 'we', 'opened', 'the', 'economy', 'everyone', 'went', 'outside', 'and', 'tech', 'set', 'new', 'all time', 'highs', 'moderna', 'published', 'the', 'same', 'vaccine', 'press', 'release', 'multiple', 'times', 'and', 'the', 'market', 'pumped', 'each', 'time', 'never', 'giving', 'up', 'the', 'gains', 'grubhub', 'went', 'through', 'the', 'roof', 'on', 'rumors', 'it', 'was', 'being', 'bought', 'out', 'by', 'uber', 'deal', 'fell', 'through', 'gh', 'never', 'gave', 'up', 'those', 'gains', 'and', 'is', 'even', 'higher', 'now', 'amc', 'theaters', 'pumped', 'on', 'rumors', 'amazon', 'was', 'looking', 'to', 'buy', 'it', 'came', 'out', 'the', 'next', 'day', 'that', 'it', 'was', 'the', 'amc', 'tv', 'channel', 'not', 'the', 'theater', 'chain', 'the', 'stock', 'gave', 'up', 'only', 'half', 'of', 'its', 'gains', 'from', 'the', 'rumor', 'free', '', 'on', 'a', 'nothingburger', 'hertz', 'hit', '', 'when', 'it', 'announced', 'bankruptcy', 'filings', 'bounced', 'to', '', 'and', 'stayed', 'there', 'a', 'while', 'following', 'the', 'most', 'autistic', 'pump', 'in', 'market', 'history', 'it s', 'leveled', 'out', 'at', 'motherfucking', 'x', 'the', 'low', 'and', 'been', 'there', 'for', 'two', 'months', 'you d', 'have', 'made', '', 'if', 'you', 'bought', 'the', 'low', 'and', 'diamond', 'handed', 'your', 'way', 'through', 'the', 'entire', 'pump', 'and', 'dump']",uber,19,0.9076876192525826,1.0141447470582754
+"['i', 'think', 'i m', 'starting', 'to', 'understand', 'the', 'rational', 'market', 'hypothesis', 'big', 'tech', 'went', 'through', 'the', 'roof', 'because', 'it ll', 'perform', 'well', 'when', 'everyone', 'is', 'forced', 'to', 'stay', 'at', 'home', 'we', 'opened', 'the', 'economy', 'everyone', 'went', 'outside', 'and', 'tech', 'set', 'new', 'all time', 'highs', 'moderna', 'published', 'the', 'same', 'vaccine', 'press', 'release', 'multiple', 'times', 'and', 'the', 'market', 'pumped', 'each', 'time', 'never', 'giving', 'up', 'the', 'gains', 'grubhub', 'went', 'through', 'the', 'roof', 'on', 'rumors', 'it', 'was', 'being', 'bought', 'out', 'by', 'uber', 'deal', 'fell', 'through', 'gh', 'never', 'gave', 'up', 'those', 'gains', 'and', 'is', 'even', 'higher', 'now', 'amc', 'theaters', 'pumped', 'on', 'rumors', 'amazon', 'was', 'looking', 'to', 'buy', 'it', 'came', 'out', 'the', 'next', 'day', 'that', 'it', 'was', 'the', 'amc', 'tv', 'channel', 'not', 'the', 'theater', 'chain', 'the', 'stock', 'gave', 'up', 'only', 'half', 'of', 'its', 'gains', 'from', 'the', 'rumor', 'free', '', 'on', 'a', 'nothingburger', 'hertz', 'hit', '', 'when', 'it', 'announced', 'bankruptcy', 'filings', 'bounced', 'to', '', 'and', 'stayed', 'there', 'a', 'while', 'following', 'the', 'most', 'autistic', 'pump', 'in', 'market', 'history', 'it s', 'leveled', 'out', 'at', 'motherfucking', 'x', 'the', 'low', 'and', 'been', 'there', 'for', 'two', 'months', 'you d', 'have', 'made', '', 'if', 'you', 'bought', 'the', 'low', 'and', 'diamond', 'handed', 'your', 'way', 'through', 'the', 'entire', 'pump', 'and', 'dump']",amc,19,1.1913978168241888,0.9334532573081085
+"['i', 'think', 'i m', 'starting', 'to', 'understand', 'the', 'rational', 'market', 'hypothesis', 'big', 'tech', 'went', 'through', 'the', 'roof', 'because', 'it ll', 'perform', 'well', 'when', 'everyone', 'is', 'forced', 'to', 'stay', 'at', 'home', 'we', 'opened', 'the', 'economy', 'everyone', 'went', 'outside', 'and', 'tech', 'set', 'new', 'all time', 'highs', 'moderna', 'published', 'the', 'same', 'vaccine', 'press', 'release', 'multiple', 'times', 'and', 'the', 'market', 'pumped', 'each', 'time', 'never', 'giving', 'up', 'the', 'gains', 'grubhub', 'went', 'through', 'the', 'roof', 'on', 'rumors', 'it', 'was', 'being', 'bought', 'out', 'by', 'uber', 'deal', 'fell', 'through', 'gh', 'never', 'gave', 'up', 'those', 'gains', 'and', 'is', 'even', 'higher', 'now', 'amc', 'theaters', 'pumped', 'on', 'rumors', 'amazon', 'was', 'looking', 'to', 'buy', 'it', 'came', 'out', 'the', 'next', 'day', 'that', 'it', 'was', 'the', 'amc', 'tv', 'channel', 'not', 'the', 'theater', 'chain', 'the', 'stock', 'gave', 'up', 'only', 'half', 'of', 'its', 'gains', 'from', 'the', 'rumor', 'free', '', 'on', 'a', 'nothingburger', 'hertz', 'hit', '', 'when', 'it', 'announced', 'bankruptcy', 'filings', 'bounced', 'to', '', 'and', 'stayed', 'there', 'a', 'while', 'following', 'the', 'most', 'autistic', 'pump', 'in', 'market', 'history', 'it s', 'leveled', 'out', 'at', 'motherfucking', 'x', 'the', 'low', 'and', 'been', 'there', 'for', 'two', 'months', 'you d', 'have', 'made', '', 'if', 'you', 'bought', 'the', 'low', 'and', 'diamond', 'handed', 'your', 'way', 'through', 'the', 'entire', 'pump', 'and', 'dump']",amzn,19,0.9929691296275333,1.0335223434022196
+"['somewhere', 'out', 'there', 'i', 'imagine', 'there s', 'an', 'autist', 'crying', 'himself', 'to', 'sleep', 'on', 'his', 'overpriced', 'prpl', 'mattress', 'as', 'he', 'eats', 'a', 'raw', 'ear', 'of', 'corn']",prpl,39,0.8862889824154362,0.9012986732037256
+"['i', 'hold', 'amzn', 'overnight', 'tsla', 'moons', 'i', 'hold', 'tsla', 'overnight', 'amzn', 'moons', 'i', 'hold', 'both', 'for', 'a', 'few', 'days', 'side', 'ways', 'or', 'tank', 'very', 'legal', 'very', 'cool', '']",amzn,40,0.9929691296275333,1.0335223434022196
+"['dear', 'father', 'steve', 'apple', 'and', 'your', 'faithfull', 'heir', 'tim', 'aapl', 'we', 'believe', 'and', 'have', 'faith', 'in', 'all', 'your', 'wise', 'decisions', 'further', 'great', 'daddy s', 'we', 'know', 'that', 'chinese', 'owned', 'epic', 'is', 'trying', 'to', 'mess', 'with', 'aapl', 'googl', 'and', 'the', 'trade', 'talk', 'may', 'the', 'us', 'government', 'smoat', 'them', 'down', 'lastly', 'if', 'either', 'of', 'you', 'ever', 'want', 'my', 'ass', 'it', 'will', 'forever', 'be', 'yours', 'praise', 'be', 'the', 'gawds', 'ramen']",aapl,19,1.0204928981374435,1.0830793290449314
+"['dear', 'father', 'steve', 'apple', 'and', 'your', 'faithfull', 'heir', 'tim', 'aapl', 'we', 'believe', 'and', 'have', 'faith', 'in', 'all', 'your', 'wise', 'decisions', 'further', 'great', 'daddy s', 'we', 'know', 'that', 'chinese', 'owned', 'epic', 'is', 'trying', 'to', 'mess', 'with', 'aapl', 'googl', 'and', 'the', 'trade', 'talk', 'may', 'the', 'us', 'government', 'smoat', 'them', 'down', 'lastly', 'if', 'either', 'of', 'you', 'ever', 'want', 'my', 'ass', 'it', 'will', 'forever', 'be', 'yours', 'praise', 'be', 'the', 'gawds', 'ramen']",googl,19,1.0092768685281162,1.0409352221094847
+"['aapl', '', 'down', 'less', 'than', '', 'wsb', '', 'im', 'ruined']",aapl,18,1.0204928981374435,1.0830793290449314
+"['anyone', 'get', 'the', 'aapl', 'dip', 'that', 'was', 'nice']",aapl,17,1.0204928981374435,1.0830793290449314
+"['bulls', 'i', 'am', 'thinking', 'if', 'we', 'just', 'reprint', 'the', 'headline', 'about', 'the', 'tesla', 'split', 'we', 'can', 'pull', 'spy', 'out', 'of', 'the', 'gutter', 'tmrw', '']",tsla,36,1.1399930639953388,1.2312266729278485
+"['bulls', 'i', 'am', 'thinking', 'if', 'we', 'just', 'reprint', 'the', 'headline', 'about', 'the', 'tesla', 'split', 'we', 'can', 'pull', 'spy', 'out', 'of', 'the', 'gutter', 'tmrw', '']",spy,36,1.0053124400779556,1.009125765730726
+"['trump', 'announces', 'prpl', 'to', 'manufacture', 'covid', 'vaccine']",prpl,16,0.8862889824154362,0.9012986732037256
+"['seriously', 'how', 'is', 'this', 'market', 'not', 'rigged', 'wtf', 'was', 'spy', 'doing', 'at', 'the', 'end', 'of', 'the', 'day']",spy,17,1.0053124400779556,1.009125765730726
+"['this', 'thread', 'has', 'more', 'volume', 'than', 'spy']",spy,15,1.0053124400779556,1.009125765730726
+"['my', 'spy', 'puts', 'just', 'went', 'from', '', 'to', '', 'what', 'a', 'fucking', 'joke']",spy,15,1.0053124400779556,1.009125765730726
+"['they', 'won t', 'let', 'spy', 'crash', 'they', 'dump', 'tech', 'and', 'just', 'pump', 'dow', 'pinning', 'vxx', 'getting', 'real', 'fucking', 'annoying']",spy,15,1.0053124400779556,1.009125765730726
+"['rumor', 'has', 'it', 'trump', 'is', 'gonna', 'legalize', 'weed', 'today', 'and', 'the', '', 'has', 'to', 'be', 'spent', 'on', 'dabs', 'and', 'other', 'high', 'thc', 'products', '', 'spy', '']",spy,14,1.0053124400779556,1.009125765730726
+"['markets', 'dumping', 'but', 'good', 'thing', 'half', 'my', 'portfolio', 'is', 'aapl']",aapl,14,1.0204928981374435,1.0830793290449314
+"['apple', 'may', 'receive', 'the', 'presidential', 'medal', 'of', 'freedom', 'for', 'saving', 'the', 'market']",aapl,15,1.0204928981374435,1.0830793290449314
+"['reminder', 'that', 'screaming', 'through', 'your', 'keyboard', 'won t', 'save', 'your', 'calls']",save,13,1.013120338461341,0.9753015330876239
+"['aapl', '', 'today']",aapl,14,1.0204928981374435,1.0830793290449314
+"['i', 'felt', 'a', 'great', 'disturbance', 'in', 'the', 'force', 'as', 'if', 'millions', 'of', 'prpl', 'gang', 'suddenly', 'cried', 'out', 'in', 'terror', 'and', 'were', 'suddenly', 'silenced']",prpl,12,0.8862889824154362,0.9012986732037256
+"['buying', 'this', 'aapl', 'dip']",aapl,14,1.0204928981374435,1.0830793290449314
+"['imagine', 'thinking', 'this', 'isn t', 'manipulated', 'looking', 'at', 'spy', 'chart', 'today']",spy,14,1.0053124400779556,1.009125765730726
+"['this', 'is', 'the', 'range', 'spy', 'trades', 'in', 'until', 'the', 'end', 'of', 'time', 'welcome', 'to', 'hell', 'bois']",spy,14,1.0053124400779556,1.009125765730726
+"['slv', 'calls', 'now', 'make', 'up', '', 'of', 'my', 'portfolio', 'plz', 'save', 'me']",save,13,1.013120338461341,0.9753015330876239
+"['aapl', 'ready', 'for', '']",aapl,13,1.0204928981374435,1.0830793290449314
+"['apple', 'going', 'from', '', 'to', '']",aapl,13,1.0204928981374435,1.0830793290449314
+"['if', 'spy', 'breaks', 'below', '', 'we ll', 'see', '']",spy,37,1.0053124400779556,1.009125765730726
+"['indexes', 'preparing', 'to', 'sell', 'off', 'meanwhile', 'tesla', 'is', 'prepping', 'a', 'comically', 'large', 'green', 'candle', 'for', 'open']",tsla,11,1.1399930639953388,1.2312266729278485
+"['tesla', 'is', 'retarded', 'change', 'my', 'mind']",tsla,13,1.1399930639953388,1.2312266729278485
+"['buy', 'the', 'aapl', 'dip']",aapl,12,1.0204928981374435,1.0830793290449314
+"['never', 'buying', 'spy', 'puts', 'again']",spy,12,1.0053124400779556,1.009125765730726
+"['spy', 'looks', 'like', 'a', 'doctor s', 'signature']",spy,13,1.0053124400779556,1.009125765730726
+"['now', 'that', 'the', 'fortnite', 'losers', 'dumped', 'apple', 'it s', 'back', 'to', 'stonks', 'go', 'up']",aapl,12,1.0204928981374435,1.0830793290449314
+"['headline', 'more', 'companies', 'coming', 'to', 'epic s', 'defense', 'over', 'aapl', 'app', 'store', 'dispute', 'aapl', 'like', 'i', 'give', 'a', 'fuck', '', 'everyone', 'else', 'take', 'them', 'all', 'off', 'the', 'app', 'store', 'see', 'who', 'need', 'who']",aapl,12,1.0204928981374435,1.0830793290449314
+"['it s', 'black', 'friday', 'spy', 'is', 'at', '', 'bears', 'after', 'saying', 'cases', 'lockdown', 'hospitals', 'overflowing', 'bad', 'gdp', 'q q', 'earnings', 'and', 'no', 'stimulus', 'would', 'tank', 'the', 'market', 'yeah', 'well', 'all', 'these', 'dumb', 'bulls', 'buying', 'the', 'top', 'just', 'wait', 'until', 'santa', 'claus', 'doesn t', 'come', 'this', 'year', 'because', 'of', 'covid', 'loading', 'up', 'spy', 'puts', 'right', 'now']",spy,12,1.0053124400779556,1.009125765730726
+"['down', '', 'today', 'thanks', 'prpl']",prpl,12,0.8862889824154362,0.9012986732037256
+"['that', 'conference', 'was', 'so', 'good', 'i', 'think', 'i m', 'gonna', 'join', 'one', 'of', 'the', '', 'million', 'trades', 'in', 'the', 'stock', 'market', 'purchasing', 'spy', 'now']",spy,11,1.0053124400779556,1.009125765730726
+"['plot', 'twist', 'prpl', 'mattresses', 'are', 'filled', 'with', 'corn']",prpl,13,0.8862889824154362,0.9012986732037256
+"['msft', 'could', 'announce', 'a', 'stock', 'split', 'and', 'it', 'would', 'go', 'down']",msft,12,0.9869136083831459,1.0228729034365864
+"['did', 'some', 'intraday', 'technicals', 'on', 'spy', 'https i imgur com bv sukk jpg']",spy,22,1.0053124400779556,1.009125765730726
+"['just', 'got', 'up', 'to', 'see', 'tesla', 'i', 'am', 'so', 'happy', 'man', 'going', 'back', 'to', 'bed', 'this', 'is', 'unreal']",tsla,11,1.1399930639953388,1.2312266729278485
+"['spy', 'hits', 'buy', 'p', 'rinse', 'wash', 'repeat']",spy,11,1.0053124400779556,1.009125765730726
+"['anyone', 'holding', 'calls', 'on', 'spy', 'is', 'truly', 'retarded']",spy,10,1.0053124400779556,1.009125765730726
+"['currently', 'getting', 'anally', 'raped', 'by', 'aapl']",aapl,11,1.0204928981374435,1.0830793290449314
+"['actual', 'fucking', 'dd', 'intel', 'had', 'a', 'decent', 'showing', 'yesterday', 'at', 'architecture', 'day', 'and', 'proposed', 'a', 'solution', 'to', 'the', 'competition', 'from', 'amds', 'high', 'core', 'count', 'processors', 'amd', 'is', 'priced', 'based', 'on', 'intel s', 'failure', 'if', 'intel', 'is', 'competent', 'amd', 'will', 'stutter', 'a', 'bit']",intc,10,1.0143152123894779,1.0112867600909317
+"['actual', 'fucking', 'dd', 'intel', 'had', 'a', 'decent', 'showing', 'yesterday', 'at', 'architecture', 'day', 'and', 'proposed', 'a', 'solution', 'to', 'the', 'competition', 'from', 'amds', 'high', 'core', 'count', 'processors', 'amd', 'is', 'priced', 'based', 'on', 'intel s', 'failure', 'if', 'intel', 'is', 'competent', 'amd', 'will', 'stutter', 'a', 'bit']",amd,10,0.955908290823718,1.0244468898629115
+"['apple', 'price', 'target', '', 'before', 'split']",aapl,11,1.0204928981374435,1.0830793290449314
+"['wow', 'spy', 'is', 'moving', 'so', 'much', 'right', 'now', 'so', 'crazy', 'im', 'up', '', 'dollars']",spy,11,1.0053124400779556,1.009125765730726
+"['what', 'the', 'fuck', 'even', 'is', 'spy', 'today', 'chart', 'looks', 'like', 'a', 'ekg', 'no', 'volume', 'slightly', 'green', 'but', 'everything', 'on', 'my', 'watchlist', 'is', 'red', 'ok']",spy,11,1.0053124400779556,1.009125765730726
+"['spy', 'is', 'the', 'lamest', 'thing', 'ever', 'today', '', 'or', '', 'i', 'don t', 'care', 'just', 'do', 'something']",spy,11,1.0053124400779556,1.009125765730726
+"['y all', 'remember', 'that', 'friday', 'where', 'trump', 'did', 'the', 'first', 'outdoor', 'press', 'conference', 'and', 'had', 'all', 'those', 'ceos', 'and', 'spy', 'jumped', 'like', '']",spy,12,1.0053124400779556,1.009125765730726
+"['why', 'does', 'tesla', 'keep', 'going', 'up', 'cause', 'it', 'never', 'runs', 'out', 'of', 'gas', '']",tsla,21,1.1399930639953388,1.2312266729278485
+"['today s', 'my', 'bday', 'and', 'i', 'need', 'plug', 'to', 'unplug', 'n', 'plunge']",plug,11,0.9531772225894187,1.1402116517807135
+"['well', 'my', 'apple', 'calls', 'are', 'fucked', 'lmao']",aapl,11,1.0204928981374435,1.0830793290449314
+"['buy', 'the', 'apple', 'dip']",aapl,11,1.0204928981374435,1.0830793290449314
+"['aapl', 'moon', 'mission', 'commencing']",aapl,10,1.0204928981374435,1.0830793290449314
+"['lol', 'at', 'apple', 'making', '', 'million', 'from', 'fortnite', 'keep', 'paying', 'up', 'to', 'tim', 'apple', 'please', 'no', 'special', 'treatment', 'companies', 'don t', 'even', 'make', '', 'million', 'lol', 'apple', 'does', 'from', 'its', 'side', 'side', 'side', 'side', 'biz', 'should', 'be', 'at', '', 'trillion']",aapl,11,1.0204928981374435,1.0830793290449314
+"['tim', 'apple', '', '']",aapl,10,1.0204928981374435,1.0830793290449314
+"['where', 'my', 'aapl', 'gang', 'at', 'we', 'still', 'kickin']",aapl,10,1.0204928981374435,1.0830793290449314
+"['spy', 'is', 'the', 'fucking', 'spine', 'of', 'a', 'stegosaurus', 'today']",spy,9,1.0053124400779556,1.009125765730726
+"['if', 'aapl', 'gets', 'through', '', 'these', 'dtes', 'get', 'interesting']",aapl,10,1.0204928981374435,1.0830793290449314
+"['man', 'can', 'amzn', 'or', 'tsla', 'get', 'it', 'together', 'and', 'move', 'in', '', 'direction', 'for', 'more', 'than', '', 'mins', 'or', 'not']",amzn,10,0.9929691296275333,1.0335223434022196
+"['at', 'this', 'point', 'spy', 'just', 'fucking', 'pump', 'or', 'dump']",spy,10,1.0053124400779556,1.009125765730726
+"['welp', 'there', 'it', 'is', 'f', 'l', 'a', 't', 'f', 'r', 'i', 'd', 'a', 'y', 'i m', 'gonna', 'enjoy', 'my', 'weekend', 'lost', 'so', 'much', 'money', 'this', 'week', 'it s', 'liberating']",f,10,1.018813331014704,0.955523679754513
+"['i', 'lost', 'my', 'homie', 'mac', 'xxx', 'juice', 'and', 'now', 'my', 'boy', 'prpl', 'wtf', 'man', 'all', 'my', 'homies', 'be', 'dying', 'on', 'me', 'bruh', '']",prpl,10,0.8862889824154362,0.9012986732037256
+"['lol', 'apple', 'dips', 'literally', 'don t', 'even', 'concern', 'me', 'anymore']",aapl,9,1.0204928981374435,1.0830793290449314
+"['wow', 'aapl', '', 'c', '', 'bid ask', '', '', '', 'interest', '', 'volume', '', 'iv', '', '', 'diff', '', 'underlying', '', 'daily', '', 'volume', '', 'sector', 'consumer', 'goods']",aapl,10,1.0204928981374435,1.0830793290449314
+"['https i imgur com necfygo png https i imgur com necfygo png', 'someone', 'just', 'sold', '', 'spy', 'shares', 'at', '', 'for', 'm', 'spy', 'currently', '', 'either', 'we', 'bouncing', 'soon', 'or', 'someone', 'hit', 'the', 'eject', 'button']",spy,10,1.0053124400779556,1.009125765730726
+"['jumping', 'in', 'tesla', 'with', 'no', 'day', 'trades', 'left', 'wish', 'me', 'luck', 'bolz']",tsla,18,1.1399930639953388,1.2312266729278485
+"['i', 'hope', 'aapl', 'has', 'a', '', 'day', 'just', 'to', 'make', 'all', 'the', 'doomers', 'screeching', 'about', 'the', 'epic', 'games', 'lawsuit', 'shut', 'the', 'fuck', 'up']",aapl,9,1.0204928981374435,1.0830793290449314
+"['amc', 'going', 'up', 'because', 'they', 'lowered', 'the', 'price', 'of', 'a', 'movie', 'ticket', 'to', '', 'cents', 'this', 'market', 'is', 'hilarious']",amc,8,1.1913978168241888,0.9334532573081085
+"['aapl', 'makes', 'bonds', 'jerome', 'buys', 'them', 'bitches']",aapl,9,1.0204928981374435,1.0830793290449314
+"['aaple', '', 'today', 'trading', 'will', 'slow', 'by', '', 'as', 'we', 'sit', 'back', 'and', 'take', 'bong', 'rips', 'with', 'tim', 'apple', 'before', 'we', 'take', 'bear', 'wives', 'out', 'on', 'friday', 'night', 'dates', 'because', 'their', 'husbands', 'have', 'weekend', 'meetups', 'at', 'the', 'treefort', 'to', 'plan', 'for', 'another', 'green', 'monday', 'hoping', 'their', 'is', 'a', 'dip', 'tuesday']",aapl,9,1.0204928981374435,1.0830793290449314
+"['listening', 'to', 'boomers', 'on', 'the', 'radio', 'talk', 'about', 'how', 'much', 'they', 'miss', 'cruising', 'making', 'my', 'ccl', 'bagholds', 'feel', 'hopeful']",ccl,9,1.0765483918044534,0.9753661233051328
+"['nkla', 'is', 'a', 'shitstain', 'on', 'the', 'nasdaq']",nkla,9,1.1048077108239287,0.8399829278660834
+"['prpl', 'is', 'down', '', '', 'in', 'premarket', 'you', 'mean', 'prpl', 'is', 'up', 'to', '', 'premarket', '']",prpl,9,0.8862889824154362,0.9012986732037256
+"['https i imgur com hhyou png https i imgur com hhyou png', 'someone', 'just', 'bought', '', '', 'spy', 'p', 'for', '', 'total']",spy,8,1.0053124400779556,1.009125765730726
+"['wow', 'this', 'sub', 'got', 'obliterated', 'by', 'prpl']",prpl,8,0.8862889824154362,0.9012986732037256
+"['spy', 'is', 'acting', 'like', 'the', 'type', 'of', 'guy', 'that', 'looks', 'you', 'in', 'the', 'eye', 'as', 'he', 'talks', 'to', 'someone', 'else', 'on', 'his', 'blue', 'tooth']",spy,8,1.0053124400779556,1.009125765730726
+"['lol', 'spy', 'daily', 'chart', 'lookin', 'like', 'my', 'cardiograph']",spy,9,1.0053124400779556,1.009125765730726
+"['i', 'was', 'told', 'tesla', 'would', 'run', 'up', 'today']",tsla,10,1.1399930639953388,1.2312266729278485
+"['just', 'called', 'robinhood', 'support', 'tried', 'to', 'refund', 'my', 'spy', 'call', 'for', 'a', 'spy', 'put', 'apparently', 'that s', 'not', 'how', 'this', 'works', 'and', 'i', 'should ve', 'btfd', 'i', 'tried', 'to', 'explain', 'i', 'bought', 'the', 'dip', 'but', 'they', 'hung', 'up', 'on', 'me', 'and', 'called', 'me', 'an', 'autist']",spy,9,1.0053124400779556,1.009125765730726
+"['i', 'mean', 'spy', 'is', 'definitely', 'uptrending', 'in', 'the', 'nastiest', 'way', 'possible']",spy,9,1.0053124400779556,1.009125765730726
+"['apple', 'please', 'just', 'go', 'up', 'i', 'need', 'you', 'back', 'at', 'open', 'to', 'break', 'even', 'here']",aapl,9,1.0204928981374435,1.0830793290449314
+"['bought', 'some', 'apple', 'calls', 'just', 'now', 'let s', 'get', 'it']",aapl,9,1.0204928981374435,1.0830793290449314
+"['everything', 'is', 'red', 'but', 'spy', 'is', 'green', 'explain']",spy,10,1.0053124400779556,1.009125765730726
+"['aapl', 'making', 'the', 'greatest', 'comeback', 'in', 'stonk', 'market', 'history', 'today']",aapl,9,1.0204928981374435,1.0830793290449314
+"['aapl', 'on', 'its', 'way', 'to', 'green', '']",aapl,9,1.0204928981374435,1.0830793290449314
+"['diamond', 'hands', 'paid', 'off', 'for', 'that', 'apple', 'call', 'weeklies', 'i', 'bought', 'this', 'morning']",aapl,9,1.0204928981374435,1.0830793290449314
+"['know', 'what', 'my', 'favorite', 'apple', 'color', 'is', '']",aapl,9,1.0204928981374435,1.0830793290449314
+"['aapl', 'v', 'shape', 'recovery']",aapl,9,1.0204928981374435,1.0830793290449314
+"['spy', 'is', 'gonna', 'pop', 'off', 'for', 'no', 'reason', 'soon', 'idk', 'i', 'just', 'got', 'this', 'feeling', 'in', 'my', 'butthole']",spy,9,1.0053124400779556,1.009125765730726
+"['someone', 'should', 'ask', 'all', 'three', 'people', 'trading', 'spy', 'right', 'now', 'what', 'they re', 'gonna', 'do']",spy,10,1.0053124400779556,1.009125765730726
+"['all', 'technicals', 'point', 'to', 'spy', 'dropping', 'bad', 'retail', 'numbers', 'this', 'morning', 'terrible', 'euro', 'gdp', 'numbers', 'congress', 'left', 'for', 'a', 'month', 'without', 'stimulus', 'bill', 'millions', 'of', 'americans', 'about', 'to', 'be', 'homeless', 'and', 'looking', 'through', 'dumpsters', 'for', 'food', 'ath', 'this', 'afternoon', 'confirmed']",spy,10,1.0053124400779556,1.009125765730726
+"['ya ll', 'bullish', 'but', 'secretly', 'loading', 'up', 'on', 'spy', 'and', 'qqq', 'puts', 'u', 'can', 'just', 'see', 'it', 'in', 'the', 'thread', 'everybody', 'rooting', 'for', 'a', 'dump', 'lmao', 'calls', 'it', 'is']",spy,10,1.0053124400779556,1.009125765730726
+"['ya ll', 'bullish', 'but', 'secretly', 'loading', 'up', 'on', 'spy', 'and', 'qqq', 'puts', 'u', 'can', 'just', 'see', 'it', 'in', 'the', 'thread', 'everybody', 'rooting', 'for', 'a', 'dump', 'lmao', 'calls', 'it', 'is']",qqq,10,1.001435092461529,1.0320372356530212
+"['aapl', 'bb', 'do', 'that', 'green', 'thang', '']",aapl,10,1.0204928981374435,1.0830793290449314
+"['aapl', 'bb', 'do', 'that', 'green', 'thang', '']",bb,10,0.9856263456942191,0.9733606329114172
+"['man', 'spy', 'flatter', 'than', 'something', 'very', 'flat']",spy,10,1.0053124400779556,1.009125765730726
+"['aapl', '', 'end', 'of', 'next', 'week']",aapl,9,1.0204928981374435,1.0830793290449314
+"['me', 'or', 'you', 'spy', 'someone s', 'gotta', 'die']",spy,8,1.0053124400779556,1.009125765730726
+"['ughhhhh i', 'only', 'have', '', 'trillion', 'dollars', 'left', 'in', 'my', 'ally', 'savings', 'account', 'after', 'acquiring', '', 'stake', 'in', 'apple', 'corporation', 'never', 'seen', 'this', 'low', 'since', '']",aapl,9,1.0204928981374435,1.0830793290449314
+"['spy', 'going', 'to', 'finish', 'green', 'we', 'all', 'know', 'it']",spy,9,1.0053124400779556,1.009125765730726
+"['barcelona', 'is', 'getting', 'rekt', 'by', 'bayern', 'bayern', 'is', 'red', 'spy', '', 'on', 'monday']",spy,9,1.0053124400779556,1.009125765730726
+"['loses', 'all', 'his', 'profit', 'in', 'my', 'spy', 'puts', 'in', '', 'minutes', '']",spy,10,1.0053124400779556,1.009125765730726
+"['spy', 'closed', '', 'green', 'lmao']",spy,9,1.0053124400779556,1.009125765730726
+"['apple', 'too', 'low', 'imo']",aapl,17,1.0204928981374435,1.0830793290449314
+"['love', 'waking', 'up', 'to', 'the', 'sound', 'of', 'my', 'cat', 'doing', 'parkour']",cat,16,1.0311648498523664,0.9926855973193373
+"['tesla', 'is', 'carrying', 'the', 'entire', 'nasdaq']",tsla,8,1.1399930639953388,1.2312266729278485
+"['ya ll', 'realize', 'while', 'everyone', 'was', 'getting', 'out', 'of', 'apple', 'yesterday', 'mm s', 'bought', 'a', 'half', 'million', 'short', 'dated', '', 'calls', 'at', 'pm', 'then', 'bought', 'up', 'until', 'close', 'right', 'aapl', 'will', 'be', 'green', 'at', 'open', 'i', 'guarantee', 'it']",aapl,8,1.0204928981374435,1.0830793290449314
+"['could', 'you', 'imagine', 'thinking', 'you', 'could', 'take', 'on', 'tim', 'apple', 'in', 'litigation', 'lol']",aapl,9,1.0204928981374435,1.0830793290449314
+"['it', 'would', 'be', 'fucking', 'hilarious', 'if', 'prpl', 'made', 'a', 'run', 'to', '', 'today', 'already', 'rising', 'from', 'the', 'dead', 'premarket']",prpl,8,0.8862889824154362,0.9012986732037256
+"['gimme', 'dte', 'tesla', 'game']",tsla,8,1.1399930639953388,1.2312266729278485
+"['if', 'you re', 'not', 'buying', 'apple', 'calls', 'on', 'every', 'red', 'day', 'you', 'hate', 'money']",aapl,8,1.0204928981374435,1.0830793290449314
+"['dat', 'feeling', 'when', 'you ve', 'blown', 'all', 'your', 'profits', 'and', 'you re', 'playing', 'with', 'ge', 'options', 'like', 'a', 'little', 'bitch']",ge,9,1.0357698130974615,0.9648318561233219
+"['buy', 'apple', 'calls', 'something', 'good', 'might', 'happen']",aapl,7,1.0204928981374435,1.0830793290449314
+"['aapl', 'you', 'a', 'bitch', 'bro']",aapl,8,1.0204928981374435,1.0830793290449314
+"['baba', 'dead', 'jd', 'dead', 'every', 'stock', 'in', 'my', 'portfolio', 'dead', 'it s', 'been', 'fun', 'assholes', 'today', 'is', 'my', 'last', 'rodeo', 'it', 'looks', 'like']",baba,7,1.0185690420743336,1.0403537597484631
+"['baba', 'dead', 'jd', 'dead', 'every', 'stock', 'in', 'my', 'portfolio', 'dead', 'it s', 'been', 'fun', 'assholes', 'today', 'is', 'my', 'last', 'rodeo', 'it', 'looks', 'like']",jd,7,1.0071405785302372,1.1952814268147618
+"['f', 'in', 'the', 'chat', 'for', 'weekly', 'rh', 'holders']",f,7,1.018813331014704,0.955523679754513
+"['spy', 'looking', 'like', 'my', 'heart', 'rate', 'off', 'the', 'gas', 'station', 'dick', 'pills']",spy,9,1.0053124400779556,1.009125765730726
+"['why', 'didn t', 'you', 'buy', 'the', 'tesla', 'dip']",tsla,9,1.1399930639953388,1.2312266729278485
+"['spy', 'just', 'so', 'casually', 'masturbating', 'in', 'public']",spy,7,1.0053124400779556,1.009125765730726
+"['hrmm', 'low', 'volume', 'slow', 'spy', 'increase', 'slow', 'vxx', 'increase', 'this', 'feels', 'familiar', 'but', 'i', 'can t', 'place', 'my', 'finger', 'on', 'the', 'last', 'time', 'this', 'happened']",spy,9,1.0053124400779556,1.009125765730726
+"['bro', 'spy', 'like', 'we', 'are', 'less', 'than', '', 'from', 'all', 'time', 'highs', 'now', 'that', 'is', 'power', '']",spy,8,1.0053124400779556,1.009125765730726
+"['hate', 'to', 'sound', 'bearish', 'and', 'i m', 'probably', 'wrong', 'but', 'i m', 'not', 'confident', 'about', 'this', 'entry', 'point', 'think', 'i m', 'gonna', 'stay', 'cash', 'and', 'stonks', 'over', 'the', 'weekend', 'minus', 'my', 'nkla', 'weeklies', 'i', 'sold', 'i', 'get', 'the', 'feeling', 'the', 'market', 'will', 'suddenly', 'care', 'about', 'no', 'stimulus', 'and', 'take', 'a', 'random', 'dump', 'this', 'week']",nkla,8,1.1048077108239287,0.8399829278660834
+"['reminder', 'that', 'fb', 'has', 'been', 'chilling', 'at', '', 'for', '', 'straight', 'days', 'now']",fb,8,0.97463058463749,1.01791777763248
+"['everything', 'i', 'own', 'is', 'down', 'why', 'is', 'spy', 'up']",spy,8,1.0053124400779556,1.009125765730726
+"['spy', 'going', 'up', 'my', 'stonks', 'go', 'down', 'story', 'of', 'this', 'week']",spy,7,1.0053124400779556,1.009125765730726
+"['if', 'you', 'bet', 'against', 'apple', 'you re', 'a', 'certified', 'retard']",aapl,9,1.0204928981374435,1.0830793290449314
+"['apple', 'calls', 'anytime', 'it', 'drops', 'under', '', 'is', 'free', 'money']",aapl,8,1.0204928981374435,1.0830793290449314
+"['aapl', 'imma', 'need', 'you', 'to', 'go', 'green', 'please', 'and', 'thank', 'you']",aapl,7,1.0204928981374435,1.0830793290449314
+"['my', 'tesla', 'calls', 'are', 'in', 'gulag', 'and', 'it', 'looks', 'like', 'it s', 'a', 'fist', 'fight', 'rip']",tsla,6,1.1399930639953388,1.2312266729278485
+"['tim', 'apple', 'get', 'the', 'fuck', 'back', 'up']",aapl,8,1.0204928981374435,1.0830793290449314
+"['donald', 'just', 'say', 'aapl', 'stock', 'too', 'low', 'imo', 'pls']",aapl,8,1.0204928981374435,1.0830793290449314
+"['lol', 'this', 'guy', 'is', 'even', 'more', 'retarded', 'than', 'the', 'prpl', 'gang']",prpl,10,0.8862889824154362,0.9012986732037256
+"['would', 'love', 'one', 'of', 'those', 'closes', 'where', 'everyone', 'in', 'here', 'writes', 'very', 'cool', 'very', 'legal', 'spy']",spy,8,1.0053124400779556,1.009125765730726
+"['spy', 'down', '', 'wsb', 'drill', 'baby', 'drillllllllllll', 'drill', 'team', 'six', 'lmfao', '']",spy,8,1.0053124400779556,1.009125765730726
+"['spy', '', 'or', 'bust']",spy,8,1.0053124400779556,1.009125765730726
+"['remember', 'when', 'spy', 'had', 'mm', 'volume', 'per', 'candle', 'good', 'times']",spy,9,1.0053124400779556,1.009125765730726
+"['nvda', 'and', 'amd', 'will', 'likely', 'moon', 'next', 'week', 'put', 'in', 'yo', 'calls', 'to', 'join', 'chip', 'gang']",nvda,8,1.0202704384069294,1.10004333958827
+"['nvda', 'and', 'amd', 'will', 'likely', 'moon', 'next', 'week', 'put', 'in', 'yo', 'calls', 'to', 'join', 'chip', 'gang']",amd,8,0.955908290823718,1.0244468898629115
+"['tim', 'apple', '', 'i', 'ain t', 'done', 'yet', '']",aapl,8,1.0204928981374435,1.0830793290449314
+"['someone', 'sold', '', 'million', 'spy', 'shares', 'right', 'at', 'pm']",spy,7,1.0053124400779556,1.009125765730726
+"['trump', 'told', 'the', 'fed', 'to', 'make', 'spy', 'green', 'today', 'at', 'whatever', 'cost']",spy,8,1.0053124400779556,1.009125765730726
+"['i', 'had', 'a', 'dream', 'this', 'sub', 'had', 'a', 'meetup', 'at', 'a', 'rented', 'out', 'school', 'gym', 'we re', 'all', 'talking', 'about', 'stocks', 'and', 'options', 'laughing', 'having', 'a', 'good', 'time', 'talking', 'about', 'dd', 'etc', 'then', 'everyone', 'goes', 'kind', 'of', 'silent', 'and', 'then', 'you', 'hear', 'ha', 'ha', 'yeah', 'i', 'was', 'the', 'prpl', 'guy', 'sorry', 'for', 'that', 'one', 'everyone', 'turns', 'around', 'to', 'look', 'who', 'the', 'fuck', 'this', 'guy', 'is', 'everyone', 'rushes', 'him', 'as', 'he', 'scrambles', 'for', 'the', 'door', 'get', 'him', 'get', 'him', 'grab', 'his', 'legs', 'then', 'everyone', 'starts', 'beating', 'the', 'shit', 'out', 'of', 'prpl', 'guy', 'i', 'get', 'tired', 'of', 'kicking', 'his', 'ribs', 'and', 'go', 'get', 'a', 'complementary', 'juice', 'box', 'at', 'the', 'snack', 'bar', 'sit', 'criss', 'cross', 'apple', 'sauce', 'and', 'check', 'my', 'rh', 'account']",prpl,16,0.8862889824154362,0.9012986732037256
+"['i', 'had', 'a', 'dream', 'this', 'sub', 'had', 'a', 'meetup', 'at', 'a', 'rented', 'out', 'school', 'gym', 'we re', 'all', 'talking', 'about', 'stocks', 'and', 'options', 'laughing', 'having', 'a', 'good', 'time', 'talking', 'about', 'dd', 'etc', 'then', 'everyone', 'goes', 'kind', 'of', 'silent', 'and', 'then', 'you', 'hear', 'ha', 'ha', 'yeah', 'i', 'was', 'the', 'prpl', 'guy', 'sorry', 'for', 'that', 'one', 'everyone', 'turns', 'around', 'to', 'look', 'who', 'the', 'fuck', 'this', 'guy', 'is', 'everyone', 'rushes', 'him', 'as', 'he', 'scrambles', 'for', 'the', 'door', 'get', 'him', 'get', 'him', 'grab', 'his', 'legs', 'then', 'everyone', 'starts', 'beating', 'the', 'shit', 'out', 'of', 'prpl', 'guy', 'i', 'get', 'tired', 'of', 'kicking', 'his', 'ribs', 'and', 'go', 'get', 'a', 'complementary', 'juice', 'box', 'at', 'the', 'snack', 'bar', 'sit', 'criss', 'cross', 'apple', 'sauce', 'and', 'check', 'my', 'rh', 'account']",aapl,16,1.0204928981374435,1.0830793290449314
+"['breaking', 'new', 'apple', 'subscription', 'service', 'apple', 'one', 'includes', 'pornhub', 'premium']",aapl,15,1.0204928981374435,1.0830793290449314
+"['my', 'dd', 'for', 'today', 'i', 'think', 'this', 'aapl', 'company', 'will', 'go', 'bust', 'soon', 'what', 'do', 'they', 'even', 'do', 'make', 'some', 'phones', 'nokia', 'made', 'phones', 'and', 'look', 'what', 'happened', 'aapl', '', 'p']",aapl,15,1.0204928981374435,1.0830793290449314
+"['', 'shares', 'kdok', '', 'shares', 'nkla', 'i', 'would', 'say', 'come', 'on', 'red', 'but', 'every', 'day', 'is', 'a', 'red', 'day', 'for', 'kodak']",nkla,8,1.1048077108239287,0.8399829278660834
+"['tim', 'apple', 'gives', 'no', 'fuck', 'about', 'a', 'video', 'game', 'lawsuit', 'aapl', 'only', 'goes', 'up']",aapl,6,1.0204928981374435,1.0830793290449314
+"['i d', 'do', 'anything', 'for', 'a', '', 'msft', 'day', 'anything']",msft,8,0.9869136083831459,1.0228729034365864
+"['the', 'baba', 'run', 'up', 'has', 'begun']",baba,6,1.0185690420743336,1.0403537597484631
+"['alibaba', 'to', 'be', 'included', 'in', 'hang', 'seng', 'index']",baba,7,1.0185690420743336,1.0403537597484631
+"['fucking', 'spy', 'low', 'volume', 'fake', 'ass', 'pump', 'couldn t', 'even', 'give', 'me', 'a', 'decent', 'red', 'day']",spy,8,1.0053124400779556,1.009125765730726
+"['aapl', 'about', 'to', 'have', 'a', 'big', 'bowl', 'of', 'epicgames', 'for', 'breakfast', 'y all']",aapl,8,1.0204928981374435,1.0830793290449314
+"['i', 'think', 'epic', 'being', 'part', 'owned', 'by', 'the', 'chinese', 'and', 'going', 'after', 'aapl', 'isn t', 'a', 'coincidence', 'but', 'retaliation', 'for', 'tik', 'tok', 'go', 'after', 'america s', 'crown', 'jewel']",aapl,6,1.0204928981374435,1.0830793290449314
+"['sitting', 'in', 'tsla', 'rkt', 'and', 'baba', 'calls', 'today', 'might', 'actually', 'work', 'out']",baba,7,1.0185690420743336,1.0403537597484631
+"['prpl', 'coming', 'back', 'from', 'the', 'dead']",prpl,6,0.8862889824154362,0.9012986732037256
+"['i', 'just', 'need', 'a', 'little', 'dip', 'so', 'i', 'can', 'unload', 'these', 'dumbass', 'spy', 'p', 'please']",spy,7,1.0053124400779556,1.009125765730726
+"['buy', 'aapl', 'you', 'retards']",aapl,8,1.0204928981374435,1.0830793290449314
+"['nvda', 'how', 'how', 'howwww', 'i m', 'dead']",nvda,6,1.0202704384069294,1.10004333958827
+"['spy', 'go', 'home', 'you re', 'drunk']",spy,8,1.0053124400779556,1.009125765730726
+"['spy', 'needs', 'to', 'shake', 'out', 'to', '', 'before', 'it', 'can', 'break', '', 'and', 'higher', 'imo', 'too', 'overstretched']",spy,7,1.0053124400779556,1.009125765730726
+"['nvda', '', '', 'call', 'will', 'smash', 'earnings', 'announce', 'new', 'generation', 'chip', 'and', 'announce', 'stock', 'split', 'at', 'earnings', 'can t', 'go', 'tits', 'up', 'edit', 'personal', 'dd', 'friend', 'waited', 'forever', 'to', 'buy', 'a', 'rtx', 'ti', 'day', 'it', 'was', 'back', 'in', 'stock', 'he', 'bought', 'one', 'next', 'day', 'sold', 'out']",nvda,8,1.0202704384069294,1.10004333958827
+"['amzn', 'dragging', 'entired', 'nasdaq', 'down']",amzn,7,0.9929691296275333,1.0335223434022196
+"['tesla', 'do', 'that', 'thing', 'you', 'do', 'where', 'you', 'go', 'up', 'for', 'an', 'hour', 'straight']",tsla,8,1.1399930639953388,1.2312266729278485
+"['all', 'i', 'really', 'want', 'for', 'my', 'spy', 'puts', 'is', 'for', 'weekend', 'trade', 'talks', 'to', 'end', 'in', 'a', 'literal', 'slapping', 'fight', 'and', 'then', 'trump', 'comes', 'out', 'and', 'talks', 'to', 'the', 'media', 'about', 'it', 'says', 'he', 'bans', 'all', 'chinese', 'everything', 'effective', 'immediately', 'then', 'slanting', 'his', 'eyes', 'and', 'saying', 'ching', 'chong']",spy,7,1.0053124400779556,1.009125765730726
+"['fb', 'nooo', 'my', 'dollarinos']",fb,6,0.97463058463749,1.01791777763248
+"['so', 'um', 'what s', 'keeping', 'spy', 'afloat']",spy,6,1.0053124400779556,1.009125765730726
+"['g', 'suite', 'is', 'trash', 'worse', 'than', 'libre', 'office', 'but', 'expensive', 'as', 'fuck', 'would', 'rather', 'use', 'ms', 'office', '', 'than', 'struggle', 'through', 'this', 'buggy', 'nonsense', 'puts', 'on', 'google']",goog,7,1.013818048935322,1.042727266210905
+"['what', 'in', 'the', 'cinnamon', 'toasted', 'fuck', 'is', 'this', 'shit', 'spy']",spy,6,1.0053124400779556,1.009125765730726
+"['i', 'went', 'all', 'in', 'on', 'fb', 'amazon', 'appl', 'and', 'spy', 'at', 'close', 'yesterday', 'i ve', 'went', 'from', 'k', 'to', 'about', 'k', 'from', 'so', 'far', 'today']",fb,8,0.97463058463749,1.01791777763248
+"['i', 'went', 'all', 'in', 'on', 'fb', 'amazon', 'appl', 'and', 'spy', 'at', 'close', 'yesterday', 'i ve', 'went', 'from', 'k', 'to', 'about', 'k', 'from', 'so', 'far', 'today']",amzn,8,0.9929691296275333,1.0335223434022196
+"['i', 'went', 'all', 'in', 'on', 'fb', 'amazon', 'appl', 'and', 'spy', 'at', 'close', 'yesterday', 'i ve', 'went', 'from', 'k', 'to', 'about', 'k', 'from', 'so', 'far', 'today']",spy,8,1.0053124400779556,1.009125765730726
+"['buy', 'the', 'fucking', 'amd', 'dip']",amd,8,0.955908290823718,1.0244468898629115
+"['this', 'is', 'fucked', 'i', 'have', 'calls', 'on', 'lots', 'of', 'things', 'and', 'they re', 'all', 'down', 'today', 'and', 'i', 'have', 'puts', 'on', 'intc', 'expiring', 'today', 'and', 'of', 'course', 'intc', 'is', 'one', 'of', 'the', 'few', 'stocks', 'that', 'are', 'up', 'it s', 'like', 'the', 'market', 'is', 'personally', 'fucking', 'me']",intc,7,1.0143152123894779,1.0112867600909317
+"['when', 'are', 'we', 'going', 'to', 'run', 'out', 'of', 'sectors', 'to', 'rotate', 'to', 'before', 'spy', 'tanks']",spy,8,1.0053124400779556,1.009125765730726
+"['buy', 'aapl', 'calls', 'before', 'close', 'free', '']",aapl,8,1.0204928981374435,1.0830793290449314
+"['there', 'we', 'go', 'aapl', 'that s', 'the', 'way']",aapl,7,1.0204928981374435,1.0830793290449314
+"['msft', 'is', 'boring', 'to', 'hold', 'but', 'i m', 'sure', 'if', 'i', 'get', 'out', 'they ll', 'go', 'buy', 'tiktok']",msft,6,0.9869136083831459,1.0228729034365864
+"['holy', 'actual', 'fuck', 'apple', 'destroyed', 'me', 'this', 'morning', 'edit', 'bought', 'calls', 'on', 'yesterday s', 'dip', 'to', '', 'thought', 'i', 'was', 'being', 'smart']",aapl,8,1.0204928981374435,1.0830793290449314
+"['gonna', 'need', 'slv', 'to', 'hit', 'the', 'moon', 'so', 'i', 'can', 'sell', 'it', 'and', 'buy', 'aapl']",aapl,7,1.0204928981374435,1.0830793290449314
+"['it', 'would', 'be', 'cool', 'if', 'donnie', 'could', 'announce', 'a', 'b', 'contract', 'for', 'tesla', 'to', 'make', 'vaccines']",tsla,7,1.1399930639953388,1.2312266729278485
+"['come', 'on', 'apple', 'please']",aapl,6,1.0204928981374435,1.0830793290449314
+"['bought', 'aapl', 'calls', 'at', 'the', 'top', 'sold', 'at', 'the', 'bottom', 'unlucky']",aapl,7,1.0204928981374435,1.0830793290449314
+"['i', 'lost', '', 'of', 'the', 'value', 'in', 'my', 'prpl', 'calls', 'lolz']",prpl,7,0.8862889824154362,0.9012986732037256
+"['up', '', 'on', 'aapl', 'dte', 's', 'let', 'it', 'ride']",aapl,7,1.0204928981374435,1.0830793290449314
+"['go', 'aapl', '', '']",aapl,7,1.0204928981374435,1.0830793290449314
+"['was', 'down', 'on', 'my', 'aapl', 'calls', 'for', 'a', 'bit', 'but', 'it s', 'on', 'a', 'moon', 'mission']",aapl,7,1.0204928981374435,1.0830793290449314
+"['wtf', 'apple']",aapl,8,1.0204928981374435,1.0830793290449314
+"['fuck', 'tim', 'apple', 'and', 'fortnite', 'shit', 'fucked', 'my', 'portfolio', 'over', 'on', 'the', 'worst', 'day', 'possible', 'lol']",aapl,7,1.0204928981374435,1.0830793290449314
+"['fuck', 'my', 'apple', 'calls']",aapl,7,1.0204928981374435,1.0830793290449314
+"['fuck', 'this', 'fucking', 'spy', 'chart']",spy,7,1.0053124400779556,1.009125765730726
+"['yikes', 'i', 'see', 'a', 'an', 'accounting', 'job', 'requiring', 'a', 'bs', 'and', '', 'years', 'experience', 'paying', '', 'per', 'year', 'edit', 'also', 'i', 'doubed', 'down', 'on', 'csco', 'i', 'have', 'faith']",csco,9,0.9011874580370667,0.994351584769954
+"['apple', 'just', 'go', 'to', '', 'holy', 'fuck', 'shit']",aapl,6,1.0204928981374435,1.0830793290449314
+"['aapl', 'the', 'last', 'hour', 'has', 'been', 'an', 'annoying', 'bitch']",aapl,7,1.0204928981374435,1.0830793290449314
+"['trade', 'deal', 'pump', 'anyday', 'now', 'spy', 'calls', 'looking', 'good', 'china', 'ramps', 'up', 'us', 'oil', 'purchases', 'ahead', 'of', 'the', 'review', 'of', 'the', 'trade', 'deal', 'chinese', 'state', 'oil', 'firms', 'tentatively', 'book', 'tankers', 'to', 'ship', 'at', 'least', 'mln', 'bbls', 'of', 'us', 'crude', 'in', 'august', 'and', 'september', 'according', 'to', 'sources']",spy,7,1.0053124400779556,1.009125765730726
+"['puts', 'on', 'apple', '', 'trump', 'doesn t', 'care', 'if', 'apple', 'gets', 'fked', 'by', 'the', 'wechat', 'ban']",aapl,6,1.0204928981374435,1.0830793290449314
+"['spy', 'up', 'or', 'down', 'x b', 'whatever']",spy,7,1.0053124400779556,1.009125765730726
+"['spy', 'gonna', 'close', '', 'for', 'the', 'next', 'week', 'just', 'to', 'fuck', 'with', 'everyone']",spy,7,1.0053124400779556,1.009125765730726
+"['aapl', 'gonna', 'pump', 'or', 'dump']",aapl,8,1.0204928981374435,1.0830793290449314
+"['amd', 'is', 'a', 'real', 'motherfucker', 'these', 'days']",amd,7,0.955908290823718,1.0244468898629115
+"['with', 'spy', 'at', 'this', 'level', 'i m', 'scared', 'of', 'puts', 'and', 'calls']",spy,5,1.0053124400779556,1.009125765730726
+"['fuck', 'you', 'tsla', 'amazon', 'and', 'apple', 'fuck', 'my', 'micro', 'dick', 'bitch']",amzn,6,0.9929691296275333,1.0335223434022196
+"['fuck', 'you', 'tsla', 'amazon', 'and', 'apple', 'fuck', 'my', 'micro', 'dick', 'bitch']",aapl,6,1.0204928981374435,1.0830793290449314
+"['watching', 'spy', 'is', 'like', 'watching', 'gay', 'bear', 'porn', 'in', 'real', 'time']",spy,7,1.0053124400779556,1.009125765730726
+"['how', 'are', 'you', 'guys', 'dying', 'from', 'a', '', 'drop', 'in', 'spy']",spy,6,1.0053124400779556,1.009125765730726
+"['current', 'positions', 'spy', '', 'c', 'bj', '', 'c', 'tgt', '', 'c', 'ba', '', 'c', 'atvi', '', 'c', 'slv', '', '', 'c', 'c']",spy,7,1.0053124400779556,1.009125765730726
+"['current', 'positions', 'spy', '', 'c', 'bj', '', 'c', 'tgt', '', 'c', 'ba', '', 'c', 'atvi', '', 'c', 'slv', '', '', 'c', 'c']",ba,7,1.0392156932584486,0.9677046827883783
+"['current', 'positions', 'spy', '', 'c', 'bj', '', 'c', 'tgt', '', 'c', 'ba', '', 'c', 'atvi', '', 'c', 'slv', '', '', 'c', 'c']",atvi,7,0.9753730824725629,1.0151274347916264
+"['this', 'spy', '', 'minute', 'candle', 'is', 'disgusting']",spy,6,1.0053124400779556,1.009125765730726
+"['i', 'really', 'fucked', 'with', 'that', 'green', 'dildo', 'at', 'the', 'end', 'their', 'tim', 'aapl', 'keep', 'doing', 'that', 'nasty', 'shit', 'i', 'like']",aapl,6,1.0204928981374435,1.0830793290449314
+"['silver', 'why', 'you', 'gotta', 'do', 'me', 'like', 'that', 'bb']",bb,13,0.9856263456942191,0.9733606329114172
+"['i', 'love', 'yahoo', 'headlines', 'us', 'productivity', 'rises', '', 'biggest', 'increase', 'since', '', 'like', 'no', 'shit', 'when', 'something', 'drops', 'a', 'significant', 'percentage', 'going', 'up', '', 'isn t', 'exactly', 'unexpected', 'do', 'these', 'people', 'not', 'understand', 'how', 'percentages', 'work', 'guys', 'amc', 'is', 'up', '', 'today', 'amazing', 'news', 'forget', 'that', 'it s', 'down', '', 'all', 'time', '']",amc,14,1.1913978168241888,0.9334532573081085
+"['ngl', 'i', 'feel', 'really', 'bad', 'for', 'kids', 'going', 'into', 'their', 'freshman senior', 'years', 'of', 'college', 'rn', 'i', 'would', 'be', 'a', 'different', 'person', 'if', 'i', 'didn t', 'have', 'those', 'experiences', 'covid', 'is', 'fucked', 'this', 'year', 'blows', 'also', 'ngl', 'i', 'feel', 'really', 'bad', 'for', 'my', 'msft', '', 'c', 'keep', 'fucking', 'writing', 'c', 'by', 'mistake']",msft,14,0.9869136083831459,1.0228729034365864
+"['spy', 'calls', 'or', 'you', 'ain t', 'black']",spy,14,1.0053124400779556,1.009125765730726
+"['prpl', 'was', 'solid', 'dd', 'y all', 'can t', 'tell', 'me', 'otherwise', 'shit', 'ran', 'for', 'days', 'on', 'end', 'the', 'mistake', 'was', 'not', 'taking', 'profit', 'and', 'holding', 'through', 'earnings', 'on', 'a', 'effing', 'mattress', 'company', 'hopefully', 'you ve', 'all', 'learned', 'from', 'the', 'experience']",prpl,11,0.8862889824154362,0.9012986732037256
+"['bought', 'tsla', 'calls', 'yesterday', 'at', '', 'sold', 'at', '', 'for', 'a', '', 'loss', 'just', 'to', 'switch', 'to', 'bidu', 'calls']",bidu,6,0.9372942192161748,1.0342060419777788
+"['what s', 'your', 'take', 'on', 'epic', 'suing', 'apple', 'and', 'google', 'i m', 'all', 'for', 'developer', 'rights', 'but', 'i', 'feel', 'like', 'epic', 'should', 'be', 'following', 'the', 'policies', 'that', 'are', 'in', 'place', 'that', 'they', 'agreed', 'to', 'or', 'maybe', 'i m', 'wrong', '', 'anyways', 'i', 'hope', 'this', 'doesn t', 'stop', 'aapl s', 'rally', 'tho', 'cause', 'my', 'calls', 'will', 'be', 'hurting']",aapl,4,1.0204928981374435,1.0830793290449314
+"['what s', 'your', 'take', 'on', 'epic', 'suing', 'apple', 'and', 'google', 'i m', 'all', 'for', 'developer', 'rights', 'but', 'i', 'feel', 'like', 'epic', 'should', 'be', 'following', 'the', 'policies', 'that', 'are', 'in', 'place', 'that', 'they', 'agreed', 'to', 'or', 'maybe', 'i m', 'wrong', '', 'anyways', 'i', 'hope', 'this', 'doesn t', 'stop', 'aapl s', 'rally', 'tho', 'cause', 'my', 'calls', 'will', 'be', 'hurting']",goog,4,1.013818048935322,1.042727266210905
+"['i', 'don t', 'even', 'know', 'what', 'data', 'is', 'dropping', 'today', 'but', 'i', 'am', 'sure', 'it', 'will', 'be', 'manipulated', 'and', 'spy', 'will', 'go', 'green', 'because', 'of', 'it']",spy,6,1.0053124400779556,1.009125765730726
+"['anyone', 'else', 'got', 'prpl', 'shares', 'they re', 'just', 'gonna', 'hold', 'i', 'bought', 'in', 'at', '', 'think', 'they', 'still', 'have', 'a', 'lot', 'of', 'growth', 'potential']",prpl,6,0.8862889824154362,0.9012986732037256
+"['what s', 'the', 'consensus', 'does', 'tesla', 'still', 'have', 'more', 'uppies', 'to', 'go']",tsla,6,1.1399930639953388,1.2312266729278485
+"['ubi', 'would', 'stimulate', 'the', 'economy', 'spy', '']",spy,6,1.0053124400779556,1.009125765730726
+"['lol', 'cnbc', 'just', 'had', 'msft', 'make', 'both', 'the', 'gainers', 'and', 'laggards', 'lists']",msft,5,0.9869136083831459,1.0228729034365864
+"['tesla', 'iv', 'crush', 'is', 'soooooo', 'real', 'it s', 'ok', 'though', '', 'is', 'on', 'the', 'table']",tsla,5,1.1399930639953388,1.2312266729278485
+"['aapl', 'please', 'edit', 'how', 'tf', 'has', 'it', 'only', 'been', '', 'minutes', 'since', 'open']",aapl,6,1.0204928981374435,1.0830793290449314
+"['prpl', 'comeback']",prpl,5,0.8862889824154362,0.9012986732037256
+"['good', 'thing', 'my', 'apple', 'calls', 'expire', 'next', 'september']",aapl,6,1.0204928981374435,1.0830793290449314
+"['i', 'swear', 'ba', 'does', 'the', 'opposite', 'of', 'what', 'the', 'market', 'does']",ba,7,1.0392156932584486,0.9677046827883783
+"['btfd', 'on', 'apple']",aapl,5,1.0204928981374435,1.0830793290449314
+"['incredible', 'spy', 'managed', 'to', 'stay', 'red', 'for', 'more', 'than', '', 'minutes']",spy,6,1.0053124400779556,1.009125765730726
+"['i', 'have', 'spy', 'c', 'and', 'spy', 'p', 'and', 'i', 'am', 'losing', 'in', 'both', 'directions']",spy,7,1.0053124400779556,1.009125765730726
+"['tesla', 'you', 'tit', 'sucking', 'bitch go', 'up']",tsla,6,1.1399930639953388,1.2312266729278485
+"['what', 'the', 'fuck', 'is', 'spy', 'doing']",spy,6,1.0053124400779556,1.009125765730726
+"['im', 'only', 'ever', 'doing', 'tde', 'tesla', 'from', 'now', 'on', 'it s', 'the', 'only', 'way', 'to', 'make', 'money']",tsla,5,1.1399930639953388,1.2312266729278485
+"['lol', 'everyone', 'freaking', 'out', 'today', 'imagine', 'when', 'we', 'see', 'an', 'actual', 'red', 'day', 'and', 'not', 'down', 'only', '', 'in', 'spy', '']",spy,6,1.0053124400779556,1.009125765730726
+"['fuck', 'it', 'i m', 'holding', 'this', 'tesla', 'c', 'dte', 'til', 'zero']",tsla,5,1.1399930639953388,1.2312266729278485
+"['f', 'in', 'the', 'chat', 'for', 'weekly', 'rh', 'holders']",f,7,1.018813331014704,0.955523679754513
+"['snip', 'snap', 'snip', 'snap', 'snip', 'snap', 'you', 'have', 'no', 'idea', 'the', 'physical', 'toll', 'that', '', 'sector', 'rotations', 'take', 'on', 'a', 'person']",snap,6,0.9995391599755649,0.9863014044618198
+"['tesla', 'you re', 'gonna', 'make', 'me', 'yolo', 'into', 'some', 'dte', 'fds', 'arent', 'you']",tsla,7,1.1399930639953388,1.2312266729278485
+"['aapl', 'baby', 'wyd']",aapl,6,1.0204928981374435,1.0830793290449314
+"['spy', 'having', 'a', 'seizure', 'huh']",spy,6,1.0053124400779556,1.009125765730726
+"['wtf', 'is', 'with', 'this', 'spy', 'chart']",spy,7,1.0053124400779556,1.009125765730726
+"['fuck', 'it', 'boys', 'baba', 'calls', '']",baba,6,1.0185690420743336,1.0403537597484631
+"['tsla', 'needs', 'to', 'break', '', 'and', 'algos', 'need', 'to', 'stop', 'reacting', 'to', 'every', 'little', 'spy', 'dip', 'everyone', 'knows', 'this', 'stock', 'is', 'on', 'a', 'godly', 'tear']",spy,6,1.0053124400779556,1.009125765730726
+"['lost', 'so', 'much', 'money', 'in', 'prpl', 'it s', 'weird', 'how', 'i', 'don t', 'even', 'care', 'coulda', 'bought', 'that', 'truck', 'i', 'wanted', 'paid', 'my', 'rent', 'for', 'the', 'next', 'year', 'took', 'a', 'nice', 'trip', 'somewhere', 'anyways', 'all', 'in', 'sq', 'and', 'nio']",prpl,6,0.8862889824154362,0.9012986732037256
+"['lost', 'so', 'much', 'money', 'in', 'prpl', 'it s', 'weird', 'how', 'i', 'don t', 'even', 'care', 'coulda', 'bought', 'that', 'truck', 'i', 'wanted', 'paid', 'my', 'rent', 'for', 'the', 'next', 'year', 'took', 'a', 'nice', 'trip', 'somewhere', 'anyways', 'all', 'in', 'sq', 'and', 'nio']",sq,6,0.9622450205956937,1.077906781301117
+"['lost', 'so', 'much', 'money', 'in', 'prpl', 'it s', 'weird', 'how', 'i', 'don t', 'even', 'care', 'coulda', 'bought', 'that', 'truck', 'i', 'wanted', 'paid', 'my', 'rent', 'for', 'the', 'next', 'year', 'took', 'a', 'nice', 'trip', 'somewhere', 'anyways', 'all', 'in', 'sq', 'and', 'nio']",nio,6,0.9397418060115553,1.07132014860532
+"['get', 'amd', 'calls']",amd,7,0.955908290823718,1.0244468898629115
+"['apple', 'has', 'completely', 'fucked', 'me', 'today', 'oh', 'my', 'lord']",aapl,7,1.0204928981374435,1.0830793290449314
+"['apple', 'one', 'will', 'launch', 'in', 'october', 'is', 'that', 'like', 'wmt', '', 'launching', 'in', 'july', '']",aapl,5,1.0204928981374435,1.0830793290449314
+"['apple', 'one', 'will', 'launch', 'in', 'october', 'is', 'that', 'like', 'wmt', '', 'launching', 'in', 'july', '']",wmt,5,1.0223058720428575,0.9946352564739469
+"['so', 'aapl', 'is', 'just', 'going', 'to', 'lose', 'its', 'entire', 'weeks', 'profit', 'before', 'lunch', 'eh', 'cool', 'cool', 'cool']",aapl,6,1.0204928981374435,1.0830793290449314
+"['i m', 'about', 'to', 'buy', 'apple', 'calls', 'and', 'log', 'off', 'for', 'the', 'week', 'i m', 'bored']",aapl,6,1.0204928981374435,1.0830793290449314
+"['tech', 'absolutely', 'murdered', 'me', 'this', 'week', 'i', 'had', 'one', 'green', 'day', 'thanks', 'atvi', 'and', 'amd']",atvi,6,0.9753730824725629,1.0151274347916264
+"['tech', 'absolutely', 'murdered', 'me', 'this', 'week', 'i', 'had', 'one', 'green', 'day', 'thanks', 'atvi', 'and', 'amd']",amd,6,0.955908290823718,1.0244468898629115
+"['insider', 'dd', 'auto', 'sales', 'were', 'bad', 'on', 'retail', 'report', 'were', 'used', 'car', 'sales', 'included', 'in', 'this', 'data', 'i', 'work', 'at', 'a', 'dealership', 'and', 'while', 'we', 'haven t', 'sold', 'hardly', 'any', 'new', 'cars', 'we ve', 'been', 'selling', 'used', 'cars', 'like', 'hot', 'cakes', 'spy', '', 'eod']",spy,6,1.0053124400779556,1.009125765730726
+"['hey', 'tim', 'what', 'if', 'we', 'kissed', 'under', 'the', 'aapl', 'dip', '']",aapl,6,1.0204928981374435,1.0830793290449314
+"['can t', 'stop', 'buying', 'fb', '', 'c']",fb,8,0.97463058463749,1.01791777763248
+"['fucking', 'travel', 'is', 'up', 'like', '', 'across', 'the', 'board', 'today', 'gonna', 'load', 'up', 'on', 'puts', 'on', 'this', 'absolute', 'trash', 'especially', 'ccl', 'who', 'the', 'fuck', 'is', 'going', 'on', 'cruises', 'for', 'the', 'foreseeable', 'future']",ccl,5,1.0765483918044534,0.9753661233051328
+"['sold', 'my', 'spy', '', 'c', 'at', 'a', 'lost', 'this', 'morning', '']",spy,8,1.0053124400779556,1.009125765730726
+"['getting', 'fb', 'calls', 'eod', 'yesterday', 'was', 'not', 'very', 'cash', 'money']",fb,6,0.97463058463749,1.01791777763248
+"['just', 'fucking', 'moon', 'spy', 'so', 'i', 'can', 'make', 'more', 'than', '', 'dollars']",spy,7,1.0053124400779556,1.009125765730726
+"['snip', 'snap', 'snip', 'snap', 'snip', 'snap']",snap,6,0.9995391599755649,0.9863014044618198
+"['spy', 'puts']",spy,5,1.0053124400779556,1.009125765730726
+"['lmao', 'apple', 'with', 'the', 'v', 'shape', 'recovery', 'wtf', 'puts', 'eod']",aapl,6,1.0204928981374435,1.0830793290449314
+"['', 'aapl', 'calls', '', 'might', 'be', 'my', 'final', 'play']",aapl,5,1.0204928981374435,1.0830793290449314
+"['come', 'on', 'apple']",aapl,5,1.0204928981374435,1.0830793290449314
+"['aapl', 'just', 'casually', 'closing', 'the', '', 'gap', 'it', 'was', 'down', 'earlier', 'today']",aapl,6,1.0204928981374435,1.0830793290449314
+"['amzn', 'pretty', 'much', 'the', 'same', 'price', 'on', 'the', 'day', 'week', 'and', 'month']",amzn,6,0.9929691296275333,1.0335223434022196
+"['wow', 'msft', 'went', 'up', '', 'wow']",msft,6,0.9869136083831459,1.0228729034365864
+"['cut', 'my', 'losses', 'on', 'the', 'bad', 'color', 'tossed', 'the', 'rest', 'in', 'spy', 'fds', 'as', 'god', 'intended', '']",spy,5,1.0053124400779556,1.009125765730726
+"['aapl', 'called', 'went', 'from', 'underwater', 'to', 'itm', '']",aapl,6,1.0204928981374435,1.0830793290449314
+"['amd', 'has', 'ruined', 'my', 'life', 'for', '', 'years', 'always', 'on', 'the', 'wrong', 'side', 'with', 'this', 'one']",amd,6,0.955908290823718,1.0244468898629115
+"['looks', 'like', 'just', 'about', 'all', 'tech', 'is', 'recovering', 'besides', 'amd', 'fuck', 'me']",amd,7,0.955908290823718,1.0244468898629115
+"['apple', 'shaking', 'out', 'all', 'you', 'tp', 'hands', 'hold', 'the', 'line']",aapl,5,1.0204928981374435,1.0830793290449314
+"['spy', 'chart', 'is', 'top', 'down', 'view', 'of', 'the', '', 'titty', 'girl', 'from', 'total', 'recall']",spy,6,1.0053124400779556,1.009125765730726
+"['prpl', 'would ve', 'been', 'just', 'fine', 'if', 'they', 'had', 'focused', 'on', 'drug', 'smuggling', 'like', 'mattress', 'firm', 'does', 'there', 'are', 'now', '', 'in', 'my', 'relatively', 'small', 'town', 'and', 'they', 'are', 'constructing', 'a', 'th', 'i', 'have', 'never', 'seen', 'anyone', 'go', 'inside', 'of', 'the', 'stores', 'and', 'if', 'i', 'was', 'asked', 'to', 'develop', 'a', 'perfect', 'padded', 'heavy', 'packaging', 'to', 'smuggle', 'drugs', 'it', 'would', '', 'be', 'a', 'mattress']",prpl,6,0.8862889824154362,0.9012986732037256
+"['going', 'to', 'buy', 'a', 'new', 'ipad', 'if', 'apple', 'hits', '', 'before', 'the', 'end', 'of', 'august']",aapl,4,1.0204928981374435,1.0830793290449314
+"['timothy', 'donald', 'apple']",aapl,6,1.0204928981374435,1.0830793290449314
+"['need', 'a', 'tesla', 'daily', 'discussion', 'thread', 'until', 'at', 'least', '', 'split', 'on', '', '', 's p', 'inclusion', 'announcement', 'if', 'it', 'ever', 'happens', '', 'battery', 'day', 'announcement']",tsla,7,1.1399930639953388,1.2312266729278485
+"['i', 'really', 'hope', 'elon', 'and', 'tim', 'apple', 'make', 'a', 'surprise', 'wh', 'appearance']",aapl,6,1.0204928981374435,1.0830793290449314
+"['fuck', 'it', 'x', 'amd', 'c', 'x', 'msft', 'c', 'x', 'atvi', 'c', 'and', 'x', 'aapl', 'c all', '', 'all', 'in', 'one', 'last', 'ride', 'buy', 'puts', 'against', 'me']",amd,7,0.955908290823718,1.0244468898629115
+"['fuck', 'it', 'x', 'amd', 'c', 'x', 'msft', 'c', 'x', 'atvi', 'c', 'and', 'x', 'aapl', 'c all', '', 'all', 'in', 'one', 'last', 'ride', 'buy', 'puts', 'against', 'me']",msft,7,0.9869136083831459,1.0228729034365864
+"['fuck', 'it', 'x', 'amd', 'c', 'x', 'msft', 'c', 'x', 'atvi', 'c', 'and', 'x', 'aapl', 'c all', '', 'all', 'in', 'one', 'last', 'ride', 'buy', 'puts', 'against', 'me']",atvi,7,0.9753730824725629,1.0151274347916264
+"['fuck', 'it', 'x', 'amd', 'c', 'x', 'msft', 'c', 'x', 'atvi', 'c', 'and', 'x', 'aapl', 'c all', '', 'all', 'in', 'one', 'last', 'ride', 'buy', 'puts', 'against', 'me']",aapl,7,1.0204928981374435,1.0830793290449314
+"['selling', 'apple', 'calls', 'at', 'an', '', 'loss', '', 'you', 'can t', 'hurt', 'me', 'anymore']",aapl,5,1.0204928981374435,1.0830793290449314
+"['you', 'wanted', 'ath', 'this', 'is', 'spy', 'near', 'ath', 'boring', 'af']",spy,5,1.0053124400779556,1.009125765730726
+"['feeling', 'some', '', 'apple', 'calls', 'next', 'week']",aapl,6,1.0204928981374435,1.0830793290449314
+"['how', 'am', 'i', 'supposed', 'to', 'make', 'money', 'on', 'my', 'options', 'when', 'spy', 'is', 'pinned', 'between', '', '']",spy,7,1.0053124400779556,1.009125765730726
+"['when', 'spy', 'can t', 'go', 'up', 'anymore', 'it', 'just', 'says', 'fuk', 'it', 'and', 'stops', 'moving']",spy,5,1.0053124400779556,1.009125765730726
+"['facebook', 'mooning', 'up', '', 'mark', 'fuckerburg']",fb,5,0.97463058463749,1.01791777763248
+"['i', 'bought', 'a', 'spy', 'put', 'at', 'the', 'top', 'feels', 'good']",spy,6,1.0053124400779556,1.009125765730726
+"['spy', 'lost', 'forward', 'momentum', '', 'downward', 'direction', 'looking', 'like', 'no', 'more', 'good', 'news', 'and', 'stimulus']",spy,4,1.0053124400779556,1.009125765730726
+"['spy', 'will', 'dump', 'hard', 'the', 'weekend', 'dump', 'is', 'upon', 'us']",spy,7,1.0053124400779556,1.009125765730726
+"['just', 'saw', 'donny s', 'new', 'tv', 'ad', 'is', 'it', 'true', 'if', 'i', 'don t', 'vote', 'for', 'him', 'spy', 'will', 'go', 'to', 'zero', 'my', 'wife', 'will', 'leave', 'me', 'for', 'a', 'bbc', 'and', 'my', 'kids', 'will', 'join', 'ms', 'i', 'feel', 'like', 'i', 'have', 'to', 'vote', 'for', 'him', 'i', 'can t', 'take', 'that', 'risk']",spy,6,1.0053124400779556,1.009125765730726
+"['intc', 'c', '', 'minutes', 'expiration', 'for', '', 'only', 'needs', 'intel', '', 'to', 'double', 'up']",intc,7,1.0143152123894779,1.0112867600909317
+"['spy', 'ath', 'postponed', 'until', 'further', 'notice']",spy,7,1.0053124400779556,1.009125765730726
+"['sure', 'glad', 'i', 'bought', 'those', 'spy', 'calls', 'an', 'hour', 'ago', 'what', 'in', 'the', 'actual', 'fucking', 'christ']",spy,5,1.0053124400779556,1.009125765730726
+"['spy', 'monday', 'calls', 'yay', 'or', 'nay']",spy,6,1.0053124400779556,1.009125765730726
+"['', 'on', 'dte', 'spy', 'puts', 'and', 'i m', 'done', 'for', 'today']",spy,6,1.0053124400779556,1.009125765730726
+"['', 'contracts', 'k', 'deep', 'in', 'aapl', 'calls', 'going', 'into', 'the', 'weekend', '', 'c', 'and', '', 'c', 'feeling', 'good', 'looking', 'like', 'i ll', 'close', 'above', 'k', 'which', 'is', 'my', 'new', 'goal', 'to', 'stay', 'above', 'k', 'gonna', 'look', 'at', 'a', 'nice', 'condo', 'in', 'socal', 'tomorrow excited', 'to', 'maybe', 'be', 'forced', 'to', 'liquidate', 'and', 'have', 'the', 'potential', 'for', 'central', 'ac', 'hope', 'everyone', 'has', 'a', 'great', 'weekend']",aapl,6,1.0204928981374435,1.0830793290449314
+"['there', 'are', 'giant', 'market', 'orders', 'that', 'leap', 'the', 'spy', 'price', 'by', '', 'cents', 'at', 'a', 'time', 'i', 'don t', 'really', 'like', 'the', 'manipulated', 'theory', 'but', 'some', 'big', 'money', 'keeps', 'wasting', 'a', 'ton', 'at', 'time', 'on', 'market', 'orders', 'to', 'prop', 'this', 'up']",spy,5,1.0053124400779556,1.009125765730726
+"['of', 'fucking', 'course', 'spy', 'finishes', 'green', 'fuck', 'that', 'manipulated', 'bullshit', '', 'bull']",spy,7,1.0053124400779556,1.009125765730726
+"['lol', 'the', 'spy', 'dump', 'at', 'pm']",spy,6,1.0053124400779556,1.009125765730726
+"['aapl', 'spreads', 'value', 'going', 'wild', 'last', '', 'min']",aapl,5,1.0204928981374435,1.0830793290449314
+"['we', 'all', 'know', 'jpow', 'launched', 'a', 'billion', 'dollar', 'cannon', 'at', 'spy', 'in', 'the', 'last', 'minute', 'to', 'make', 'it', 'green']",spy,7,1.0053124400779556,1.009125765730726
+"['i', 'think', 'amzn', 'is', 'our', 'big', 'tech', 'runner', 'next', 'week']",amzn,6,0.9929691296275333,1.0335223434022196
+"['friendly', 'reminder', 'of', 'what', 'aapl', 'likes', 'to', 'do https imgur com gallery rawglej', 'before', 'a', 'split']",aapl,11,1.0204928981374435,1.0830793290449314
+"['rip', 'my', 'account', 'took', 'my', 'tiny', 'pp', 'account', 'and', 'was', 'growing', 'it', 'but', 'ended', 'up', 'all', 'in', 'on', 'amd', 'calls', 'that', 'expire', 'today', 'so', 'long', 'and', 'thanks', 'for', 'all', 'the', 'fish']",amd,11,0.955908290823718,1.0244468898629115
+"['spy', 'looks', 'so', 'healthy', 'completely', 'normal', 'yep']",spy,11,1.0053124400779556,1.009125765730726
+"['aapl', 'gave', 'all', 'y all', 'haters', 'prime', 'real', 'estate', 'for', 'calls', 'like', '', 'off', 'and', 'y all', 'yelled', 'at', 'her', 'aapl', 'girl', 'i', 'knew', 'what', 'you', 'were', 'doing', 'bby', 'luv', 'you']",aapl,10,1.0204928981374435,1.0830793290449314
+"['aapl', 'gave', 'all', 'y all', 'haters', 'prime', 'real', 'estate', 'for', 'calls', 'like', '', 'off', 'and', 'y all', 'yelled', 'at', 'her', 'aapl', 'girl', 'i', 'knew', 'what', 'you', 'were', 'doing', 'bby', 'luv', 'you']",bby,10,1.055223537385246,1.0522428594912352
+"['aapl', 'gave', 'all', 'y all', 'haters', 'prime', 'real', 'estate', 'for', 'calls', 'like', '', 'off', 'and', 'y all', 'yelled', 'at', 'her', 'aapl', 'girl', 'i', 'knew', 'what', 'you', 'were', 'doing', 'bby', 'luv', 'you']",luv,10,1.037147100841546,1.0113702448490742
+"['throwing', 'k', 'in', 'dte', 'spy', 'puts', 'need', 'the', 'eod', 'dump']",spy,11,1.0053124400779556,1.009125765730726
+"['lets', 'attack', 'aapl', 'with', 'an', 'aapl', 'ad']",aapl,10,1.0204928981374435,1.0830793290449314
+"['msft', 'please', 'i m', 'begging', 'you']",msft,5,0.9869136083831459,1.0228729034365864
+"['all', 'in', 'tsla', 'dte', 'at', 'open', 'and', 'get', 'that', 'bread', 'market', 'chatter', 'tesla', 'hints', 'at', 'new', 'car', 'model', 'made', 'in', 'china', 'with', 'job', 'openings', '', '', 'am', '', 'am', 'edt', '', 'mt', 'newswires', '', 'tesla', 'tsla', 'posted', 'new', 'job', 'openings', 'on', 'its', 'official', 'weibo', 'account', 'in', 'china', 'this', 'week', 'hinting', 'that', 'the', 'us', 'electric', 'car', 'maker', 'is', 'working', 'on', 'a', 'new', 'car', 'model', 'in', 'the', 'country', 'news', 'website', 'electrek', 'reported', 'on', 'thursday', 'in', 'january', 'ceo', 'elon', 'musk', 'said', 'tesla', 'will', 'design', 'and', 'produce', 'an', 'electric', 'car', 'in', 'china', 'for', 'the', 'global', 'market', 'and', 'in', 'june', 'the', 'company', 'began', 'taking', 'design', 'submissions', 'from', 'the', 'public', 'for', 'the', 'new', 'car', 'according', 'to', 'the', 'report', 'tesla', 'posted', 'job', 'openings', 'for', 'a', 'design', 'manager', 'creative', 'manager', 'senior', 'car', 'designer', 'and', 'eight', 'other', 'positions', 'the', 'news', 'service', 'reported', 'market', 'chatter', 'news', 'is', 'derived', 'from', 'conversations', 'with', 'market', 'professionals', 'globally', 'this', 'information', 'is', 'believed', 'to', 'be', 'from', 'reliable', 'sources', 'but', 'may', 'include', 'rumor', 'and', 'speculation', 'accuracy', 'is', 'not', 'guaranteed', 'price', '', 'change', '', 'percent', 'change', '']",tsla,6,1.1399930639953388,1.2312266729278485
+"['sugar', 'water', 'prpl']",prpl,5,0.8862889824154362,0.9012986732037256
+"['mfw', 'i', 'look', 'at', 'atvi', 'pre market', 'data', 'wtf', 'am', 'i', 'looking', 'at']",atvi,4,0.9753730824725629,1.0151274347916264
+"['i', 'haven t', 'even', 'changed', 'my', 'mattress', 'for', '', 'years', 'how', 'is', 'prpl', 'planning', 'to', 'make', 'money', 'after', 'the', 'hype']",prpl,5,0.8862889824154362,0.9012986732037256
+"['this', 'whole', 'prpl', 'saga', 'still', 'make', 'me', 'laugh', 'so', 'many', 'people', 'stuck', 'bagholding', 'a', 'shitty', 'matress', 'company']",prpl,5,0.8862889824154362,0.9012986732037256
+"['hahaha', 'apple', 'is', 'green', 'ticker', 'this', 'morning', 'on', 'cnbc', 'during', 'hit', 'piece', 'this', 'shit', 'is', 'too', 'funny', 'fuck', 'squawk', 'box']",aapl,5,1.0204928981374435,1.0830793290449314
+"['are', 'there', 'even', 'any', 'tesla', 'shorts', 'left', 'to', 'be', 'squeezed']",tsla,6,1.1399930639953388,1.2312266729278485
+"['amzn', 'all', 'time', 'highs', 'today', 'baby']",amzn,5,0.9929691296275333,1.0335223434022196
+"['aapl', 'giant', 'green', 'dildo', 'off', 'of', 'vwap', 'bullish', 'as', 'fuck', 'new', 'all', 'time', 'high', 'confirmed']",aapl,5,1.0204928981374435,1.0830793290449314
+"['hmm', 'rkt', 'creating', 'amazon', 'of', 'financial', 'services', 'thats', 'bullish', 'maybe', 'they', 'buy', 'affirm']",amzn,5,0.9929691296275333,1.0335223434022196
+"['tim', 'aapl', 'gonna', 'buttfuck', 'epic', '']",aapl,5,1.0204928981374435,1.0830793290449314
+"['retail', 'disappointing', 'stimulus', 'stalled', 'spy', 'ath', 'by', '']",spy,4,1.0053124400779556,1.009125765730726
+"['k', 'in', 'sq', 'dte', 'calls', 'paying', 'for', 'a', 'gap', 'up']",sq,5,0.9622450205956937,1.077906781301117
+"['if', 'tesla', 'opens', 'above', '', 'there', 'will', 'be', 'a', 'massive', 'short', 'squeeze']",tsla,6,1.1399930639953388,1.2312266729278485
+"['u houston swimmer', 'how s', 'your', 'aapl', 'calls', 'looking', 'my', 'dude']",aapl,5,1.0204928981374435,1.0830793290449314
+"['lol', 'what', 'if', 'prpl', 'does', 'the', 'reversal', 'nothing', 'in', 'this', 'market', 'makes', 'sense', 'anyways']",prpl,4,0.8862889824154362,0.9012986732037256
+"['is', 'baba', 'about', 'to', 'moon', 'cuz', 'of', 'the', 'ant', 'group', 'cocktease']",baba,6,1.0185690420743336,1.0403537597484631
+"['prpl', 'redemption']",prpl,3,0.8862889824154362,0.9012986732037256
+"['prpl', 'holding', 'up', 'price', 'target', 'raises']",prpl,5,0.8862889824154362,0.9012986732037256
+"['baba', 'having', 'some', 'fun', 'premarket']",baba,7,1.0185690420743336,1.0403537597484631
+"['does', 'anyone', 'see', 'wmt', 'reaching', '', 'by', 'december', 'or', 'is', 'that', 'just', 'a', 'big', 'fucking', 'reach']",wmt,6,1.0223058720428575,0.9946352564739469
+"['y all', 'ready', 'for', 'spy', 'double', 'top', 'i m', 'not', 'i m', 'a', 'broke', 'as', 'shit', 'bear', 'with', 'a', 'gaping', 'anus']",spy,6,1.0053124400779556,1.009125765730726
+"['waving', 'farewell', 'to', 'the', 'premium', 'on', 'my', '', '', 'spy', 'calls', '']",spy,6,1.0053124400779556,1.009125765730726
+"['what', 'should', 'tesla', '', '', 'calls', 'open', 'at', 'they', 'closed', 'at', '', 'when', 'tsla', 'was', '', '']",tsla,5,1.1399930639953388,1.2312266729278485
+"['tesla', '', 'am', 'buy', 'in', 'dip', 'just', 'like', 'yesterday', 'hopefully']",tsla,4,1.1399930639953388,1.2312266729278485
+"['moves', 'on', 'aapl']",aapl,5,1.0204928981374435,1.0830793290449314
+"['prpl', 'going', 'to', 'dump', 'at', 'open']",prpl,5,0.8862889824154362,0.9012986732037256
+"['a', 'select', 'group', 'of', 'people', 'today', 'after', 'aapl', 'continues', 'on', 'its', 'jolly', 'little', 'path', 'to', 'valhalla', 'how', 'the', 'fuck', 'is', 'aapl', 'up', 'this', 'lawsuit', 'and', 'wechat', 'should', 'have', 'destroyed', 'them', 'and', 'tanked', 'them', 'i', 'hate', 'this', 'market', 'it', 'makes', 'no', 'sense', 'guhhhhhhh']",aapl,6,1.0204928981374435,1.0830793290449314
+"['why', 'is', 'msft', 'acting', 'like', 'ba']",msft,4,0.9869136083831459,1.0228729034365864
+"['why', 'is', 'msft', 'acting', 'like', 'ba']",ba,4,1.0392156932584486,0.9677046827883783
+"['prpl', 'making', 'a', 'comeback', 'would', 'be', 'the', 'funniest', 'thing']",prpl,5,0.8862889824154362,0.9012986732037256
+"['loading', 'up', 'on', 'more', 'intc', 'calls', 'while', 'it s', 'chilling', 'under', '', 'still']",intc,5,1.0143152123894779,1.0112867600909317
+"['post', 'prpl', 'loss', 'porn', 'pls', '']",prpl,5,0.8862889824154362,0.9012986732037256
+"['why', 'is', 'fb', 'sucking', 'so', 'much', 'dick']",fb,6,0.97463058463749,1.01791777763248
+"['man', 'puts', 'on', 'meme', 'stocks', 'are', 'free', 'money', 'lmao', 'yesterday', 'i', 'saw', 'someone', 'here', 'say', 'grwg', 'calls', 'printing', 'and', 'i', 'looked', 'and', 'saw', 'it', 'was', 'up', 'like', '', 'in', 'one', 'day', 'didn t', 'even', 'google', 'to', 'see', 'wtf', 'it', 'was', 'just', 'bought', 'puts', 'knew', 'it', 'was', 'some', 'pump n dump', 'fuckery']",goog,4,1.013818048935322,1.042727266210905
+"['let s', 'go', 'amd', 'take', 'me', 'to', 'the', 'moon']",amd,4,0.955908290823718,1.0244468898629115
+"['doubling', 'down', 'on', 'apple', 'feeling', 'confident', 'in', 'this', 'play']",aapl,5,1.0204928981374435,1.0830793290449314
+"['all', 'i', 'need', 'is', 'for', 'spy', 'to', 'touch', '', '', 'more', 'time', 'and', 'im', 'loading', 'up', 'on', 'puts']",spy,4,1.0053124400779556,1.009125765730726
+"['switched', 'to', 'the', '', 'month', 'chart', 'i', 'feel', 'a', 'lot', 'better', 'about', 'my', 'aapl', 'calls', 'crisis', 'averted']",aapl,5,1.0204928981374435,1.0830793290449314
+"['did', 'prpl', 'thanos', 'snap', 'half', 'of', 'this', 'sub']",prpl,4,0.8862889824154362,0.9012986732037256
+"['did', 'prpl', 'thanos', 'snap', 'half', 'of', 'this', 'sub']",snap,4,0.9995391599755649,0.9863014044618198
+"['less', 'than', '', 'nin', 'into', 'opening', 'and', 'so', 'much', 'whining', 'about', 'apple', 'only', 'being', 'down', 'a', '', 'y all', 'need', 'to', 'get', 'the', 'sand', 'out', 'of', 'your', 'vag', 'and', 'man', 'the', 'fuck', 'up']",aapl,6,1.0204928981374435,1.0830793290449314
+"['amazon', 'teasing', 'my', 'balloon', 'knot']",amzn,6,0.9929691296275333,1.0335223434022196
+"['spy', 'not', 'feeling', 'it']",spy,6,1.0053124400779556,1.009125765730726
+"['j', 'pow', 'the', 'spy', 'who', 'shagged', 'me']",spy,4,1.0053124400779556,1.009125765730726
+"['pls', 'aapl', 'don t', 'tell', 'me', 'that', 'was', 'a', 'bull', 'trap', '']",aapl,4,1.0204928981374435,1.0830793290449314
+"['remember', 'that', 'dd', 'for', 'shop', 'like', '', 'years', 'ago', 'rkt', 'is', 'the', 'new', 'one', 'jump', 'in']",shop,4,0.9363981274066943,1.0187768208654375
+"['aapl', 'c', 'dte', 'gogogogogo']",aapl,5,1.0204928981374435,1.0830793290449314
+"['f', '', 'for', 'some', 'reason']",f,5,1.018813331014704,0.955523679754513
+"['ha', 'wmt', 'stuck', 'between', '', 'forever']",wmt,4,1.0223058720428575,0.9946352564739469
+"['spy', 'will', 'finish', 'day', 'at', '', 'and', 'we ll', 'have', 'wasted', 'the', 'whole', 'day']",spy,5,1.0053124400779556,1.009125765730726
+"['wsb', 'ba', 'mooning', 'i', 'check', 'the', 'price', 'it s', 'up', '', '', '']",ba,5,1.0392156932584486,0.9677046827883783
+"['aapl', 'pton', 'or', 'amd', 'do', 'something', 'please']",aapl,4,1.0204928981374435,1.0830793290449314
+"['aapl', 'pton', 'or', 'amd', 'do', 'something', 'please']",amd,4,0.955908290823718,1.0244468898629115
+"['the', 'volume', 'on', 'spy', 'is', 'disgusting']",spy,5,1.0053124400779556,1.009125765730726
+"['lol', 'aapl', 'dte', 'lottery', 'tickets', 'did', 'not', 'pay', 'off', 'instant', '']",aapl,6,1.0204928981374435,1.0830793290449314
+"['why', 'does', 'spy', 'have', 'a', 'retarded', 'chart', 'today']",spy,5,1.0053124400779556,1.009125765730726
+"['dte', '', 'aapl', 'calls', 'anyone', 'cheap']",aapl,6,1.0204928981374435,1.0830793290449314
+"['fuck', 'offfff', 'tesla', 'let s', 'just', 'hit', '', 'for', 'the', 'fucking', 'boys', 'damnit']",tsla,5,1.1399930639953388,1.2312266729278485
+"['calls', 'on', 'atvi']",atvi,5,0.9753730824725629,1.0151274347916264
+"['fuck', 'you', 'apple']",aapl,4,1.0204928981374435,1.0830793290449314
+"['damn', 'looks', 'like', 'i', 'should', 'have', 'waited', 'a', 'little', 'longer', 'to', 'go', 'in', 'on', 'aapl', 'eh', 'hope', 'it', 'recovers', 'next', 'week', 'for', 'my', 'c', '']",aapl,4,1.0204928981374435,1.0830793290449314
+"['spy', 'looks', 'like', 'you', 'fuckers', 'heartbeats', 'jacked', 'up', 'on', 'coke', 'and', 'coffee']",spy,4,1.0053124400779556,1.009125765730726
+"['fuck', 'you', 'spy']",spy,5,1.0053124400779556,1.009125765730726
+"['spy', 'lookin', 'like', 'a', 'penny', 'stock', 'on', 'intraday', 'can', 'something', 'just', 'happen', 'please']",spy,5,1.0053124400779556,1.009125765730726
+"['today s', 'the', 'day', 'wmt']",wmt,5,1.0223058720428575,0.9946352564739469
+"['yes', 'my', 'pretty', 'intc', 'rise', 'like', 'a', 'phoenix', 'from', 'the', 'ashes', 'of', 'earnings', 'call', 'past', 'break', '', 'and', 'we', 'shall', 'rejoice']",intc,5,1.0143152123894779,1.0112867600909317
+"['spy', 'in', 'scalp', 'mode', 'today']",spy,6,1.0053124400779556,1.009125765730726
+"['tsla', 'i', 'need', 'you', 'to', 'gap', 'up', '', 'so', 'i', 'can', 'get', 'out', 'of', 'my', 'position', 'thank', 'you', 'bb', '']",bb,5,0.9856263456942191,0.9733606329114172
+"['longing', 'more', 'aapl', 'going', 'to', '', 'eod']",aapl,5,1.0204928981374435,1.0830793290449314
+"['i', 'just', 'went', 'balls', 'deep', 'into', 'mar', 'slv', 'calls', 'enough', 'of', 'weekly', 'stress']",mar,7,1.0186737627186258,0.9796400683091662
+"['donald', 'pump', 'at', '', 'perhaps', 'anyone', 'playing', 'spy', '', 'days']",spy,4,1.0053124400779556,1.009125765730726
+"['ba', 'going', 'to', 'drop', 'any', 'minute']",ba,3,1.0392156932584486,0.9677046827883783
+"['cant', 'believe', 'im', 'typing', 'this', 'i', 'made', 'money', 'with', 'aapl', 'puts', 'feels wrong', 'and', 'dirty']",aapl,4,1.0204928981374435,1.0830793290449314
+"['it s', 'actually', 'kind', 'of', 'a', 'joke', 'how', 'tesla', 'just', 'wont', 'run', 'smh']",tsla,4,1.1399930639953388,1.2312266729278485
+"['lol', 'will', 'apple', 'really', 'go', 'green', 'by', 'eod']",aapl,4,1.0204928981374435,1.0830793290449314
+"['donnie', 'pump', 'sending', 'us', 'checks', 'himself', 'for', 'the', 'aapl', 'split']",aapl,5,1.0204928981374435,1.0830793290449314
+"['at', 'this', 'rate', 'spy', 'will', 'end', 'the', 'day', 'flat', 'my', 'options', 'dead', 'and', 'my', 'portfolio', 'fucked']",spy,5,1.0053124400779556,1.009125765730726
+"['if', 'apple', 'hits', '', 'eod', 'i ll', 'nut']",aapl,5,1.0204928981374435,1.0830793290449314
+"['i', 'definitely', 'should', 'have', 'doubled', 'if', 'not', 'tripled', 'down', 'on', 'my', 'apple', 'calls', 'but', 'i', 'got', 'stuck', 'on', 'a', 'call', '']",aapl,5,1.0204928981374435,1.0830793290449314
+"['i m', 'holding', 'this', 'fucking', 'aapl', 'c', 'until', 'i', 'break', 'even', 'i', 'don t', 'care', 'if', 'i', 'lose', 'it', 'all', 'at', 'this', 'point']",aapl,6,1.0204928981374435,1.0830793290449314
+"['aapl', '']",aapl,5,1.0204928981374435,1.0830793290449314
+"['spy', 'the', 'rising', 'wedge', 'to', 'hopium', '']",spy,6,1.0053124400779556,1.009125765730726
+"['baba', 'has', 'aspergers', 'at', 'least']",baba,5,1.0185690420743336,1.0403537597484631
+"['apple', 'actually', 'finna', 'hit', '']",aapl,5,1.0204928981374435,1.0830793290449314
+"['riding', 'out', 'my', '', 'spy', 'put', 'spreads', 'to', 'zero', 'here', 'we', 'go', 'boys']",spy,3,1.0053124400779556,1.009125765730726
+"['aapl', 'just', 'prints']",aapl,5,1.0204928981374435,1.0830793290449314
+"['that', 'was', 'the', 'third', 'time', 'we', 'bumped', 'resistance', 'on', 'spy', 'and', 'what', 'looks', 'to', 'be', 'like', 'a', 'rd', 'rejection']",spy,5,1.0053124400779556,1.009125765730726
+"['', 'apple', 'is', 'gonna', 'be', 'tough']",aapl,5,1.0204928981374435,1.0830793290449314
+"['aapl', 'slowly', 'printing', 'away', 'the', 'losses', 'i m', 'getting', 'from', 'me', 'betting', 'retail', 'finally', 'wakes', 'up', 'and', 'sells', 'the', 'top']",aapl,4,1.0204928981374435,1.0830793290449314
+"['come', 'on', 'apple', 'don t', 'stop', 'yet']",aapl,6,1.0204928981374435,1.0830793290449314
+"['why', 'are', 'my', 'apple', 'calls', 'vanishing', 'jesus']",aapl,5,1.0204928981374435,1.0830793290449314
+"['can', 'anyone', 'afford', 'k', 'tesla', 'shares', 'to', 'pump', 'this', 'price', 'up']",tsla,6,1.1399930639953388,1.2312266729278485
+"['y all', 'think', 'pumplethinskins', 'will', 'be', 'intelligible', 'enough', 'to', 'convince', 'the', 'clowns', 'to', 'buy', 'more', 'this', 'afternoon', 'or', 'is', 'spy', 'going', 'to', 'fade']",spy,4,1.0053124400779556,1.009125765730726
+"['tesla', 'is', 'boring', 'me', 'dump', 'and', 'revisit', '']",tsla,5,1.1399930639953388,1.2312266729278485
+"['goooood', 'aapl', 'dip', 'entry']",aapl,4,1.0204928981374435,1.0830793290449314
+"['damn', 'apple', 'dte', 'calls', 'at', 'the', 'bottom', 'were', 'the', 'play', 'i m', 'so', 'glad', 'i', 'grabbed', 'fb', 'ones', 'on', 'the', 'first', 'big', 'dip', 'instead']",aapl,5,1.0204928981374435,1.0830793290449314
+"['damn', 'apple', 'dte', 'calls', 'at', 'the', 'bottom', 'were', 'the', 'play', 'i m', 'so', 'glad', 'i', 'grabbed', 'fb', 'ones', 'on', 'the', 'first', 'big', 'dip', 'instead']",fb,5,0.97463058463749,1.01791777763248
+"['bid', '', 'ask', 'liquidity', 'on', 'spy', 'fds', 'is', 'insane', 'comforting', 'knowing', 'there', 'are', 'others', 'out', 'there', 'like', 'me', 'though', 'i', 'assume', 'most', 'are', 'hedges', 'lol']",spy,4,1.0053124400779556,1.009125765730726
+"['if', 'anybody', 'is', 'wondering', 'why', 'nvda', 'dumped', 'right', 'before', 'noon', 'it', 'is', 'because', 'of', 'this', 'idiot', 'journalist', 'writing', 'a', 'piece', 'about', 'wanting', 'the', 'uk', 'gov', 'to', 'stop', 'arm', 'sale', 'to', 'nvda', 'article', 'link https www telegraph co uk technology arm sale talks accelerate amid calls protect cambridge hq']",nvda,5,1.0202704384069294,1.10004333958827
+"['buy', 'the', 'dip', 'on', 'aapl', 'thinking', '', 's']",aapl,5,1.0204928981374435,1.0830793290449314
+"['come', 'on', 'apple', 'fight', 'to', 'green']",aapl,5,1.0204928981374435,1.0830793290449314
+"['jesus', 'christ', 'spy', 'get s', 'instabought', 'when', 'it', 'barely', 'touches', 'red']",spy,5,1.0053124400779556,1.009125765730726
+"['mm', 'keeping', 'aapl', 'under', '', 'so', 'they', 'don t', 'have', 'to', 'payout', 'all', 'the', '', 'contracts', 'gay']",aapl,4,1.0204928981374435,1.0830793290449314
+"['spy', 'pump', 'to', 'donnie', 'pump', 'isnt', 'doing', 'a', 'presser', 'during', 'trading', 'hours', 'by', 'accident']",spy,7,1.0053124400779556,1.009125765730726
+"['i hate', 'every thing', 'about', 'you', 'why', 'do', 'i', 'love', 'you', 'amzn']",amzn,5,0.9929691296275333,1.0335223434022196
+"['guh', 'i', 'bought', 'an', 'aapl', '', 'put', 'lmao', 'may', 'be', 'retarded', 'today', 'otherwise', 'i m', 'cash', 'gang', 'this', 'theta', 'day', 'low', 'key', 'boring']",aapl,6,1.0204928981374435,1.0830793290449314
+"['', 'spy', 'aug', '', '', '', 'call', 'update', 'whoever', 'sold', 'these', 'to', 'me', 'congratulations', 'and', 'fuck', 'you']",spy,4,1.0053124400779556,1.009125765730726
+"['can', 'donnie', 'save', 'my', 'apple', 'calls']",save,5,1.013120338461341,0.9753015330876239
+"['can', 'donnie', 'save', 'my', 'apple', 'calls']",aapl,5,1.0204928981374435,1.0830793290449314
+"['i', 'need', 'msft', 'to', 'keep', 'up']",msft,5,0.9869136083831459,1.0228729034365864
+"['is', 'apple', 'gonna', 'pump', 'or', 'is', 'it', 'done', 'now']",aapl,5,1.0204928981374435,1.0830793290449314
+"['i', 'am', 'upset', 'that', 'i', 'don t', 'see', 'enough', 'prpl', 'loss', 'porn']",prpl,6,0.8862889824154362,0.9012986732037256
+"['may', 'buy', 'a', 'dte', 'put', 'or', 'call', 'on', 'tesla', 'at', 'like', 'pm', 'today']",tsla,5,1.1399930639953388,1.2312266729278485
+"['spy', 'chart', 'has', 'me', 'like', '']",spy,4,1.0053124400779556,1.009125765730726
+"['spy', '', 'c', 'is', 'only', '', 'that s', 'worth', 'a', 'gamble', 'imo']",spy,5,1.0053124400779556,1.009125765730726
+"['if', 'we', 'would', 'just', 'test', 'spy', 'more', 'then', 'we ll', 'get', 'more', 'positives']",spy,5,1.0053124400779556,1.009125765730726
+"['got', 'k', 'in', 'baba', 'calls', 'c', '', '', 'and', '', 'i m', 'gonna', 'start', 'drinking', 'now', 'to', 'forget', 'abt', 'them', 'until', 'monday', 'is', 'it', 'looking', 'like', 'a', 'good', 'move']",baba,5,1.0185690420743336,1.0403537597484631
+"['aapl', 'was', 'about', 'to', 'drop', 'but', 'instead', 'it', 'goes', 'up']",aapl,4,1.0204928981374435,1.0830793290449314
+"['tried', 'being', 'gay', 'today', 'buying', 'a', 'put', 'spy', 'only', 'went', 'up', 'during', 'trump', 'conference', 'sold', 'at', 'minor', 'loss', 'gay', 'and', 'paper', 'hands', 'smh']",spy,5,1.0053124400779556,1.009125765730726
+"['tsla', 'planning', 'on', 'starting', 'a', 'self', 'driving', 'car', 'service', 'like', 'uber', 'or', 'lyft', 'buy', 'the', 'dip']",uber,5,0.9076876192525826,1.0141447470582754
+"['bye', 'bye', 'american', 'spy']",spy,3,1.0053124400779556,1.009125765730726
+"['watch', 'spy', 'close', 'green']",spy,5,1.0053124400779556,1.009125765730726
+"['was', 'prpl', 'the', 'market', 'top']",prpl,4,0.8862889824154362,0.9012986732037256
+"['spy', 'is', 'so', 'horny', 'for', '', 'that', 'it', 'wants', 'to', 'penetrate', 'it', 'repeatedly', 'but', 'never', 'fully', 'commit']",spy,6,1.0053124400779556,1.009125765730726
+"['i', 'tried', 'to', 'sign', 'up', 'for', 'fucking', 'uber', 'and', 'got', 'slapped', 'a', '', 'bill']",uber,6,0.9076876192525826,1.0141447470582754
+"['sold', 'my', '', '', 'aapl', 'calls', 'for', 'a', 'loss', 'doubled', 'down', '', '', 'and', '', '', 'yes', 'i', 'am', 'retarded']",aapl,5,1.0204928981374435,1.0830793290449314
+"['course', 'apple', 'goes', 'to', '', 'before', 'market', 'close', 'lol']",aapl,6,1.0204928981374435,1.0830793290449314
+"['everyone', 'knows', 'spy', 'stands', 'for', 'shrek', 'pumps', 'you']",spy,5,1.0053124400779556,1.009125765730726
+"['ok', 'so', 'we re', 'just', 'going', 'to', 'pump', 'spy', '', 'in', '', 'minutes', 'just', 'to', 'keep', 'the', 'charts', 'from', 'looking', 'too', 'ugly']",spy,6,1.0053124400779556,1.009125765730726
+"['might', 'lock', 'in', 'these', 'spy', 'calls', 'rn', 'lmao']",spy,5,1.0053124400779556,1.009125765730726
+"['what', 'took', 'about', 'an', '', 'hours', 'to', 'happen', 'in', 'spy', 'selling', 'off', 'was', 'erased', 'in', 'about', '', 'minutes', 'gee', 'i', 'wonder', 'who', 'has', 'that', 'kind', 'of', 'buying', 'power']",spy,4,1.0053124400779556,1.009125765730726
+"['another', 'week', 'of', 'holding', 'atvi', 'trash']",atvi,5,0.9753730824725629,1.0151274347916264
+"['holaaaay', 'i', 'was', 'joking', 'about', 'spy', 'magically', 'closing', 'green', 'but', 'this', 'mf', 'really', 'just', 'closed', '', 'cent', 'above', 'yesterday s', 'level', 'fuck', 'me']",spy,5,1.0053124400779556,1.009125765730726
+"['i', 'bought', 'rkt', 'calls', 'at', 'the', 'start', 'of', 'the', 'day', 'thinking', 'it', 'was', 'a', 'rocket', 'company', 'in', 'detroit', 'then', 'halfway', 'through', 'the', 'day', 'i', 'lost', '', 'on', 'rkt', 'and', 'learned', 'it s', 'a', 'branch', 'of', 'quicken', 'that', 'does', 'mortgage', 'software', 'that', 'sounds', 'way', 'better', 'than', 'a', 'rocket', 'company', 'so', 'i', 'tripled', 'down', 'on', 'rkt', 'btw', 'portfolio', 'is', 'up', '', 'this', 'week', 'on', 'nkla', 'and', 'corn', 'calls', 'just', 'be', 'retarded', 'and', 'go', 'against', 'logic']",nkla,6,1.1048077108239287,0.8399829278660834
+"['i', 'swear', 'msft', 'is', 'the', 'biggest', 'pos', 'stock', 'on', 'the', 'market', 'rn']",msft,9,0.9869136083831459,1.0228729034365864
+"['buy', 'the', 'amd', 'dip']",amd,8,0.955908290823718,1.0244468898629115
+"['aapl', 'is', 'the', 'greatest', 'stock', 'of', 'all', 'time']",aapl,9,1.0204928981374435,1.0830793290449314
+"['well', 'i', 'have', 'no', 'one', 'to', 'blame', 'other', 'than', 'myself', 'for', 'prpl', 'losses', 'loss https i imgur com mqus du png', 'not', 'only', 'did', 'i', 'sell', 'my', 'stock', 'to', 'buy', 'naked', 'otm', 'calls', 'i', 'bought', 'at', 'the', 'literal', 'fucking', 'top', 'and', 'got', 'caught', 'up', 'in', 'the', 'fomo', 'my', 'wife', 'has', 'no', 'idea', 'that', 'i', 'lost', 'my', 'down', 'payment', 'we', 'we re', 'saving', 'to', 'buy', 'a', 'house', 'i m', 'ashamed', 'hurt', 'and', 'embarrassed']",prpl,10,0.8862889824154362,0.9012986732037256
+"['i', 'can t', 'believe', 'we', 'dropped', '', 'on', 'spy', 'back', 'in', 'march', 'hard', 'to', 'believe', 'with', 'the', 'way', 'it', 'moves', 'now']",spy,8,1.0053124400779556,1.009125765730726
+"['holy', 'fuck', '', 'stimulus', 'for', 'families', 'of', '', 'please', 'tendie', 'town', 'help', 'my', 'spy', 'calls', '']",spy,11,1.0053124400779556,1.009125765730726
+"['got', 'k', 'on', 'spy', 'puts', 'please', 'god', 'save', 'me', 'for', 'i', 'have', 'became', 'a', '']",spy,12,1.0053124400779556,1.009125765730726
+"['got', 'k', 'on', 'spy', 'puts', 'please', 'god', 'save', 'me', 'for', 'i', 'have', 'became', 'a', '']",save,12,1.013120338461341,0.9753015330876239
+"['hey', 'everyone', 'it s', 'your', 'boy', 'chimpu', 'and', 'it s', 'am', 'so', 'im', 'here', 'with', 'your', 'final', 'pre market', 'report', 'for', 'today', 'this', 'is', 'my', 'fourth', 'time', 'reposting', 'this', 'this', 'morning', 'but', 'i', 'spent', 'like', '', 'mins', 'on', 'this', 'so', 'here', 'is', 'a', 'disclaimer', 'that', 'i', 'changed', 'one', 'word', 'based', 'on', 'market', 'changes', 'since', 'the', 'last', 'time', 'i', 'posted', 'this', '', 'minutes', 'ago', 'so', 'you', 'know', 'it s', 'not', 'spam', 'like', 'all', 'days', 'i', 'predict', 'the', 'markets', 'will', 'go', 'up', 'because', 'im', 'playing', 'a', 'numbers', 'game', 'here', 'so', 'i', 'never', 'rock', 'the', 'boat', 'or', 'really', 'make', 'predictions', 'of', 'any', 'substance', 'that', 'could', 'come', 'back', 'on', 'me', 'personally', 'international', 'markets', 'looking', 'pretty', 'gay', 'but', 'investors', 'shrug', 'stuff', 'off', 'ive', 'noticed', 'sometimes', 'market', 'is', 'slightly', 'down', 'right', 'now', 'which', 'makes', 'for', 'a', 'great', 'entry', 'point', 'for', 'shrugging', 'investors', 'i', 'also', 'looked', 'at', 'an', 'investing com', 'chart', 'and', 'the', 'line', 'seems', 'to', 'have', 'upward', 'pressure', 'because', 'that s', 'a', 'thing', 'personal', 'bias', 'is', 'that', 'we', 'will', 'trade', 'between', 'spy', '', 'and', '', 'today', 'quote', 'of', 'the', 'day', 'no', 'one', 'will', 'notice', 'that', 'you', 'say', 'the', 'same', 'shit', 'everyday', 'if', 'people', 'like', 'what', 'you', 'are', 'saying']",spy,20,1.0053124400779556,1.009125765730726
+"['fucking', 'aapl']",aapl,7,1.0204928981374435,1.0830793290449314
+"['stop', 'cashing', 'out', 'spy', 'pussies']",spy,8,1.0053124400779556,1.009125765730726
+"['this', 'looking', 'like', 'a', 'spy', '', 'kind', 'of', 'day']",spy,9,1.0053124400779556,1.009125765730726
+"['aapl', 'coming', 'back', 'to', 'life', 'is', 'tempting', 'me', 'to', 'buy', 'a', 'small', 'c', '', 'dte', 'position', 'lol']",aapl,9,1.0204928981374435,1.0830793290449314
+"['bought', 'a', 'handful', 'of', 'spy', 'c', 'yesterday', 'that', 'expire', 'today', 'so', 'prepare', 'for', 'a', 'sell', 'off']",spy,4,1.0053124400779556,1.009125765730726
+"['tesla', 'dte', 'calls', 'seem', 'to', 'be', 'the', 'move']",tsla,4,1.1399930639953388,1.2312266729278485
+"['baba', 'added', 'to', 'the', 'hang', 'seng', 'index', 'baby', 'its', 'going', 'to', 'run', 'hard', '']",baba,4,1.0185690420743336,1.0403537597484631
+"['ok', 'so', 'i', 'have', 'tesla', 'puts', 'spy', 'puts', 'and', 'vxx', 'calls', 'how', 'fucked', 'am', 'i']",tsla,5,1.1399930639953388,1.2312266729278485
+"['ok', 'so', 'i', 'have', 'tesla', 'puts', 'spy', 'puts', 'and', 'vxx', 'calls', 'how', 'fucked', 'am', 'i']",spy,5,1.0053124400779556,1.009125765730726
+"['tesla', 'literally', 'to', 'the', 'moon']",tsla,5,1.1399930639953388,1.2312266729278485
+"['blnk', 'c', '', 'as', 'lil', 'wayne', 'said', 'i m', 'going', 'in', 'i m', 'going', 'in']",blnk,4,0.9289916520636952,0.5762711932898184
+"['just', 'get', 'to', '', 'fb', 'that', 's', 'all', 'i m', 'hoping', 'for']",fb,4,0.97463058463749,1.01791777763248
+"['amazon', 'too', 'low', 'imo']",amzn,4,0.9929691296275333,1.0335223434022196
+"['apple', 'wants', 'that', 't', 'mark', 'will', 'tim', 'for', 'a', 'pump']",aapl,4,1.0204928981374435,1.0830793290449314
+"['apple', 'gains', 'yesterday', 'apple', 'dividends', 'today', '']",aapl,4,1.0204928981374435,1.0830793290449314
+"['if', 'microsoft', 'dips', 'below', '', 'then', 'this', 'might', 'be', 'it', 'for', 'my', 'investing', 'career', 'call', 'it', 'a', 'day', 'and', 'delete', 'reddit']",msft,3,0.9869136083831459,1.0228729034365864
+"['switching', 'to', 'tesla', 'puts', 'edit', 'short', 'cfds', 'now', 'since', 'i', 'can', 'trade', 'premarket', 'so', 'thank', 'me', 'when', 'it', 'moons', 'to', 'new', 'ath']",tsla,5,1.1399930639953388,1.2312266729278485
+"['baba', '']",baba,4,1.0185690420743336,1.0403537597484631
+"['i', 'like', 'to', 'say', 'alibaba', 'intelligence']",baba,3,1.0185690420743336,1.0403537597484631
+"['prpl', 'is', 'recovering', 'lmao']",prpl,3,0.8862889824154362,0.9012986732037256
+"['so', 'what', 'price', 'dte', 'call', 'should', 'i', 'buy', 'for', 'tesla']",tsla,4,1.1399930639953388,1.2312266729278485
+"['when', 'in', 'doubt', 'buy', 'aapl', 'calls', 'a', 'month', 'out']",aapl,4,1.0204928981374435,1.0830793290449314
+"['for', 'all', 'you', 'aapl', 'holders', 'right', 'around', 'the', '', 'mark', 'we', 'get', 'a', 'squeeze', 'flipping', 'shorts', 'into', 'zombie', 'stock', 'holders']",aapl,4,1.0204928981374435,1.0830793290449314
+"['facebook', 'fading']",fb,5,0.97463058463749,1.01791777763248
+"['prpl', 'take', 'my', 'energy', '', 'xxxgokuxxx', 'dbz', 'bulma', 'hentaixxx']",prpl,3,0.8862889824154362,0.9012986732037256
+"['bac', '', 'tsla', 'target', 'they', 'r', 'normally', 'pretty', 'bearish', 'so', 'this', 'is', 'pretty', 'yugee']",bac,3,1.0060813443957293,0.9585571190019107
+"['come', 'on', 'fb', 'just', 'have', 'your', 'moon', 'day']",fb,3,0.97463058463749,1.01791777763248
+"['wmt', 'earnings', 'next', 'week', 'load', 'up', 'now']",wmt,4,1.0223058720428575,0.9946352564739469
+"['pussied', 'out', 'on', 'buying', 'tesla', '', 'days', 'ago', 'fuck', 'me']",tsla,2,1.1399930639953388,1.2312266729278485
+"['come', 'on', 'fb', 'get', 'to', '', 'today', 'i', 'dare', 'ya']",fb,4,0.97463058463749,1.01791777763248
+"['crying', 'prpl', 'tears']",prpl,4,0.8862889824154362,0.9012986732037256
+"['dollar', 'going', 'into', 'the', 'shitter', 'lmao', 'prepare', 'for', 'spy', 'ath', 'today']",spy,4,1.0053124400779556,1.009125765730726
+"['', 'day', 'spy', 'gang', 'c', 'or', 'c', 'at', 'the', 'bell', '']",spy,5,1.0053124400779556,1.009125765730726
+"['let s', 'fucking', 'gooooo', 'tesla']",tsla,4,1.1399930639953388,1.2312266729278485
+"['bro', 'tesla', 'd', 'chess', 'move', 'now', 'most', 'of', 'wsb', 'can', 'afford', 'to', 'play', 'with', 'tesla', 'but', 'to', 'have', 'spy', 'liquidity']",tsla,4,1.1399930639953388,1.2312266729278485
+"['bro', 'tesla', 'd', 'chess', 'move', 'now', 'most', 'of', 'wsb', 'can', 'afford', 'to', 'play', 'with', 'tesla', 'but', 'to', 'have', 'spy', 'liquidity']",spy,4,1.0053124400779556,1.009125765730726
+"['spy', 'doesnt', 'know', 'what', 'to', 'do']",spy,3,1.0053124400779556,1.009125765730726
+"['csco', 'cvs', 'atvi', 'ely', 'i', 'sure', 'do', 'pick', 'winners', 'huh']",csco,4,0.9011874580370667,0.994351584769954
+"['csco', 'cvs', 'atvi', 'ely', 'i', 'sure', 'do', 'pick', 'winners', 'huh']",cvs,4,1.0118643162946055,0.9947105474647276
+"['csco', 'cvs', 'atvi', 'ely', 'i', 'sure', 'do', 'pick', 'winners', 'huh']",atvi,4,0.9753730824725629,1.0151274347916264
+"['', 'on', 'prpl', 'calls', 'i', 'just', 'dumped', 'anyone', 'do', 'better']",prpl,5,0.8862889824154362,0.9012986732037256
+"['i', 'feel', 'like', 'an', 'apple', 'pump', 'so', 'all', 'our', '', 'calls', 'print', 'is', 'not', 'allowed', 'but', 'ill', 'diamond', 'hand', 'them', 'anyway']",aapl,4,1.0204928981374435,1.0830793290449314
+"['lol', 'prpl', 'vol', 'm', 'in', 'opening', 'minute', 'i m', 'fucken', 'holding']",prpl,3,0.8862889824154362,0.9012986732037256
+"['rip', 'prpl', 'and', 'dkng']",prpl,5,0.8862889824154362,0.9012986732037256
+"['i', 'just', 'need', 'tesla', 'to', 'go', 'up', 'another', '', 'and', 'i m', 'back', 'to', 'even', 'from', 'yesterday', 'theta', 'does', 'ruin', 'you']",tsla,4,1.1399930639953388,1.2312266729278485
+"['i', 'was', 'able', 'to', 'sell', 'my', 'retarded', 'wmt', 'play', 'for', 'a', 'small', 'profit', '', 'dte', 'so', 'fucking', 'lucky']",wmt,5,1.0223058720428575,0.9946352564739469
+"['i', 'might', 'sit', 'today', 'out', 'let', 'me', 'long', 'aapl', 'calls', 'take', 'a', 'breather', 'this', 'day', 'has', 'doom', 'written', 'all', 'over', 'it']",aapl,4,1.0204928981374435,1.0830793290449314
+"['not', 'very', 'cool', 'very', 'lame', 'aapl']",aapl,4,1.0204928981374435,1.0830793290449314
+"['spy', 'calls', 'and', 'vxx', 'puts', '', 'guh']",spy,3,1.0053124400779556,1.009125765730726
+"['prpl', 'loss', 'porn', 'please', 'post']",prpl,4,0.8862889824154362,0.9012986732037256
+"['prpl', 'lives', 'on', 'in', 'our', 'hearts']",prpl,4,0.8862889824154362,0.9012986732037256
+"['anyone', 'buying', 'tesla', 'calls', 'now']",tsla,4,1.1399930639953388,1.2312266729278485
+"['calm', 'down', 'aapl', 'is', 'just', 'late', 'to', 'the', 'party', 'had', 'to', 'stop', 'at', 'the', 'store', 'and', 'get', 'some', 'shit', 'and', 'then', 'some', 'traffic']",aapl,3,1.0204928981374435,1.0830793290449314
+"['trading', 'nvda', 'is', 'mainlining', 'coke']",nvda,3,1.0202704384069294,1.10004333958827
+"['what', 'are', 'the', 'chances', 'prpl', 'u', 'turns']",prpl,4,0.8862889824154362,0.9012986732037256
+"['i m', 'down', 'k', 'on', 'apple', 'in', 'the', 'morning', 'fucj']",aapl,3,1.0204928981374435,1.0830793290449314
+"['buy', 'the', 'apple', 'dip']",aapl,4,1.0204928981374435,1.0830793290449314
+"['prpl', 'chewed', 'up', 'and', 'spit', 'my', 'money', 'out', 'someone', 'give', 'me', 'a', '', 'dolla', 'yolo']",prpl,3,0.8862889824154362,0.9012986732037256
+"['is', 'aapl', 'dumping', 'because', 'of', 'fortnite']",aapl,4,1.0204928981374435,1.0830793290449314
+"['die', 'amc', 'die']",amc,4,1.1913978168241888,0.9334532573081085
+"['how', 'faggy', 'is', 'aapl', '', '']",aapl,4,1.0204928981374435,1.0830793290449314
+"['anyone', 'else', 'playing', 'wmt', 'earnings']",wmt,3,1.0223058720428575,0.9946352564739469
+"['spy', 'mimicking', 'my', 'heartbeat']",spy,3,1.0053124400779556,1.009125765730726
+"['tesla', 'to', '', 'today', 'who', 'says', 'no']",tsla,5,1.1399930639953388,1.2312266729278485
+"['apple', 'gonna', 'rebound', 'today']",aapl,4,1.0204928981374435,1.0830793290449314
+"['amazon', 'as', 'flat', 'as', 'my', 'grandmothers', 'heart', 'rate']",amzn,4,0.9929691296275333,1.0335223434022196
+"['last', 'chance', 'to', 'get', 'in', 'before', 'amd', 'hits', '']",amd,5,0.955908290823718,1.0244468898629115
+"['i m', 'so', 'done', 'with', 'spy']",spy,4,1.0053124400779556,1.009125765730726
+"['hoping', 'for', 'a', 'prpl', 'shaped', 'recovery']",prpl,3,0.8862889824154362,0.9012986732037256
+"['go', 'all', 'in', 'on', 'this', 'baba', 'dip', 'where', 'do', 'we', 'think', 'bottom', 'is', '']",baba,5,1.0185690420743336,1.0403537597484631
+"['nvda', 'definitely', 'wants', 'to', 'touch', '', 'and', 'then', 'cum', 'on', 'its', 'own', 'face']",nvda,4,1.0202704384069294,1.10004333958827
+"['any', 'prpl', 'bagholders', 'here']",prpl,4,0.8862889824154362,0.9012986732037256
+"['is', 'buying', 'some', 'dte', '', 'aapl', 'dumb', 'good', 'i m', 'doing', 'it']",aapl,3,1.0204928981374435,1.0830793290449314
+"['might', 'get', 'back', 'into', 'apple', 'eod']",aapl,4,1.0204928981374435,1.0830793290449314
+"['bought', 'the', 'amzn', 'dip', 'and', 'it', 'immediately', 'fell', '', 'after', 'i m', 'laughing']",amzn,5,0.9929691296275333,1.0335223434022196
+"['ok', 'it', 'turns', 'out', 'anyone', 'who', 'followed', 'the', 'prpl', 'dd', 'advice', 'and', 'bought', 'the', 'recommended', 'spreads', 'should', 'be', 'ok', '', 'will', 'be', 'profitable', 'at', 'expiration', 'rip', 'call', 'holders', 'though']",prpl,4,0.8862889824154362,0.9012986732037256
+"['if', 'tesla', 'could', 'drop', 'even', 'i d', 'buy', '', 'calls']",tsla,5,1.1399930639953388,1.2312266729278485
+"['baba', 'price', 'makes', 'no', 'sense', 'to', 'me']",baba,4,1.0185690420743336,1.0403537597484631
+"['spy', 'looking', 'like', 'a', 'penny', 'stock']",spy,4,1.0053124400779556,1.009125765730726
+"['someone', 'please', 'tell', 'me', 'how', 'the', 'fuck', 'penn', 'is', 'so', 'stable', 'sports', 'in', 'shambles', 'dkng', 'dropping', 'but', 'it', 'just', 'keeps', 'floating', 'at', 'aths', 'bought', 'some', '', 'p', 'earlier', 'this', 'week', 'and', 'just', 'want', 'one', 'sub', '', 'drop', 'so', 'i', 'can', 'unload', 'for', 'a', 'nominal', 'profit', 'done', 'betting', 'against', 'this', 'retard', 'strength']",penn,3,1.0878938166716974,1.0576374129139512
+"['tesla', 'with', 'a', 'morning', 'double', 'dip']",tsla,4,1.1399930639953388,1.2312266729278485
+"['mr', 'apple', 'i', 'don t', 'feel', 'so', 'good', '']",aapl,4,1.0204928981374435,1.0830793290449314
+"['is', 'ba', 'buying', 'tiktok']",ba,4,1.0392156932584486,0.9677046827883783
+"['spce', 'is', 'da', 'place']",spce,4,1.0043313441624337,0.894011663431317
+"['aapl', 'plz', 'moon']",aapl,4,1.0204928981374435,1.0830793290449314
+"['fucking', 'shit', 'i', 'triggered', 'a', 'wash', 'sale', 'on', 'tesla', 'entering', 'back', 'into', 'the', 'same', 'call', 'which', 'disallows', '', 'of', 'my', 'previous', 'losses', 'for', 'tax', 'purposes', 'winning']",tsla,3,1.1399930639953388,1.2312266729278485
+"['', 'bynd', '', '', '', '']",bynd,4,0.9458396656732294,0.9917355133684643
+"['whos', 'dick', 'do', 'i', 'have', 'to', 'suck', 'for', 'spy', 'to', 'free', 'fall', 'at', 'this', 'point', 'id', 'eat', 'a', 'cock', 'meat', 'sandwich']",spy,4,1.0053124400779556,1.009125765730726
+"['nvda', 'c', 'lol']",nvda,4,1.0202704384069294,1.10004333958827
+"['nvda', '', 'and', '', 'c', 'calenders', 'are', 'damn', 'near', 'free', 'money', 'right', 'now']",nvda,4,1.0202704384069294,1.10004333958827
+"['apple', 'pls', 'make', 'a', 'run', 'for', 'it', 'up']",aapl,4,1.0204928981374435,1.0830793290449314
+"['its', 'almost', 'like', 'tsla', 'replaced', 'amzn', 'in', 'the', 's p']",amzn,3,0.9929691296275333,1.0335223434022196
+"['tesla', 'starship', 'fueled', 'and', 'ready']",tsla,5,1.1399930639953388,1.2312266729278485
+"['lol', 'spy', 'green', 'biatchessssss']",spy,4,1.0053124400779556,1.009125765730726
+"['look', 'what', 'y all', 'motherfuckers', 'did', 'you', 'turned', 'spy', 'into', 'a', 'meme', 'stock', 'does', 'that', 'chart', 'look', 'healthy', 'to', 'you']",spy,4,1.0053124400779556,1.009125765730726
+"['lol', 'this', 'is', 'what', 'i', 'deserve', 'for', 'yoloing', 'my', 'account', 'into', 'aapl', 'fd', 'at', 'open']",aapl,4,1.0204928981374435,1.0830793290449314
+"['this', 'sucks', 'shit', 'always', 'pumps', 'hard', 'as', 'fuck', 'when', 'selling', 'puts', 'cash', 'gang', 'for', 'now', 'until', 'something', 'wild', 'drags', 'me', 'back', 'in', 'in', 'like', 'an', 'hour', 'or', 'two', 'watch', 'the', 'market', 'absolutely', 'dump', 'now', 'amazon', 'puts', 'were', 'the', 'big', 'winner', 'for', 'me', 'today', 'funny', 'because', 'my', 'spy', 'wayfair', 'and', 'boeing', 'puts', 'wiped', 'away', 'those', 'gains', 'i', 'was', 'up', 'k', 'at', 'one', 'point', 'today', 'now', 'i m', 'only', 'up', '', 'edit', 'fuck', 'why', 'did', 'i', 'sell', 'my', 'puts', 'lol', 'i', 'knew', 'it', 'would', 'dump', 'then']",amzn,4,0.9929691296275333,1.0335223434022196
+"['this', 'sucks', 'shit', 'always', 'pumps', 'hard', 'as', 'fuck', 'when', 'selling', 'puts', 'cash', 'gang', 'for', 'now', 'until', 'something', 'wild', 'drags', 'me', 'back', 'in', 'in', 'like', 'an', 'hour', 'or', 'two', 'watch', 'the', 'market', 'absolutely', 'dump', 'now', 'amazon', 'puts', 'were', 'the', 'big', 'winner', 'for', 'me', 'today', 'funny', 'because', 'my', 'spy', 'wayfair', 'and', 'boeing', 'puts', 'wiped', 'away', 'those', 'gains', 'i', 'was', 'up', 'k', 'at', 'one', 'point', 'today', 'now', 'i m', 'only', 'up', '', 'edit', 'fuck', 'why', 'did', 'i', 'sell', 'my', 'puts', 'lol', 'i', 'knew', 'it', 'would', 'dump', 'then']",spy,4,1.0053124400779556,1.009125765730726
+"['my', 'heart', 'wants', 'to', 'buy', 'more', 'tesla', 'calls', 'but', 'my', 'head', 'says', 'no']",tsla,4,1.1399930639953388,1.2312266729278485
+"['bruh', 'why', 'is', 'atvi', 'being', 'such', 'dog', 'shit']",atvi,4,0.9753730824725629,1.0151274347916264
+"['oof', 'tim', 'apple', 'finna', 'get', 'kicked', 'out', 'of', 'the', 'three', 'coma s', 'club']",aapl,4,1.0204928981374435,1.0830793290449314
+"['spy', 'has', 'gone', 'full', 'retard']",spy,3,1.0053124400779556,1.009125765730726
+"['should ve', 'sold', 'my', 'amd', 'at', 'open', 'guh']",amd,4,0.955908290823718,1.0244468898629115
+"['prpl', 'going', 'down', 'again', 'lol']",prpl,4,0.8862889824154362,0.9012986732037256
+"['might', 'buy', 'some', 'long', 'dated', 'aapl', 'calls', 'for', 'a', 'few', 'weeks', 'after', 'the', 'split']",aapl,5,1.0204928981374435,1.0830793290449314
+"['come', 'sq', 'go', 'up', 'i', 'got', 'lady', 'bois', 'to', 'support', 'make', 'this', 'money', '']",sq,4,0.9622450205956937,1.077906781301117
+"['robinhood', 'forced', 'me', 'to', 'diamond', 'hands', 'my', 'ba', 'puts', 'probably', 'won t', 'turn', 'out', 'well']",ba,5,1.0392156932584486,0.9677046827883783
+"['when', 'are', 'we', 'buying', 'aapl', 'calls']",aapl,5,1.0204928981374435,1.0830793290449314
+"['how', 'is', 'spy', 'even', 'green', 'everything', 'blood', 'red', 'in', 'my', 'account']",spy,3,1.0053124400779556,1.009125765730726
+"['anyone', 'know', 'what', 'happened', 'to', 'jd']",jd,4,1.0071405785302372,1.1952814268147618
+"['osama', 'bin', 'bag', 'holding', 'fb', 'calls', 'that', 'he', 'fomo d', 'into', 'last', 'week']",fb,4,0.97463058463749,1.01791777763248
+"['my', 'apple', 'calls', 'are', 'so', 'fuckrd', 'even', 'when', 'it s', 'going', 'up', 'i m', 'barely', 'gaining', 'from', 'my', 'losses']",aapl,3,1.0204928981374435,1.0830793290449314
+"['awaken', 'the', 'beast', 'apple']",aapl,4,1.0204928981374435,1.0830793290449314
+"['lowe s', 'you re', 'disappointing', 'me', 'this', 'is', 'why', 'i', 'shop', 'at', 'home', 'depot']",shop,8,0.9363981274066943,1.0187768208654375
+"['should', 'i', 'have', 'sold', 'nflx', 'when', 'i', 'was', 'up', 'bigly', 'on', 'it', 'this', 'morning', 'probably', 'do', 'i', 'ever', 'learn', 'my', 'lesson', 'nah']",nflx,4,0.9783723253355031,1.0196553375800816
+"['tesla', 'pls', 'don t', 'cuck', 'us', 'elon', 'pls', 'bless', 'us']",tsla,5,1.1399930639953388,1.2312266729278485
+"['amd', 'please', 'fuck', 'off', 'you', 'useless', 'turd', 'i', 'could ve', 'sold', 'this', 'c', 'two', 'days', 'ago', 'for', 'like', '', 'profits', 'but', 'no', 'i m', 'straight', 'autistic', 'and', 'now', 'it s', 'only', 'up', 'like', '']",amd,6,0.955908290823718,1.0244468898629115
+"['am', 'i', 'dumb', 'for', 'entering', 'apple', 'right', 'here']",aapl,4,1.0204928981374435,1.0830793290449314
+"['how', 'is', 'spy', 'green']",spy,4,1.0053124400779556,1.009125765730726
+"['guy', 'who', 'bought', 'my', 'apple', 'calls', 'tde', 'at', '', 'cents', 'just', 'got', 'a', '', 'bagger']",aapl,4,1.0204928981374435,1.0830793290449314
+"['', 'hour', 'ago', 'amazon', 'was', 'worth', '', 'per', 'share', 'less', 'and', 'my', 'calls', 'were', 'worth', 'more', 'damn', 'you', 'time']",amzn,4,0.9929691296275333,1.0335223434022196
+"['cmon', 'fb', 'aapl', 'embarrassing', 'the', 'fuck', 'out', 'of', 'you']",fb,4,0.97463058463749,1.01791777763248
+"['cmon', 'fb', 'aapl', 'embarrassing', 'the', 'fuck', 'out', 'of', 'you']",aapl,4,1.0204928981374435,1.0830793290449314
+"['just', 'scooped', 'some', 'aapl', 'leaps', '', '']",aapl,5,1.0204928981374435,1.0830793290449314
+"['incoming', 'little', 'aapl', 'pump']",aapl,4,1.0204928981374435,1.0830793290449314
+"['apple', 'please', 'go', 'to', '']",aapl,4,1.0204928981374435,1.0830793290449314
+"['is', 'it', 'worth', 'holding', 'any', 'tesla', 'calls', 'over', 'the', 'weekend']",tsla,4,1.1399930639953388,1.2312266729278485
+"['glad', 'i', 'dumped', 'by', 'bullshit', 'dbx', 'to', 'double', 'down', 'on', 'apple', 'v', 'shaped', 'recovery', 'baby']",dbx,6,0.9298998873872952,1.0249618797460847
+"['glad', 'i', 'dumped', 'by', 'bullshit', 'dbx', 'to', 'double', 'down', 'on', 'apple', 'v', 'shaped', 'recovery', 'baby']",aapl,6,1.0204928981374435,1.0830793290449314
+"['aapl', 'the', 'truth']",aapl,2,1.0204928981374435,1.0830793290449314
+"['aapl', 'calls', 'bring', 'me', 'k', 'to', 'k', 'just', 'never', 'let', 'go', '']",aapl,4,1.0204928981374435,1.0830793290449314
+"['down', '', 'because', 'of', 'apple', 'i', 'swear', 'this', 'shit', 'better', 'recover', 'and', 'then', 'some']",aapl,5,1.0204928981374435,1.0830793290449314
+"['i', 'almost', 'pussed', 'out', 'and', 'sold', 'an', 'apple', 'call', 'for', 'a', '', 'loss', 'but', 'i', 'said', 'fuck', 'it', 'and', 'held', 'every', 'once', 'in', 'a', 'while', 'ya', 'get', 'one', 'right']",aapl,4,1.0204928981374435,1.0830793290449314
+"['this', 'apple', 'pump', 'is', 'so', 'dumb', 'it', 'doesn t', 'even', 'make', 'sense']",aapl,5,1.0204928981374435,1.0830793290449314
+"['shun', 'the', 'nonbelievers', 'who', 'really', 'thought', 'a', 'fortnite', 'lawsuit', 'could', 'keep', 'tim', 'apple', 'down']",aapl,4,1.0204928981374435,1.0830793290449314
+"['th', 'times', 'a', 'charm', 'to', 'break', 'this', 'resistance', 'spy', '']",spy,4,1.0053124400779556,1.009125765730726
+"['guys', 'who', 'buy', 'apple', 'drink', 'white', 'claw', 'to', 'celebrate']",aapl,4,1.0204928981374435,1.0830793290449314
+"['spy', 'is', 'being', 'a', 'real', 'fgtrtd']",spy,3,1.0053124400779556,1.009125765730726
+"['bought', 'spy', 'calls', 'fds', 'instead', 'of', 'slv', 'puts', 'not', 'looking', 'good', 'lol']",spy,4,1.0053124400779556,1.009125765730726
+"['spy', 'chart', 'straight', 'kangaroo', 'wtf', 'is', 'this', 'shit']",spy,4,1.0053124400779556,1.009125765730726
+"['tesla', 'is', 'getting', 'condensed', 'into', 'a', 'pretty', 'tight', 'range', 'i', 'think', 'it ll', 'break', 'down', 'will', 'see', 'don t', 'have', 'any', 'positions', 'but', 'might', 'jump', 'in', 'some', 'zero', 'days', 'cause', 'i', 'never', 'learn', 'my', 'lesson']",tsla,4,1.1399930639953388,1.2312266729278485
+"['dear', 'amd', 'i', 'realize', 'our', 'relationship', 'might', 'seem', 'a', 'bit', 'stale', 'to', 'you', 'now', 'i', 'do', 'however', 'prove', 'my', 'commitment', 'every', 'week', 'with', 'dte', 'calls', 'our', 'relationship', 'is', 'currently', 'stuck', 'at', 'the', 'letter', 'm', 'that', 'you', 'keep', 'showing', 'in', 'your', 'charts', 'i', 'am', 'unable', 'to', 'fathom', 'what', 'it', 'means', 'i', 'would', 'very', 'much', 'appreciate', 'a', 'few', 'ws', 'or', 'a', 'straight', 'up', 'parabolic', 'like', 'we', 'used', 'to', 'have', 'when', 'our', 'relationship', 'was', 'young', 'yours', 'truly']",amd,3,0.955908290823718,1.0244468898629115
+"['what', 'do', 'you', 'guys', 'think', 'of', 'baba', 'january', 'leaps', 'at', 'this', 'entry']",baba,4,1.0185690420743336,1.0403537597484631
+"['that', 'spy', '', 'day', 'chart', 'is', 'ugly', 'as', 'sin']",spy,3,1.0053124400779556,1.009125765730726
+"['spy', 'triple', 'top', 'whatevs']",spy,3,1.0053124400779556,1.009125765730726
+"['miraculously', 'i', 'woke', 'up', 'and', 'made', 'great', 'decisions', 'rode', 'my', 'ups', 'cs', 'up', 'to', 'the', 'top', 'and', 'into', 'aapl', 'odtes', 'now', 'my', 'qqqs', 'are', 'coming', 'back', 'to', 'life', 'what', 'a', 'day']",aapl,5,1.0204928981374435,1.0830793290449314
+"['chicken', 'tendie', 'sub', 'for', 'lunch', 'thanks', 'to', 'subae', '', 'gain', 'on', 'amd', 'fds', 'this', 'morning']",amd,5,0.955908290823718,1.0244468898629115
+"['apple', 'don t', 'fight', 'the', 'granny', 'smith', 'go', 'greeeeeennn']",aapl,5,1.0204928981374435,1.0830793290449314
+"['stimulus', 'talks', 'not', 'going', 'well', 'trade', 'talks', 'not', 'going', 'well', 'spy', 'pump', 'coming', 'soon', 'also', 'i', 'just', 'reentered', 'my', 'put', 'positions', 'all', 'indicators', 'are', 'showing', 'green', 'monday']",spy,3,1.0053124400779556,1.009125765730726
+"['just', 'bought', 'some', 'apple', 'stonks', 'as', 'a', 'hedge', 'against', 'my', 'calls']",aapl,3,1.0204928981374435,1.0830793290449314
+"['til', 'apple', '', 'riot', 'games']",aapl,5,1.0204928981374435,1.0830793290449314
+"['apple', 'you', 'gotta', 'lead', 'the', 'charge', 'fam', 'come', 'on']",aapl,3,1.0204928981374435,1.0830793290449314
+"['webster s', 'updates', 'definition', 'of', 'poor', 'to', '', 'investors', 'in', 'prpl', '', 'those', 'who', 'do', 'not', 'own', 'air', 'fryers']",prpl,5,0.8862889824154362,0.9012986732037256
+"['lol', 'as', 'soon', 'as', 'i', 'sell', 'my', 'tesla', 'calls']",tsla,6,1.1399930639953388,1.2312266729278485
+"['apple', 'thrusters', 'r', 'engaged', 'and', 'cook', 'has', 'got', 'some', 'blue', 'balls']",aapl,3,1.0204928981374435,1.0830793290449314
+"['averaged', 'down', 'msft', 'calls']",msft,4,0.9869136083831459,1.0228729034365864
+"['lol', 'vxx', 'spy', 'iwm', 'and', 'qqq', 'are', 'all', 'within', '', 'of', 'open']",spy,4,1.0053124400779556,1.009125765730726
+"['lol', 'vxx', 'spy', 'iwm', 'and', 'qqq', 'are', 'all', 'within', '', 'of', 'open']",qqq,4,1.001435092461529,1.0320372356530212
+"['trump', 'if', 'you', 'mention', 'baba', 'negatively', 'i', 'will', 'have', 'to', 'intervene', '']",baba,4,1.0185690420743336,1.0403537597484631
+"['can', 'trump', 'pump', 'the', 'msft', 'tik', 'tok', 'deal', 'please']",msft,3,0.9869136083831459,1.0228729034365864
+"['wells', 'fargo', 'outperformed', 'amazon', 'this', 'week', 'let', 'that', 'sink', 'in']",amzn,4,0.9929691296275333,1.0335223434022196
+"['apple', 'is', 'being', 'gay', 'biw']",aapl,4,1.0204928981374435,1.0830793290449314
+"['what', 'is', 'spy', 'going', 'to', 'wiggle', 'it s', 'way', 'all', 'the', 'way', 'to', '', '']",spy,5,1.0053124400779556,1.009125765730726
+"['really', 'no', 'spy', 'dip', 'into', 'the', 'mid', '', 'this', 'better', 'not', 'turn', 'into', 'a', 'guh', 'play']",spy,3,1.0053124400779556,1.009125765730726
+"['intc', 'to', '', 'eod', 'would', 'be', 'nice']",intc,3,1.0143152123894779,1.0112867600909317
+"['nooo', 'rip', 'my', 'aapl', 'calls you', 'were', 'supposed', 'to', 'pump', 'donny']",aapl,4,1.0204928981374435,1.0830793290449314
+"['spy', 'been', 'having', 'a', 'seizure', 'all', 'day algos', 'don t', 'know', 'what s', 'going', 'on', 'either', 'lmao']",spy,5,1.0053124400779556,1.009125765730726
+"['puts', 'on', 'apple', 'daddy', 'trump', 'said', 'whatever', 'to', 'if', 'banning', 'we', 'chat', 'will', 'hurt', 'iphone', 'sales']",aapl,3,1.0204928981374435,1.0830793290449314
+"['', 'volume', 'and', 'spy', 'pumping', 'on', 'a', 'dud', 'conference', 'that', 'confirmed', 'negative', 'shit', 'is', 'going', 'on', 'i m', 'switching', 'to', 'theta', 'because', 'these', 'damn', 'monkeys', 'somehow', 'have', 'more', 'loose', 'change', 'to', 'buy', 'more', 'into', 'the', 'top', 'with']",spy,3,1.0053124400779556,1.009125765730726
+"['time', 'for', 'the', 'nd', 'half', 'of', 'the', 'travel', 'pump', 'ba', 'to', '']",ba,4,1.0392156932584486,0.9677046827883783
+"['amzn', 'is', 'straight', 'molesting', 'me', 'right', 'now']",amzn,4,0.9929691296275333,1.0335223434022196
+"['what', 'is', 'tesla', 'doing', 'and', 'when', 'will', 'it', 'take', 'off', 'to', '']",tsla,4,1.1399930639953388,1.2312266729278485
+"['spy', 'is', 'on', 'drugs']",spy,4,1.0053124400779556,1.009125765730726
+"['keep', 'buying', 'aapl', 'bitches']",aapl,4,1.0204928981374435,1.0830793290449314
+"['tencent', 'vs', 'tim', 'apple', 'and', 'uncle', 'pichai', 'who ll', 'win', 'find', 'out', 'on', 'the', 'next', 'episode', 'of', 'wallstreetree']",aapl,5,1.0204928981374435,1.0830793290449314
+"['afternoon', 'sale', 'on', 'aapl', 'call s']",aapl,3,1.0204928981374435,1.0830793290449314
+"['i', 'need', 'to', 'buy', 'a', 'spy', 'put', 'to', 'raise', 'the', 'market']",spy,5,1.0053124400779556,1.009125765730726
+"['grab', 'y all', 'spy', 'puts', 'rn', '', 'not', 'happening']",spy,4,1.0053124400779556,1.009125765730726
+"['the', 'buys', 'when', 'spy', 'hits', 'negative', 'hilarious']",spy,4,1.0053124400779556,1.009125765730726
+"['i', 'have', 'been', 'here', 'since', 'nkla', 'kodak', 'and', 'purple', 'lmao', 'i', 'am', 'done', 'with', 'playing', 'this', 'bs']",nkla,4,1.1048077108239287,0.8399829278660834
+"['ay', '', 'yo', '', 'why', '', 'spy', 'dumping', '', 'i', '', 'still', '', 'got', '', 'calls', '']",spy,4,1.0053124400779556,1.009125765730726
+"['omg', 'spy', 'dipped', 'under', '', 'again', 'buy', 'buy', 'buy', 'this', 'is', 'on', 'sale']",spy,4,1.0053124400779556,1.009125765730726
+"['when', 'spy', 'goes', 'low', 'i', 'get', 'high']",spy,4,1.0053124400779556,1.009125765730726
+"['wait', 'so', 'tesla', 'went', 'up', 'only', 'in', 'my', '', 'minute', 'nap']",tsla,4,1.1399930639953388,1.2312266729278485
+"['i', 'want', 'to', 'make', 'a', 'nice', '', 'bagger', 'spy', 'puts', 'in', 'a', 'decent', 'sell', 'off', 'should', 'do', 'this', '']",spy,4,1.0053124400779556,1.009125765730726
+"['think', 'buying', 'tesla', 'calls', 'end', 'of', 'day', 'is', 'a', 'good', 'move', 'think', 'it', 'can', 'still', 'run', 'or', 'is', 'it', 'more', 'likely', 'to', 'dump']",tsla,4,1.1399930639953388,1.2312266729278485
+"['saw', 'a', 'lot', 'of', 'people', 'had', 'c', 's', 'for', 'prpl', 'so', 'i', 'had', 'to', 'check', 'out', 'the', 'value', 'of', 'that', 'option', 'today', 'no', 'bidders', 'lmao']",prpl,5,0.8862889824154362,0.9012986732037256
+"['', 'hour', 'to', 'go', 'and', 'volume', 'on', 'spy', 'is', 'less', 'than', 'm', 'nothing', 'to', 'see', 'here']",spy,5,1.0053124400779556,1.009125765730726
+"['ok', 'spy', 'that', 'was', 'a', 'funny', 'joke', 'you', 'can', 'go', 'back', 'up', 'now']",spy,6,1.0053124400779556,1.009125765730726
+"['who', 'bought', 'prpl', 'at', '', 'show', 'yourself']",prpl,4,0.8862889824154362,0.9012986732037256
+"['wanna', 'play', 'baba', 'earning', 'run', '', 'but', 'i', 'know', 'we', 'have', 'a', 'fucking', 'retard', 'in', 'office', 'that s', 'gonna', 'fuck', 'it', 'up', 'for', 'me']",baba,5,1.0185690420743336,1.0403537597484631
+"['just', 'all', 'inned', 'my', 'account', 'on', 'apple', 'calls', 'well', 'what', 'i', 'had', 'left', 'still', 'got', 'metals', 'and', 'spy', 'calls', 'everything', 'way', 'out', 'of', 'the', 'money', 'because', 'retarded', 'but', 'hey', 'here', 'we', 'are']",aapl,3,1.0204928981374435,1.0830793290449314
+"['just', 'all', 'inned', 'my', 'account', 'on', 'apple', 'calls', 'well', 'what', 'i', 'had', 'left', 'still', 'got', 'metals', 'and', 'spy', 'calls', 'everything', 'way', 'out', 'of', 'the', 'money', 'because', 'retarded', 'but', 'hey', 'here', 'we', 'are']",spy,3,1.0053124400779556,1.009125765730726
+"['wmt', 'has', 'my', 'permission', 'to', 'pump', 'up', 'but', 'not', 'hit', '', 'as', 'my', 'calls', 'i m', 'selling', 'that', 'expire', 'today', 'could', 'get', 'hit', 'thanks']",wmt,3,1.0223058720428575,0.9946352564739469
+"['amd', 'you', 'dirty', 'fucking', 'slut', 'get', 'your', 'faggot', 'ass', 'up']",amd,4,0.955908290823718,1.0244468898629115
+"['made', 'a', 'few', 'grand', 'this', 'week', 'of', 'off', 'tsla', 'and', 'aapl', 'might', 'sit', 'out', 'for', 'a', 'few', 'weeks']",aapl,3,1.0204928981374435,1.0830793290449314
+"['spy', 'has', 'been', 'moving', 'down', 'for', 'an', 'hour', 'now', 'but', 'my', '', 'puts', 'aren t', 'gaining', 'any', 'value', 'wtf', 'robinhood']",spy,3,1.0053124400779556,1.009125765730726
+"['my', 'dte', 'aapl', 'puts', 'are', 'getting', 'fuccccckkkeddd']",aapl,4,1.0204928981374435,1.0830793290449314
+"['are', 'we', 'getting', 'uppies', 'or', 'downies', 'for', 'wmt', 'earnings', 'next', 'week']",wmt,4,1.0223058720428575,0.9946352564739469
+"['reading', 'articles', 'on', 'fortnite', 'creators', 'and', 'streamers', 'saying', 'they', 'support', 'fortnite', 'against', 'apple', 'makes', 'me', 'wish', 'tim', 'apple', 'just', 'massacres', 'them', 'all']",aapl,4,1.0204928981374435,1.0830793290449314
+"['we', 'aren t', 'breaching', 'ath', 'w o', 'stimulus', 'news', 'yall', 'can', 'keep', 'those', 'spy', 'calls']",spy,4,1.0053124400779556,1.009125765730726
+"['need', 'to', 'learn', 'to', 'take', 'profit', 'and', 'not', 'expect', 'spy', 'to', 'hit', 'ath', 'going', 'into', 'the', 'weekend', 'pissed', 'of', 'now']",spy,5,1.0053124400779556,1.009125765730726
+"['tfw', 'spy', 'tumbling', 'makes', 'your', 'tech', 'stonks', 'that', 'have', 'already', 'been', 'murdered', 'now', 'slaughtered']",spy,2,1.0053124400779556,1.009125765730726
+"['spy', '', 'just', 'refuses', 'to', 'break']",spy,4,1.0053124400779556,1.009125765730726
+"['saw', 'someone', 'just', 'buy', '', 'spy', 'shares', 'thats', '', 'million']",spy,5,1.0053124400779556,1.009125765730726
+"['', '', 'tesla', 'call', 'elon', 'give', 'me', 'the', '', 'bagger', 'i', 'deserve']",tsla,2,1.1399930639953388,1.2312266729278485
+"['own', 'spy', 'puts', 'and', 'still', 'down', 'big', 'on', 'the', 'day', '', 'nice']",spy,4,1.0053124400779556,1.009125765730726
+"['looking', 'at', 'time', 'and', 'sales', 'on', 'spy', 'someone', 'just', 'bought', '', 'spy', 'shares', 'thats', '', 'mil', 'wtf', 'happened', 'at', '']",spy,4,1.0053124400779556,1.009125765730726
+"['spy', 'really', 'trying', 'to', 'make', 'this', 'week', 'red', 'huh']",spy,4,1.0053124400779556,1.009125765730726
+"['qqq', 'closing', 'flat', 'for', 'the', 'week', 'bullish']",qqq,4,1.001435092461529,1.0320372356530212
+"['ba', 'with', 'bad', 'news', 'again', 'this', 'company', 'is', 'run', 'by', 'fucking', 'morons', 'nbsp', 'federal', 'prosecutors', 'probe', 'boeing', 'executive s', 'contacts', 'with', 'former', 'nasa', 'official', 'on', 'lunar', 'contracts', 'sources', 'say', 'ba']",ba,5,1.0392156932584486,0.9677046827883783
+"['now', 'is', 'when', 'you', 'buy', 'spy', 'calls']",spy,4,1.0053124400779556,1.009125765730726
+"['i', 'have', 'family', 'that', 'work', 'for', 'fortune', '', 'companies', 'and', 'they', 'are', 'still', 'furloughed', 'since', 'march', 'buy', 'spy', 'puts']",spy,3,1.0053124400779556,1.009125765730726
+"['went', 'all', 'in', 'on', 'spy', '', '', 'calls', 'i', 'believe']",spy,3,1.0053124400779556,1.009125765730726
+"['spy', 'calls', 'for', 'pump']",spy,4,1.0053124400779556,1.009125765730726
+"['not', 'only', 'did', 'aapl', 'steal', '', 'from', 'me', 'because', 'they', 'decided', 'to', 'have', 'a', 'red', 'day', 'but', 'i', 'also', 'woke', 'up', 'to', 'my', 'entire', 'apple', 'music', 'library', 'not', 'saved', 'to', 'my', 'phone', 'ie', 'i', 'have', 'to', 'redownload', 'all', 'my', 'music', 'nice']",aapl,5,1.0204928981374435,1.0830793290449314
+"['pulled', 'the', 'plug', 'on', '', 'credit', 'spreads', 'that', 'went', 'itm', 'with', 'min', 'to', 'go', 'for', 'break', 'even', 'fml', 'i', 'hate', 'losing', 'profits', 'right', 'at', 'the', 'end']",plug,4,0.9531772225894187,1.1402116517807135
+"['got', 'double', 'fingerbanged', 'by', 'tim', 'apple', 'and', 'big', 'dick', 'bezos']",aapl,4,1.0204928981374435,1.0830793290449314
+"['spy', 'puts', 'for', 'next', 'week']",spy,3,1.0053124400779556,1.009125765730726
+"['dam', 'i', 'learned', 'about', 'tesla', 'theta', 'the', 'hard', 'way', 'today']",tsla,5,1.1399930639953388,1.2312266729278485
+"['who s', 'holding', 'otm', 'csco', 'leaps']",csco,5,0.9011874580370667,0.994351584769954
+"['up', '', 'today', 'thanks', 'to', 'selling', 'tsla', 'at', 'morning', 'peak', 'spy', '', 'to', 'end', 'the', 'day', 'have', 'a', 'good', 'weekend', 'lads']",spy,5,1.0053124400779556,1.009125765730726
+"['spy', 'got', 'that', 'retard', 'strength', 'bro', 'how', 'much', 'does', 'it', 'bench']",spy,5,1.0053124400779556,1.009125765730726
+"['nvda', 'calls', 'or', 'no']",nvda,4,1.0202704384069294,1.10004333958827
+"['blnk', 'pulled', 'a', 'nio', '', 'from', 'up', '', 'to', 'red', 'what', 'an', 'absolutely', 'shit', 'ending', 'for', 'the', 'week']",blnk,5,0.9289916520636952,0.5762711932898184
+"['blnk', 'pulled', 'a', 'nio', '', 'from', 'up', '', 'to', 'red', 'what', 'an', 'absolutely', 'shit', 'ending', 'for', 'the', 'week']",nio,5,0.9397418060115553,1.07132014860532
+"['come', 'on', 'spy', 'just', 'need', 'you', 'to', 'hit', '', 'by', 'close']",spy,4,1.0053124400779556,1.009125765730726
+"['thank', 'you', 'apple', 'for', 'making', 'me', 'money', 'i', 'just', 'ordered', 'an', 'iphone', '', 'pro', 'max', 'after', 'breaking', 'my', 'samsung', 's', 'earlier']",aapl,3,1.0204928981374435,1.0830793290449314
+"['i', 'love', 'how', 'there s', '', 'buy', 'orders', 'for', 'spy', '', 'just', 'sitting', 'there']",spy,4,1.0053124400779556,1.009125765730726
+"['eod', 'dump', 'and', 'pump', 'on', 'aapl']",aapl,5,1.0204928981374435,1.0830793290449314
+"['really', 'hope', 'this', 'aapl', 'and', 'baba', 'rally', 'are', 'a', 'sneak', 'peak', 'of', 'next', 'week s', 'action', 'bought', 'the', 'dip', 'but', 'jesus', 'christ', 'theta', 'tore', 'me', 'a', 'new', 'asshole', 'today']",aapl,4,1.0204928981374435,1.0830793290449314
+"['really', 'hope', 'this', 'aapl', 'and', 'baba', 'rally', 'are', 'a', 'sneak', 'peak', 'of', 'next', 'week s', 'action', 'bought', 'the', 'dip', 'but', 'jesus', 'christ', 'theta', 'tore', 'me', 'a', 'new', 'asshole', 'today']",baba,4,1.0185690420743336,1.0403537597484631
+"['spy', 'got', 'us', 'on', 'the', 'edge', 'of', 'our', 'seats', 'right', 'till', 'the', 'end', 'of', 'this', 'one']",spy,5,1.0053124400779556,1.009125765730726
+"['either', 'this', 'is', 'the', 'biggest', 'dead', 'cat', 'bounce', 'or', 'the', 'cat', 'just', 'stood', 'up', 'and', 'said', 'it s', 'a', 'prank']",cat,3,1.0311648498523664,0.9926855973193373
+"['lol', 'got', 'out', 'with', 'good', 'last', 'half', 'hour', 'spy', 'call', 'gain']",spy,4,1.0053124400779556,1.009125765730726
+"['loool', 'spy', '', 'hahaha', 'bears', 'r', 'fucked']",spy,5,1.0053124400779556,1.009125765730726
+"['spy', '', 'huge', 'green', 'day']",spy,5,1.0053124400779556,1.009125765730726
+"['i', 'need', 'amazon', 'to', 'announce', 'a', '', 'and', 'for', 'the', 'stock', 'to', 'jump', '']",amzn,4,0.9929691296275333,1.0335223434022196
+"['closed', 'aapl', 'after', 'the', 'news', 'that', 'if', 'apple', 'store', 'removes', 'wechat', 'china', 'will', 'retailate', 'by', 'banning', 'the', 'import', 'of', 'iphones', '', 'of', 'the', 'market', 'was', 'i', 'too', 'paranoid']",aapl,5,1.0204928981374435,1.0830793290449314
+"['wow', 'apple', '', 'climb', '', 'minutes', 'from', 'close', 'my', 'mckesson', 'and', 'apple', 'calls', 'are', 'green', 'af', 'rn']",aapl,3,1.0204928981374435,1.0830793290449314
+"['bought', 'apple', 'call', 'during', 'the', 'bottom', 'genius']",aapl,4,1.0204928981374435,1.0830793290449314
+"['got', 'my', 'acct', 'to', '', 'k', 'this', 'week', 'on', 'tesla', 'calls', 'started', 'with', 'k', 'lost', 'it', 'all', 'today', 'almsot', 'but', 'cashed', 'out', 'at', 'k', 'left', 'on', 'my', 'de', 'tesla', 'calls', 'went', 'all', 'in', 'on', 'spy', 'puts', '', 'de', 'got', 'my', 'account', 'back', 'to', 'k', 'sold', '', 'tesla', 'put', 'spreads', 'for', 'august', '', 'at', 'the', 'bottom', 'today', 'account', 'will', 'be', 'at', 'k', 'if', 'tesla', 'stays', 'over', '', 'next', 'week', 'was', 'already', 'up', 'k', 'by', 'the', 'end', 'of', 'day', 'on', 'the', 'put', 'spread', 'since', 'it', 'went', 'from', '', 'to', '']",tsla,5,1.1399930639953388,1.2312266729278485
+"['got', 'my', 'acct', 'to', '', 'k', 'this', 'week', 'on', 'tesla', 'calls', 'started', 'with', 'k', 'lost', 'it', 'all', 'today', 'almsot', 'but', 'cashed', 'out', 'at', 'k', 'left', 'on', 'my', 'de', 'tesla', 'calls', 'went', 'all', 'in', 'on', 'spy', 'puts', '', 'de', 'got', 'my', 'account', 'back', 'to', 'k', 'sold', '', 'tesla', 'put', 'spreads', 'for', 'august', '', 'at', 'the', 'bottom', 'today', 'account', 'will', 'be', 'at', 'k', 'if', 'tesla', 'stays', 'over', '', 'next', 'week', 'was', 'already', 'up', 'k', 'by', 'the', 'end', 'of', 'day', 'on', 'the', 'put', 'spread', 'since', 'it', 'went', 'from', '', 'to', '']",spy,5,1.0053124400779556,1.009125765730726
+"['so', 'there', 'was', 'somewhere', 'around', '', 'billion', 'dollars', 'worth', 'of', 'spy', 'traded', 'in', 'the', 'last', '', 'minutes', 'how', 'many', 'puts', 'were', 'fucked', 'by', 'that', 'did', 'they', 'pump', 'es', 'at', 'the', 'same', 'time', 'how', 'does', 'that', 'work']",spy,4,1.0053124400779556,1.009125765730726
+"['bad', 'day', 'for', 'me', '', 'loss', 'on', 'today', 'apple', 'call', 'got', 'paper', 'hands', 'sold', 'at', 'a', 'loss', 'would', 'have', 'been', 'less', 'of', 'a', 'loss', 'had', 'i', 'waited', 'closer', 'to', 'eod', 'csco', 'puts', 'traded', 'mostly', 'flat', 'all', 'day', 'don t', 'expire', 'till', 'next', 'week', 'but', 'still', 'down', 'spy', 'calls', 'and', 'puts hedge', 'mostly', 'flat', 'all', 'day', 'expiring', 'next', 'week', 'fuhhhhhkkk']",aapl,5,1.0204928981374435,1.0830793290449314
+"['bad', 'day', 'for', 'me', '', 'loss', 'on', 'today', 'apple', 'call', 'got', 'paper', 'hands', 'sold', 'at', 'a', 'loss', 'would', 'have', 'been', 'less', 'of', 'a', 'loss', 'had', 'i', 'waited', 'closer', 'to', 'eod', 'csco', 'puts', 'traded', 'mostly', 'flat', 'all', 'day', 'don t', 'expire', 'till', 'next', 'week', 'but', 'still', 'down', 'spy', 'calls', 'and', 'puts hedge', 'mostly', 'flat', 'all', 'day', 'expiring', 'next', 'week', 'fuhhhhhkkk']",csco,5,0.9011874580370667,0.994351584769954
+"['bad', 'day', 'for', 'me', '', 'loss', 'on', 'today', 'apple', 'call', 'got', 'paper', 'hands', 'sold', 'at', 'a', 'loss', 'would', 'have', 'been', 'less', 'of', 'a', 'loss', 'had', 'i', 'waited', 'closer', 'to', 'eod', 'csco', 'puts', 'traded', 'mostly', 'flat', 'all', 'day', 'don t', 'expire', 'till', 'next', 'week', 'but', 'still', 'down', 'spy', 'calls', 'and', 'puts hedge', 'mostly', 'flat', 'all', 'day', 'expiring', 'next', 'week', 'fuhhhhhkkk']",spy,5,1.0053124400779556,1.009125765730726
+"['got', 'fucked', 'hard', 'today', 'but', 'at', 'least', 'my', 'apple', 'shares', 'will', 'carry', 'me', 'into', 'valhalla', 'when', 'the', 'shit', 'splits', 'and', 'ends', 'up', 'being', 'worth', '', 'by', 'mid', 'september']",aapl,3,1.0204928981374435,1.0830793290449314
+"['wmt', 'earnings', 'next', 'week', 'anyone']",wmt,4,1.0223058720428575,0.9946352564739469
+"['aapl', 'finna', 'gonna', 'bouta', 'moon']",aapl,9,1.0204928981374435,1.0830793290449314
+"['aapl', 'leaps', 'are', 'free', 'money']",aapl,10,1.0204928981374435,1.0830793290449314
+"['well', 'i', 'avged', 'down', 'now', '', 'of', 'my', 'portfolio', 'is', 'in', 'aapl', 'calls', '']",aapl,10,1.0204928981374435,1.0830793290449314
+"['short', 'iq', 'the', 'new', 'luckin', 'coffee', 'falling', 'like', 'a', 'knife', 'for', 'bad', 'earning', 'and', 'fraud', 'investigation', 'x b', 'china', 'has', 'produced', 'yet', 'another', 'luckin', 'coffee', 'x b', 'iqiyi', 'baidu s', 'video', 'unit', 'discloses', 'sec', 'investigation', 'shares', 'tank', 'iqiyi', 'fraud', 'allegations', 'first', 'raised', 'by', 'short', 'seller', 'wolfpack', 'research', 'being', 'probed', 'by', 'securities', 'regulators', 'https www thestreet com investing iqiyi baidus video unit discloses sec investigation shares tank https www thestreet com investing iqiyi baidus video unit discloses sec investigation shares tank', 'x b', 'chinese', 'netflix style', 'service', 'iqiyi', 'tanks', 'by', '', 'after', 'u s', 'regulators', 'investigate', 'fraud', 'allegations', 'iqiyi', 'announced', 'that', 'the', 'securities', 'and', 'exchange', 'commission', 'sec', 'has', 'launched', 'a', 'probe', 'into', 'the', 'company', 'https www cnbc com iqiyi sec investigation into fraud allegations shares plunge html https www cnbc com iqiyi sec investigation into fraud allegations shares plunge html']",iq,7,0.858671420723857,1.0005260509606224
+"['i', 'was', 'told', 'spy', 'calls', 'are', 'free', 'money']",spy,8,1.0053124400779556,1.009125765730726
+"['spy', 'puts', 'at', 'open', 'spy', 'calls', 'before', 'lunch']",spy,8,1.0053124400779556,1.009125765730726
+"['just', 'bought', '', 'worth', 'of', 'shares', 'of', 'tesla', 'on', 'margin', 'wish', 'me', 'luck', 'retards']",tsla,6,1.1399930639953388,1.2312266729278485
+"['threw', '', 'at', 'prpl', 'calls', 'yesterday', 'after', 'that', 'massive', 'yolo', 'of', 'm', 'on', 'this', 'sub', 'i', 'can', 'confirm', 'she s', 'not', 'looking', 'good', 'fellas']",prpl,7,0.8862889824154362,0.9012986732037256
+"['buy', 'the', 'aapl', 'dip']",aapl,8,1.0204928981374435,1.0830793290449314
+"['apple', 'pls', 'go', 'to', '', 'or', 'i', 'can t', 'play', 'this', 'game', 'anymore']",aapl,7,1.0204928981374435,1.0830793290449314
+"['it s', 'become', 'clear', 'that', 'the', 'ez', 'mode', 'market', 'is', 'officially', 'over', 'back', 'to', 'ath', 'back', 'to', 'spy', '', 'days', 'back', 'to', 'range', 'bound', 'flat', 'nonsense', 'no', 'moon', 'in', 'the', 'sky', 'anymore']",spy,6,1.0053124400779556,1.009125765730726
+"['didn t', 'expect', 'tesla', 'to', 'just', 'trade', 'flat', 'all', 'day', 'this', 'happens', 'every', 'time', 'i', 'buy', 'calls', 'rip']",tsla,6,1.1399930639953388,1.2312266729278485
+"['getting', 'eiffel', 'towered', 'by', 'slv', 'and', 'amd', 'rn']",amd,7,0.955908290823718,1.0244468898629115
+"['why', 'apple', 'people', 'got', 'bored', 'of', 'apple', '']",aapl,6,1.0204928981374435,1.0830793290449314
+"['vix', 'and', 'spy', 'green', 'spooky', '']",spy,8,1.0053124400779556,1.009125765730726
+"['you', 'fuckin', 'dte', 'c', 'tesla', 'cunts', 'can', 'suck', 'it', 'if', 'i', 'had', 'listened', 'to', 'this', 'it', 'would', 'have', 'interrupted', 'my', 'boat', 'time', 'this', 'weekend', 'thank', 'fuck', 'i', 'don t', 'take', 'any', 'advice', 'from', '', 'account', 'robinhoodies']",tsla,6,1.1399930639953388,1.2312266729278485
+"['oh', 'my', 'fucking', 'god', 'aapl', 'recovering', 'fuck', 'those', 'guys', 'who', 'said', 'not', 'to', 'buy', 'that', 'dip']",aapl,9,1.0204928981374435,1.0830793290449314
+"['holy', 'shit', 'i', 'didn t', 'realize', 'rkt', 'was', 'a', 'mortgage', 'loan', 'company', 'i', 'thought', 'it', 'was', 'an', 'spce', 'type', 'there', 'goes', '', 'yolo']",spce,10,1.0043313441624337,0.894011663431317
+"['gonna', 'buy', 'k', 'worth', 'of', '', 'calls', 'at', 'open', 'nvidia', '', 'tsla', '', 'aapl', '', 'baba', '']",aapl,7,1.0204928981374435,1.0830793290449314
+"['gonna', 'buy', 'k', 'worth', 'of', '', 'calls', 'at', 'open', 'nvidia', '', 'tsla', '', 'aapl', '', 'baba', '']",baba,7,1.0185690420743336,1.0403537597484631
+"['get', 'in', 'gild', 'now', '', 'fda', 'approval', 'for', 'filgotinib', 'coming', 'next', 'wednesday', 'if', 'it', 'gets', 'approved', 'i m', 'a', 'millionaire', 'it', 'already', 'got', 'approved', 'in', 'the', 'eu', 'and', 'we', 'all', 'know', 'the', 'fda', 'is', 'worse', 'than', 'the', 'eu s', 'regulatory', 'body', 'so', 'they', 'should', 'approve', 'it', 'hands', 'down', 'i m', 'also', 'a', 'dentist', 'who', 'thinks', 'he s', 'a', 'doctor', 'edit', 'it', 'never', 'hurts', 'to', 'throw', 'a', '', 'into', 'fda', 'plays', 'if', 'you', 'hit', 'it', 'you', 'have', 'an', 'instant', '', 'bagger', 'if', 'you', 'don t', 'you', 'just', 'lose', '', 'no', 'biggie']",gild,6,0.99060017394898,0.9766484461491343
+"['woke', 'up', 'this', 'morning', 'to', 'find', 'that', 'qqq', 'grew', 'in', 'value', 'and', 'a', 'girl', 'matched', 'me', 'on', 'tinder', 'tech', 'you', 'beautiful', 'bastard', 'don t', 'dump', 'on', 'me', 'until', 'after', 'i', 'close', 'my', 'put', 'credit', 'spreads', 'the', 'girl', 'probably', 'marketing', 'her', 'twitch', 'and', 'other', 'accounts', 'i', 'expect', 'to', 'get', 'unmatched', 'in', 'the', 'next', 'couple', 'of', 'hours', 'because', 'that s', 'the', 'drill']",qqq,6,1.001435092461529,1.0320372356530212
+"['prpl', 'thanos', 'snapping', 'everyone s', 'calls']",prpl,7,0.8862889824154362,0.9012986732037256
+"['msft', 'needs', 'to', 'charge', '', 'fee', 'on', 'all', 'purchases', 'made', 'on', 'windows', 'os', 'they', 'would', 'moon', 'like', 'aapl']",msft,7,0.9869136083831459,1.0228729034365864
+"['msft', 'needs', 'to', 'charge', '', 'fee', 'on', 'all', 'purchases', 'made', 'on', 'windows', 'os', 'they', 'would', 'moon', 'like', 'aapl']",aapl,7,1.0204928981374435,1.0830793290449314
+"['apple', 'down', 'msft', 'up', 'today', 'will', 'be', 'biblical']",aapl,6,1.0204928981374435,1.0830793290449314
+"['apple', 'down', 'msft', 'up', 'today', 'will', 'be', 'biblical']",msft,6,0.9869136083831459,1.0228729034365864
+"['this', 'aapl', 'dump', 'is', 'fake', 'right']",aapl,6,1.0204928981374435,1.0830793290449314
+"['put', 'my', 'entire', 'account', 'into', 'spy', 's', 'expiring', 'today', '', 'contracts', 'near', 'close', 'yesterday', 'need', 'spy', 'to', 'go', 'back', 'up']",spy,6,1.0053124400779556,1.009125765730726
+"['bought', 'the', 'dip', 'tesla', 'is', 'gonna', 'moon']",tsla,6,1.1399930639953388,1.2312266729278485
+"['apple', 'to', 'release', 'new', 'iphones', 'oct', '', 'with', 'g']",aapl,6,1.0204928981374435,1.0830793290449314
+"['can', 'tesla', 'break', '', 'ffs', 'it s', 'acting', 'like', 'it s', '']",tsla,5,1.1399930639953388,1.2312266729278485
+"['anyone', 'grab', 'some', 'juicy', 'aapl', 'c', 'for', 'end', 'of', 'month', 'grabbed', 'this', 'morning', 'at', 'the', 'dip', 'unfortunately', 'didn t', 'grab', 'at', 'the', 'dip', 'of', 'the', 'dip']",aapl,6,1.0204928981374435,1.0830793290449314
+"['aapl', 'dip', 'buying', 'printing']",aapl,6,1.0204928981374435,1.0830793290449314
+"['tesla', 'gonna', 'rally', 'qqq', 'bout', 'to', 'go', 'green', 'lets', 'gooo', 'baby', 'x b', 'mm', 'will', 'get', 'tired', 'of', 'holding', 'it', 'down']",tsla,7,1.1399930639953388,1.2312266729278485
+"['tesla', 'gonna', 'rally', 'qqq', 'bout', 'to', 'go', 'green', 'lets', 'gooo', 'baby', 'x b', 'mm', 'will', 'get', 'tired', 'of', 'holding', 'it', 'down']",qqq,7,1.001435092461529,1.0320372356530212
+"['trump', 'pump', 'inc', 'we', 'breaking', 'ath', 'in', 'spy']",spy,6,1.0053124400779556,1.009125765730726
+"['buy', 'tesla', 'calls', 'today', 'thank', 'me', 'on', 'monday']",tsla,5,1.1399930639953388,1.2312266729278485
+"['aapl', 'saw', 'its', 'own', 'reflection', 'this', 'morning', 'and', 'said', 'wait phamp', 'it']",aapl,7,1.0204928981374435,1.0830793290449314
+"['fun', 'fact', 'the', 'gold silver', 'ratio', 'was', 'set', 'in', 'us', 'law', 'to', 'be', '', 'if', 'we', 'hadnt', 'moved', 'off', 'the', 'gold', 'standard', 'silver', 'would', 'be', 'at', '', 'at', 'spot', 'gold', 'price', 'everyone', 'should', 'hold', 'slv']",spot,6,0.9993240360840108,1.0585983885817187
+"['tesla', '', 'option', 'call', 'for', '', 'million', '', 'day']",tsla,6,1.1399930639953388,1.2312266729278485
+"['bought', 'that', 'fat', 'apple', 'dip', 'pls', 'no', 'bull', 'trap']",aapl,9,1.0204928981374435,1.0830793290449314
+"['can t', 'watch', 'with', 'mr', 'no', 'personality', 'on', 'from', 'mangna', 'whatever', 'the', 'google', 'investment', 'search', 'deal', 'gonna', 'get', 'more', 'coffee', 'and', 'hope', 'this', 'doesn t', 'last', 'long']",goog,3,1.013818048935322,1.042727266210905
+"['eh', 'little', 'volume', 'on', 'tesla', 'in', 'pm ah', 'has', 'such', 'a', 'significant', 'impact', 'on', 'price', 'change', 'i m', 'about', 'to', 'buy', 'this', 'morning', 'dip', 'so', 'bad']",tsla,3,1.1399930639953388,1.2312266729278485
+"['prpl', 'going', 'to', 'tank']",prpl,3,0.8862889824154362,0.9012986732037256
+"['why', 'spy', 'red']",spy,3,1.0053124400779556,1.009125765730726
+"['nvda', 'to', 'the', 'moon', 'today', 'er', 'next', 'week']",nvda,3,1.0202704384069294,1.10004333958827
+"['lmfao', 'idk', 'how', 'i', 'did', 'it', 'but', 'i', 'just', 'kept', 'jerking', 'off', 'since', 'spy', 'was', 'at', '', 'and', 'said', 'i', 'won t', 'stop', 'till', 'we re', 'green']",spy,3,1.0053124400779556,1.009125765730726
+"['anyone', 'buying', 'tesla', 'calls', 'today', 'if', 'there', 'is', 'a', 'dip', 'or', 'too', 'risky']",tsla,3,1.1399930639953388,1.2312266729278485
+"['my', 'amd', '', 'calls', 'going', 'to', 'need', 'a', 'rocket', 'ship', 'at', 'open', 'to', 'hit']",amd,3,0.955908290823718,1.0244468898629115
+"['prpl', 'with', 'the', 'analyst', 'upgrades', '']",prpl,3,0.8862889824154362,0.9012986732037256
+"['you', 'all', 'watching', 'aapl', 'pm', 'rn']",aapl,3,1.0204928981374435,1.0830793290449314
+"['guys', 'i', 'see', 'tesla', 'is', 'up', 'right', 'now', 'i', 'have', 'a', 'c', '', 'should', 'i', 'sell', 'at', 'open', 'or', 'what']",tsla,3,1.1399930639953388,1.2312266729278485
+"['if', 'atvi', 'volume', 'is', 'shit', 'again', 'today', 'i m', 'gonna', 'need', 'them', 'to', 'manipulate', 'the', 'price', 'up', 'rather', 'than', 'down']",atvi,3,0.9753730824725629,1.0151274347916264
+"['tesla', '', 'at', 'open', 'c mon']",tsla,3,1.1399930639953388,1.2312266729278485
+"['how', 'rare', 'is', 'f', 'l', 'a', 't', 'f', 'r', 'i', 'd', 'a', 'y', 'pretty', 'sure', 'it s', 'impossible', 'either', 'we', 'drill', 'hard', 'or', 'we', 'aths']",f,3,1.018813331014704,0.955523679754513
+"['lol', 'prpl', '', '', 'pm']",prpl,3,0.8862889824154362,0.9012986732037256
+"['hopefully', 'those', 'big', 'red', 'candle', 'sell', 'off', '', 'will', 'sacrifice', 'a', 'quick', 'day', 'trade', 'for', 'spy', 'puts', 'k', 'and', 'enjoy', 'my', 'weekend']",spy,3,1.0053124400779556,1.009125765730726
+"['i', 'have', 'prpl', '', 'spreads', 'for', 'september', 'that', 'may', 'not', 'be', 'super', 'fucked']",prpl,3,0.8862889824154362,0.9012986732037256
+"['ccl', 'price', 'target', 'eod']",ccl,3,1.0765483918044534,0.9753661233051328
+"['tesla', 'op']",tsla,3,1.1399930639953388,1.2312266729278485
+"['amazon', 'and', 'goole', 'split', 'pleae']",amzn,3,0.9929691296275333,1.0335223434022196
+"['is', 'aapl', 'kill']",aapl,3,1.0204928981374435,1.0830793290449314
+"['okay', 'spy', 'gonna', 'need', 'that', 'pump', 'today']",spy,3,1.0053124400779556,1.009125765730726
+"['fb', 'on', 'meth']",fb,3,0.97463058463749,1.01791777763248
+"['so', 'aapl', 'profit', 'taking', 'at', 'open', 'huh']",aapl,3,1.0204928981374435,1.0830793290449314
+"['lol', 'all', 'the', 'red', 'besides', 'tesla']",tsla,3,1.1399930639953388,1.2312266729278485
+"['contemplating', 'doubling', 'down', 'my', 'my', '', 'bac', 'calls', 'retarded']",bac,3,1.0060813443957293,0.9585571190019107
+"['baba', 'announced', 'to', 'join', 'hang', 'seng', 'immediately', 'drops', 'apparently', 'stocks', 'only', 'go', 'up', 'after', 'split', 'announcements fuck', 'this', 'jd', 'earnings', 'must', 'have', 'leaked', 'lol']",baba,3,1.0185690420743336,1.0403537597484631
+"['baba', 'announced', 'to', 'join', 'hang', 'seng', 'immediately', 'drops', 'apparently', 'stocks', 'only', 'go', 'up', 'after', 'split', 'announcements fuck', 'this', 'jd', 'earnings', 'must', 'have', 'leaked', 'lol']",jd,3,1.0071405785302372,1.1952814268147618
+"['wmt', 'is', 'a', 'beast', 'n', 'i', 'love', 'it']",wmt,3,1.0223058720428575,0.9946352564739469
+"['amzn', 'if', 'you', 'can', 'break', 'out', 'of', 'this', '', 'bullshit', 'it', 'will', 'be', 'greatly', 'appreciated']",amzn,3,0.9929691296275333,1.0335223434022196
+"['ba', 'can', 'suck', 'my', 'c ck']",ba,3,1.0392156932584486,0.9677046827883783
+"['gotta', 'love', 'the', 'random', 'nio', 'drilling', 'paper', 'hand', 'fags']",nio,3,0.9397418060115553,1.07132014860532
+"['fb', '']",fb,3,0.97463058463749,1.01791777763248
+"['k', 'in', 'spy', 'calls', 'for', 'next', 'friday', 'what', 'could', 'go', 'wrong']",spy,3,1.0053124400779556,1.009125765730726
+"['amd', 'has', 'commenced']",amd,3,0.955908290823718,1.0244468898629115
+"['fucking', 'amazon', 'takes', '', 'weeks', 'to', 'ship', 'my', 'package', 'wtf']",amzn,3,0.9929691296275333,1.0335223434022196
+"['my', 'spy', '', 'calls', 'went', 'to', '', 'cents', 'ama']",spy,3,1.0053124400779556,1.009125765730726
+"['can', 'someone', 'let', 'me', 'hold', '', 'grand', 'so', 'i', 'can', 'buy', 'an', 'aapl', 'leap']",aapl,3,1.0204928981374435,1.0830793290449314
+"['prpl', '', '']",prpl,3,0.8862889824154362,0.9012986732037256
+"['well', 'is', 'my', 'apple', 'calls', 'tucked']",aapl,3,1.0204928981374435,1.0830793290449314
+"['prpl', 'green', 'today', 'or', 'i ll', 'definitely', 'let', 'my', 'calls', 'expire', 'worthless']",prpl,3,0.8862889824154362,0.9012986732037256
+"['lol', 'kind', 'of', 'want', 'to', 'buy', 'tesla', 'calls', 'now', 'but', 'i', 'probably', 'shouldn t', 'fomo', 'into', 'anything', 'in', 'the', 'first', 'half', 'hour', 'been', 'screwed', 'doing', 'that', 'way', 'too', 'many', 'times']",tsla,3,1.1399930639953388,1.2312266729278485
+"['rip', 'nio']",nio,3,0.9397418060115553,1.07132014860532
+"['of', 'course', 'apple', 'tanks', 'after', 'i', 'had', 'just', 'bought', 'calls', '']",aapl,3,1.0204928981374435,1.0830793290449314
+"['spy', 'is', 'gey']",spy,3,1.0053124400779556,1.009125765730726
+"['uber', 'keeeeep', 'on', 'drilling']",uber,3,0.9076876192525826,1.0141447470582754
+"['here', 'i', 'thought', 'it', 'was', 'an', 'aapl', 'dip', 'at', '']",aapl,3,1.0204928981374435,1.0830793290449314
+"['kill', 'the', 'spy']",spy,3,1.0053124400779556,1.009125765730726
+"['ouchy', 'thank', 'god', 'i', 'got', 'out', 'of', 'amazon']",amzn,3,0.9929691296275333,1.0335223434022196
+"['uber', 'is', 'dying', 'yay']",uber,3,0.9076876192525826,1.0141447470582754
+"['aapl', 'rest', 'day', 'was', 'clearly', 'evident', 'imo', 'puts', 'weren t', 'worth', 'trying', 'but', 'she', 'gonna', 'have', 'a', 'big', 'week', 'next', 'week', 'tl dr', 'get', 'in', 'losers', 'we', 'buy', 'the', 'aapl', 'dip']",aapl,3,1.0204928981374435,1.0830793290449314
+"['damn', 'if', 'we', 'do', 'slowly', 'bleed', 'until', 'eod', 'tho', 'i m', 'really', 'contemplating', 'the', 'yolo', 'on', 'spy', 'calls']",spy,3,1.0053124400779556,1.009125765730726
+"['wheres', 'all', 'the', 'prpl', 'loss', 'porn']",prpl,3,0.8862889824154362,0.9012986732037256
+"['wow', 'nio', 'free', 'fall', 'i', 'm', 'scared']",nio,3,0.9397418060115553,1.07132014860532
+"['the', 'spy', 'is', 'down', '', 'and', 'an', '', '', 'put', 'is', 'only', '', 'just', 'a', 'few', 'cents', 'away', 'from', 'being', 'itm', 'seems', 'like', 'a', 'rally', 'is', 'priced', 'in', 'boys']",spy,3,1.0053124400779556,1.009125765730726
+"['wmt', '', 'finally', '']",wmt,3,1.0223058720428575,0.9946352564739469
+"['spy', 'green', 'tho']",spy,3,1.0053124400779556,1.009125765730726
+"['spy', 'really', 'threw', 'me', 'for', 'a', 'loop', 'this', 'morning']",spy,3,1.0053124400779556,1.009125765730726
+"['feeling', 'cute', 'might', 'buy', '', 'shares', 'of', 'pfe', 'to', 'sell', 'covered', 'calls']",pfe,3,0.9872892864653895,1.0228887239975504
+"['nvda', 'and', 'amd', 'keeping', 'me', 'green']",nvda,3,1.0202704384069294,1.10004333958827
+"['nvda', 'and', 'amd', 'keeping', 'me', 'green']",amd,3,0.955908290823718,1.0244468898629115
+"['lol', 'after', 'all', 'that', 'hubbub', 'prpl', 'is', 'currently', 'only', 'down', '']",prpl,3,0.8862889824154362,0.9012986732037256
+"['lmao', 'all', 'these', 'bears', 'got', 'blue', 'balls', 'for', 'prpl', 'loss', 'porn', 'it s', 'going', 'to', 'be', '', 'eod', 'hahahahahahah']",prpl,3,0.8862889824154362,0.9012986732037256
+"['down', '', 'on', 'the', 'week', 'just', 'a', 'steady', 'bleed', 'out', 'i', 'have', 'had', 'absolutely', 'no', 'feel', 'this', 'week', 'and', 'ignored', 'tesla', 'wednesday', 'taking', 'today', 'off', 'but', 'i ll', 'be', 'back', 'monday', 'good', 'luck', 'everyone']",tsla,3,1.1399930639953388,1.2312266729278485
+"['msft', '', 'by', 'december']",msft,3,0.9869136083831459,1.0228729034365864
+"['buy', 'the', 'aapl', 'dip']",aapl,3,1.0204928981374435,1.0830793290449314
+"['am', 'i', 'finally', 'gonna', 'buy', 'an', 'aapl', 'dip']",aapl,3,1.0204928981374435,1.0830793290449314
+"['if', 'prpl', 'goes', 'green', 'after', 'i', 'sold', 'all', 'my', 'calls', 'i', 'am', 'going', 'to', 'laugh', 'and', 'cry', 'lost', '', 'of', 'my', 'portfolio', 'saddest', 'part', 'the', 'only', 'contracts', 'i', 'have', 'open', 'are', 'mreit', 'leaps']",prpl,3,0.8862889824154362,0.9012986732037256
+"['anyone', 'else', 'think', 'shop', 'is', 'the', 'next', 'split', 'announcement']",shop,3,0.9363981274066943,1.0187768208654375
+"['i ve', 'gotten', 'like', '', 'prpl', 'ads', 'today', 'just', 'taunting', 'me']",prpl,3,0.8862889824154362,0.9012986732037256
+"['ba', 'gaps', 'up', 'outta', 'nowhere']",ba,3,1.0392156932584486,0.9677046827883783
+"['msft', 'what', 'is', 'you', 'doing', 'bb']",msft,3,0.9869136083831459,1.0228729034365864
+"['msft', 'what', 'is', 'you', 'doing', 'bb']",bb,3,0.9856263456942191,0.9733606329114172
+"['cvs', 'moon', 'mission', 'starts', 'today']",cvs,3,1.0118643162946055,0.9947105474647276
+"['goog', 'absolutely', 'the', 'shittiest', 'faang', 'stock']",goog,3,1.013818048935322,1.042727266210905
+"['the', 'fact', 'ba', 'keeps', 'going', 'up', 'is', 'incredible', 'boeing', 'hasn t', 'had', 'a', 'positive', 'news', 'headline', 'in', 'ages']",ba,3,1.0392156932584486,0.9677046827883783
+"['doubled', 'down', 'on', 'aapl', 'calls', 'don t', 'fail', 'me', 'now', '']",aapl,3,1.0204928981374435,1.0830793290449314
+"['you', 'guys', 'made', 'me', 'actually', 'look', 'up', 'ba', 'over', 'a', '', 'gain']",ba,3,1.0392156932584486,0.9677046827883783
+"['the', 'market', 'is', 'a', 'bubble', 'but', 'it', 'could', 'go', 'higher', 'but', 'it', 'also', 'could', 'drop', 'we', 'have', 'no', 'fucking', 'clue', 'either', '', 'cnbc', 'fox', 'business']",fox,3,1.0369477532670919,1.0132451083067466
+"['', 'spy', 'goes', 'green', 'right', 'on', 'time']",spy,3,1.0053124400779556,1.009125765730726
+"['ok', 'not', 'funny', 'baba', 'stop', 'joking', 'around']",baba,3,1.0185690420743336,1.0403537597484631
+"['no', 'amazon', 'not', 'like', 'this', 'please', 'jeff', 'do', 'something']",amzn,3,0.9929691296275333,1.0335223434022196
+"['', 'stupid', 'price', 'me', 'not', 'like', '', 'wmt']",wmt,3,1.0223058720428575,0.9946352564739469
+"['i', 'can t', 'believe', 'i', 'bought', 'apple', 'calls', 'at', 'open', 'and', 'went', 'back', 'to', 'sleep']",aapl,3,1.0204928981374435,1.0830793290449314
+"['is', 'baba', 'c', 'the', 'play', 'they', 'just', 'were', 'announced', 'they', 'will', 'be', 'added', 'to', 'a', 'new', 'chinese', 'index', 'and', 'have', 'earnings', 'on', 'the', 'th', 'tanking', 'today', 'might', 'be', 'the', 'last', 'time', 'to', 'buy', 'what', 'am', 'i', 'missing', 'here', 'i', 'think', 'trumps', 'threats', 'are', 'toothless', 'as', 'we', 'need', 'to', 'trade', 'with', 'china']",baba,3,1.0185690420743336,1.0403537597484631
+"['bought', 'some', 'otm', 'qqq', 'calls', 'and', 'called', 'it', 'a', 'day', 'good', 'luck', 'everyone']",qqq,3,1.001435092461529,1.0320372356530212
+"['lulu', 'isn t', 'rebounding', 'yet', 'don t', 'buy', 'calls']",lulu,3,1.0194177413285284,1.0531201097464944
+"['i', 'thought', 'tim', 'apple', 'bought', 'all', 'the', 'dips', 'with', 'his', 'billion', 'dollars', 'where', 'are', 'you', 'tim']",aapl,3,1.0204928981374435,1.0830793290449314
+"['those', 'that', 'dont', 'have', 'faith', 'in', 'tim', 'aapl', 'rn', 'deserved', 'to', 'get', 'cut', 'off', 'smh', 'hoolddd']",aapl,3,1.0204928981374435,1.0830793290449314
+"['this', 'is', 'my', 'daily', 'go', 'fuck', 'yourself', 'amazon', 'comment']",amzn,3,0.9929691296275333,1.0335223434022196
+"['baba', '', 'next', 'week']",baba,3,1.0185690420743336,1.0403537597484631
+"['sold', 'my', 'aapl', 'puts', 'waiting', 'for', 'botom', 'to', 'buy', 'tech', 'calls']",aapl,3,1.0204928981374435,1.0830793290449314
+"['will', 'new', 'cod', 'announcement', 'give', 'atvi', 'any', 'pop', 'at', 'all']",atvi,3,0.9753730824725629,1.0151274347916264
+"['alrighty', 'drained', 'all', 'my', 'powder', 'on', 'aapl', 'dip', 'c', 's', 'and', 'c', 's', 'x b', 'now', 'we', 'wait']",aapl,3,1.0204928981374435,1.0830793290449314
+"['really', 'want', 'to', 'get', 'a', 'p', 'spy', '', 'after', 'seeing', 'all', 'the', 'volume', 'it', 'has']",spy,3,1.0053124400779556,1.009125765730726
+"['apple', 'dragging', 'my', 'whole', 'shit', 'down']",aapl,3,1.0204928981374435,1.0830793290449314
+"['tesla', 'about', 'to', 'fuck', 'some', 'bear', 'butts']",tsla,3,1.1399930639953388,1.2312266729278485
+"['baba', 'will', 'probably', 'break', '', 'before', 'earnings', 'or', '', 'after']",baba,3,1.0185690420743336,1.0403537597484631
+"['intel', 'about', 'to', 'take', 'off']",intc,3,1.0143152123894779,1.0112867600909317
+"['damn', 'it', 'my', 'morning', 'meeting', 'went', 'long', 'and', 'i', 'missed', 'the', 'tesla', 'dip', 'think', 'with', 'the', 'increase', 'in', 'premium', 'costs', 'maybe', 'i ll', 'just', 'not', 'fomo', 'in', 'today', 'no', 'daytrades', 'left', 'either']",tsla,3,1.1399930639953388,1.2312266729278485
+"['cmon', 'spy', 'it s', 'right', 'there', '']",spy,3,1.0053124400779556,1.009125765730726
+"['plug', 'calls', 'and', 'ups', 'calls', 'printing']",plug,3,0.9531772225894187,1.1402116517807135
+"['', 'on', 'prpl', 'c', '', 'it', 'be', 'like', 'that', 'sometime']",prpl,3,0.8862889824154362,0.9012986732037256
+"['algos', 'are', 'pumping', 'spy', 'little', 'by', 'little', 'hoping', 'that', 'retail', 'buys', 'their', 'bags', 'don t', 'fall', 'for', 'their', 'tricks']",spy,3,1.0053124400779556,1.009125765730726
+"['prpl', 'actually', 'was', 'upgraded', 'across', 'the', 'board', 'wtf']",prpl,3,0.8862889824154362,0.9012986732037256
+"['anyone', 'long', 'on', 'spce']",spce,3,1.0043313441624337,0.894011663431317
+"['goddammit', 'tesla', 'just', 'unleash', 'will', 'you']",tsla,3,1.1399930639953388,1.2312266729278485
+"['atvi', 'guh', '']",atvi,3,0.9753730824725629,1.0151274347916264
+"['why', 'is', 'there', 'so', 'much', 'bac', '', 'volume']",bac,3,1.0060813443957293,0.9585571190019107
+"['oh', 'no', 'amzn', 'being', 'investigated', 'in', 'canada']",amzn,3,0.9929691296275333,1.0335223434022196
+"['spy', 'is', 'trynna', 'decide', 'which', 'way', 'it', 'wants', 'to', 'go']",spy,3,1.0053124400779556,1.009125765730726
+"['amd', 'calls', 'all', 'the', 'way', 'it s', 'gonna', 'moon', 'after', 'this', 'low']",amd,3,0.955908290823718,1.0244468898629115
+"['tesla', 'does', 'not', 'give', 'a', 'shit', 'will', 'git', '', 'today', 'if', 'we', 'see', 'any', 'qqq', 'rally']",tsla,3,1.1399930639953388,1.2312266729278485
+"['tesla', 'does', 'not', 'give', 'a', 'shit', 'will', 'git', '', 'today', 'if', 'we', 'see', 'any', 'qqq', 'rally']",qqq,3,1.001435092461529,1.0320372356530212
+"['getting', 'cucked', 'all', 'week', 'by', 'amd']",amd,3,0.955908290823718,1.0244468898629115
+"['my', 'services', 'behind', 'wendy s', 'will', 'be', 'free', 'tonight', 'if', 'spy', 'will', 'drop', 'more', 'than', '']",spy,3,1.0053124400779556,1.009125765730726
+"['it s', 'crazy', 'if', 'you', 'look', 'at', 'spy', 'chart', 'today', 'you', 'can', 'literally', 'see', 'where', 'i', 'sold', 'my', 'puts', 'at', 'buy', 'high', 'sell', 'low', 'is', 'the', 'new', 'trend', 'i m', 'the', 'king', 'of', 'this']",spy,3,1.0053124400779556,1.009125765730726
+"['aapl', 'wont', 'let', 'me', 'play', 'anymore']",aapl,3,1.0204928981374435,1.0830793290449314
+"['is', 'spy', 'bugged', 'it s', 'friday', 'it s', 'a', 'green', 'day']",spy,3,1.0053124400779556,1.009125765730726
+"['remember', 'vtiqs', 'huge', 'rise', 'into', 'nkla', 'nbsp', 'thats', '', 'except', 'they', 'actually', 'have', 'products', 'not', 'renders']",nkla,3,1.1048077108239287,0.8399829278660834
+"['wow', 'the', 'comments', 'in', 'here', 'made', 'me', 'think', 'aapl', 'was', 'crashing', 'below', '', 'nope', 'just', 'down', '', 'after', 'a', 'moon', 'mission', 'lol']",aapl,3,1.0204928981374435,1.0830793290449314
+"['here s', 'to', 'another', 'day', 'of', 'making', 'all', 'the', 'wrong', 'moves', 'and', 'getting', 'your', 'ass', 'bailed', 'out', 'by', 'tesla', '', 'boys']",tsla,3,1.1399930639953388,1.2312266729278485
+"['who', 'is', 'still', 'holding', 'prpl']",prpl,3,0.8862889824154362,0.9012986732037256
+"['fb', 'c', '', 'book', 'it', 'zuck']",fb,3,0.97463058463749,1.01791777763248
+"['find', 'the', 'bottom', 'apple', 'jesus']",aapl,3,1.0204928981374435,1.0830793290449314
+"['damn', 'i', 'bought', 'intc', 'calls', 'for', 'the', 'wrong', 'week', 'smh', '', 'calls', 'next', 'week', 'have', 'massive', 'volume', 'today', 'compared', 'to', 'all', 'other', 'strikes', 'for', 'calls puts', 'over', 'k', 'in', 'less', 'than', '', 'hours']",intc,3,1.0143152123894779,1.0112867600909317
+"['is', 'this', 'the', 'aapl', 'dip', 'to', 'buy', 'or', 'is', 'the', 'hype', 'done']",aapl,3,1.0204928981374435,1.0830793290449314
+"['lol', 'that', 'spy', 'fakeout', 'today s', 'gonna', 'be', 'a', 'green', 'day', 'bois']",spy,3,1.0053124400779556,1.009125765730726
+"['wmt', 'gang', 'wait', 'for', '', '']",wmt,3,1.0223058720428575,0.9946352564739469
+"['aapl', 'yuuuuuuuuuup']",aapl,3,1.0204928981374435,1.0830793290449314
+"['spy', 'pretending', 'to', 'be', 'unshortable', 'squeezing', 'them', 'bottom', 'shorts', 'every', 'day', 'like', 'a', 'mofo']",spy,3,1.0053124400779556,1.009125765730726
+"['bro', 'i m', 'just', 'so', 'proud', 'of', 'spy', 'do', 'ya', 'nibbas', 'remember', 'march', '', 'fuck', 'how', 'long', 'we', 'have', 'come']",spy,3,1.0053124400779556,1.009125765730726
+"['holy', 'fucking', 'nut', 'apple']",aapl,3,1.0204928981374435,1.0830793290449314
+"['gunna', 'get', 'rich', 'af', 'off', 'these', 'intel', 'leaps', 'bruh']",intc,3,1.0143152123894779,1.0112867600909317
+"['low', 'energy', 'weak', 'volume', 'crooked', 'spy']",spy,3,1.0053124400779556,1.009125765730726
+"['shop', 'finally', 'realizes', 'it s', 'not', 'worth', 'k', 'a', 'share']",shop,3,0.9363981274066943,1.0187768208654375
+"['why', 'are', 'puts', 'so', 'much', 'more', 'expensive', 'than', 'calls', 'on', 'spy']",spy,3,1.0053124400779556,1.009125765730726
+"['spy', 'cup', 'and', 'handle', 'forming']",spy,3,1.0053124400779556,1.009125765730726
+"['let s', 'go', 'wmt', 'i', 'need', 'a', 'miracle', 'for', 'my', 'c', '', '']",wmt,3,1.0223058720428575,0.9946352564739469
+"['come', 'on', 'apple', 'wtf']",aapl,3,1.0204928981374435,1.0830793290449314
+"['the', 'prpl', 'puts', 'i', 'sold', 'actually', 'got', 'me', 'profits', 'because', 'iv', 'crushed', 'so', 'hard', 'theta', 'gang', 'for', 'life']",prpl,3,0.8862889824154362,0.9012986732037256
+"['apple', 'is', 'nuts', 'i m', 'so', 'dumb', 'for', 'not', 'averaging', 'down']",aapl,3,1.0204928981374435,1.0830793290449314
+"['why', 'is', 'ba', 'mooning']",ba,3,1.0392156932584486,0.9677046827883783
+"['anyone', 'still', 'playing', 'amd', 'or', 'just', 'me', 'we', 'hoping', 'for', '', 'still', 'or', '', 'or', 'something']",amd,3,0.955908290823718,1.0244468898629115
+"['baba', 'literal', 'trash']",baba,3,1.0185690420743336,1.0403537597484631
+"['atvi', 'lots', 'of', 'buyers', 'volume', 'much', 'better', 'still', 'going', 'down', 'edit', 'nvm', 'it', 'just', 'popped', '', 'cents']",atvi,3,0.9753730824725629,1.0151274347916264
+"['am', 'i', 'retarded', 'for', 'holding', 'my', '', 'percent', 'up', 'jan', '', 'nvda', 'calls', 'i', 'hope', 'so']",nvda,3,1.0202704384069294,1.10004333958827
+"['the', 'great', 'apple', 'comeback']",aapl,3,1.0204928981374435,1.0830793290449314
+"['having', 'push', 'notifications', 'on', 'for', 'elon', 'when', 'you', 'have', 'a', 'tesla', 'option', 'is', 'honestly', 'why', 'i', 'play', 'tesla', 'you', 'never', 'know', 'what', 'you re', 'gonna', 'get']",tsla,3,1.1399930639953388,1.2312266729278485
+"['if', 'you', 'had', 'bought', 'qqq', 'in', '', 'you', 'would', 'not', 'see', 'a', 'return', 'on', 'your', 'investment', 'for', '', 'years', 'hope', 'this', 'isn t', 'another', 'bubble', 'like', 'that']",qqq,3,1.001435092461529,1.0320372356530212
+"['jerome', 'got', 'enough', 'funds', 'to', 'make', 'both', 'aapl', 'and', 'ba', 'fly', 'at', 'the', 'same', 'time', 'just', 'in', 'case', 'some', 'of', 'us', 'retards', 'get', 'confused', 'at', 'first', 'today']",aapl,3,1.0204928981374435,1.0830793290449314
+"['jerome', 'got', 'enough', 'funds', 'to', 'make', 'both', 'aapl', 'and', 'ba', 'fly', 'at', 'the', 'same', 'time', 'just', 'in', 'case', 'some', 'of', 'us', 'retards', 'get', 'confused', 'at', 'first', 'today']",ba,3,1.0392156932584486,0.9677046827883783
+"['haha', 'aapl', 'you', 'sweet', 'thing', 'you', 'don t', 'need', 'nobody', 'but', 'tim', 'apple', 'huh']",aapl,3,1.0204928981374435,1.0830793290449314
+"['we', 'getting', 'that', 'new', 'cod', 'trailer', 'today', 'my', 'atvi', 'calls', 'are', 'bleeding', 'out']",atvi,3,0.9753730824725629,1.0151274347916264
+"['oh', 'timmie', 'apple', 'im', 'gonna', 'come']",aapl,3,1.0204928981374435,1.0830793290449314
+"['aapl', 'pump', 'like', '', 'bb', '']",aapl,3,1.0204928981374435,1.0830793290449314
+"['aapl', 'pump', 'like', '', 'bb', '']",bb,3,0.9856263456942191,0.9733606329114172
+"['apple', 'so', 'mf', 'sexy']",aapl,3,1.0204928981374435,1.0830793290449314
+"['okay', 'so', 'no', 'stimulus', 'package', 'until', 'september why', 'isn t', 'spy', 'dying', '']",spy,3,1.0053124400779556,1.009125765730726
+"['guys', 'don t', 'expect', 'baba', 'to', 'move', 'like', 'tesla', 'please', 'lol']",baba,3,1.0185690420743336,1.0403537597484631
+"['guys', 'don t', 'expect', 'baba', 'to', 'move', 'like', 'tesla', 'please', 'lol']",tsla,3,1.1399930639953388,1.2312266729278485
+"['this', 'gets', 'meme d', 'a', 'lot', 'but', 'are', 'we', 'really', 'sitting', 'under', 'm', 'volume', 'on', 'spy', 'and', 'it s', 'almost', '', 'lmfao', 'no', 'one', 'is', 'actually', 'buying', 'in', 'this', 'market']",spy,3,1.0053124400779556,1.009125765730726
+"['might', 'even', 'have', 'less', 'volume', 'then', 'yesterday', 'on', 'spy']",spy,3,1.0053124400779556,1.009125765730726
+"['what s', 'this', 'tesla', 'joining', 'the', 's p', '', 'today', 'people', 'keep', 'randomly', 'posting']",tsla,3,1.1399930639953388,1.2312266729278485
+"['if', 'you re', 'not', 'buying', 'this', 'jd', 'dip', 'for', 'monday', 'earnings', 'then', 'you re', 'not', 'black']",jd,3,1.0071405785302372,1.1952814268147618
+"['i', 'know', 'nothing', 'about', 'ta', 'garbage', 'but', 'spy', 'rising', 'channel', '', 'eod', 'confirmed']",spy,3,1.0053124400779556,1.009125765730726
+"['spy', 'just', 'ping', 'ponging', 'on', 'the', 'day s', 'trend s', 'resistance', 'and', 'support']",spy,3,1.0053124400779556,1.009125765730726
+"['wmt', 'calls']",wmt,3,1.0223058720428575,0.9946352564739469
+"['anyone', 'buying', 'tesla', 'calls', 'end', 'of', 'day']",tsla,3,1.1399930639953388,1.2312266729278485
+"['airlines', 'back', 'in', 'a', 'downtrend', 'might', 'add', 'shares', 'or', 'leaps', 'at', 'dal', '', 'good', 'long', 'term', 'hold', 'imo']",dal,3,1.0542608058319027,0.9636042824358797
+"['spy', 'with', 'that', 'better', 'hide', 'in', 'case', 'donnie', 'trips', 'over', 'his', 'dick', 'during', 'the', 'presser', 'action', 'and', 'which', 'of', 'you', 'is', 'shooting', 'us', 'the', 'bird', 'on', 'the', '', 'minute', 'volume', 'eff', 'you', 'bro', 'you', 'retard']",spy,3,1.0053124400779556,1.009125765730726
+"['theta', 'friday', 'today', 'thinking', 'of', 'getting', 'spy', 'calls', 'for', 'monday', 'for', 'the', 'guaranteed', 'pajama', 'pump', 'on', 'sunday', 'possibly', 'even', 'ath']",spy,3,1.0053124400779556,1.009125765730726
+"['prpl', 'dumping', 'guess', 'i m', 'buying', 'shares', 'when', 'it', 'drops', 'another', '']",prpl,3,0.8862889824154362,0.9012986732037256
+"['apple', '']",aapl,3,1.0204928981374435,1.0830793290449314
+"['bought', 'znga', '', 'oct', 'calls', 'people', 'love', 'harry', 'potter', 'shit']",znga,3,0.962051293788812,1.0010752934061011
+"['wmt', 'extending', 'store', 'hours', 'starting', 'monday', 'bullish', 'af']",wmt,3,1.0223058720428575,0.9946352564739469
