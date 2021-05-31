@@ -143,7 +143,7 @@ def main():
     train, dev, test = read_days_data("stockreturnpred/Dataset-release version/reduced_dataset-release.csv", 7)
     write_name_ticker_dict_csv()
     write_csv(train, "train.csv")
-    rite_csv(dev, "dev.csv")
+    write_csv(dev, "dev.csv")
     write_csv(test, "test.csv")
     
     
