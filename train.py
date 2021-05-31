@@ -154,6 +154,7 @@ def main():
             with torch.enable_grad():
                 # TODO: maybe we should split data and then use dataloader here?
                 for vector in train_iterator:
+                    optimizer.zero_grad()
                     # Grab labels.
                     target = torch.zeros((5,))
                     target[train_iterator[:, -1]] = 1
