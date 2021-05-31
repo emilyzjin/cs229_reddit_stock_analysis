@@ -9,6 +9,8 @@ nltk.download('stopwords')
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 import torch
+import spacy
+spacy.load("en_core_web_sm")
 
 lemmatizer = WordNetLemmatizer()
 
@@ -38,10 +40,10 @@ def tokenize_csv(input_file, output_file):
             tokenized_entry = tokenize(entry[-1])
             if len(tokenized_entry) > 0:
                 tokenized_data.append([entry[0], tokenized_entry])
-                i += 1 
+                i += 1
                 if i % 20000 == 0:
                     print(i / len(dataset_list))
-            
+
     with open(output_file, 'w', newline='') as f:
         write = csv.writer(f)
         for entry in tokenized_data:
@@ -85,42 +87,42 @@ def train(model, iterator, optimizer, criterion):
 
     iterator - train iterator
     """
-    
+
     # Cumulated Training loss
     training_loss = 0.0
     # Cumulated Training accuracy
     training_acc = 0.0
-    
+
     # Set model to training mode
     model.train()
-    
+
     # For each batch in the training iterator
     for batch in iterator:
-        
+
         # 1. Zero the gradients
         optimizer.zero_grad()
-        
+
         # batch.text is a tuple (tensor, len of seq)
         text, text_lengths = batch.text
 
         # 2. Compute the predictions
         predictions = model(text, text_lengths).squeeze(1)
-        
+
         # 3. Compute loss
         loss = criterion(predictions, batch.label)
-        
+
         # Compute accuracy
         accuracy = batch_accuracy(predictions, batch.label)
-        
+
         # 4. Use loss to compute gradients
         loss.backward()
-        
+
         # 5. Use optimizer to take gradient step
         optimizer.step()
-        
+
         training_loss += loss.item()
         training_acc += accuracy.item()
-    
+
     # Return the loss and accuracy, averaged across each epoch
     # len of iterator = num of batches in the iterator
     return training_loss / len(iterator), training_acc / len(iterator)
@@ -131,31 +133,31 @@ def evaluate(model, iterator, criterion):
 
     iterator - validation or test iterator
     """
-    
+
     # Cumulated Training loss
     eval_loss = 0.0
     # Cumulated Training accuracy
     eval_acc = 0
-    
+
     # Set model to evaluation mode
     model.eval()
-    
+
     # Don't calculate the gradients
     with torch.no_grad():
-    
+
         for batch in iterator:
 
             text, text_lengths = batch.text
-            
+
             predictions = model(text, text_lengths).squeeze(1)
-            
+
             loss = criterion(predictions, batch.label)
-            
+
             accuracy = batch_accuracy(predictions, batch.label)
 
             eval_loss += loss.item()
             eval_acc += accuracy.item()
-        
+
     return eval_loss / len(iterator), eval_acc / len(iterator)
 
 
