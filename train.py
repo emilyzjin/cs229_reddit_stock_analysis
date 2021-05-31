@@ -133,7 +133,6 @@ def main():
         vocab_size=None, # TODO
         embedding_dim=None, # TODO
         hidden_dim=hidden_size,
-        output_dim=5, # TODO
         n_layers=None, # TODO
         bidirectional=True,
         dropout=drop_prob,

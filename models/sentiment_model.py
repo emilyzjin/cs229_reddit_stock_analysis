@@ -12,18 +12,17 @@ class MovementPredictor(nn.Module):
     """
     Full model for predicting stock movements.
     """
-    def __init__(self, vocab_size, embedding_dim, hidden_dim, output_dim, n_layers, 
-                 bidirectional, dropout, pad_idx, alpha):
-        self.sentiment_analysis = SentimentLSTM(vocab_size, embedding_dim, hidden_dim, output_dim, n_layers, 
+    def __init__(self, vocab_size, embedding_dim, hidden_dim, n_layers, bidirectional, dropout, pad_idx, alpha):
+        self.sentiment_analysis = SentimentLSTM(vocab_size, embedding_dim, hidden_dim, n_layers, 
                                                 bidirectional, dropout, pad_idx)
-        self.out = OutputLayer(output_dim, hidden_dim, alpha)
+        self.out = OutputLayer(hidden_dim, hidden_dim, alpha)
 
     def forward(self, converted_text, multimodal_data):
         return self.out(self.sentiment_analysis(converted_text), multimodal_data)
 
 
 class SentimentLSTM(nn.Module):
-    def __init__(self, vocab_size, embedding_dim, hidden_dim, output_dim, n_layers, 
+    def __init__(self, vocab_size, embedding_dim, hidden_dim, n_layers, 
                  bidirectional, dropout, pad_idx):
         """
         Define the layers of the module.
@@ -55,7 +54,7 @@ class SentimentLSTM(nn.Module):
         # 3. Fully-connected layer
         # Final hidden state has both a forward and a backward component concatenated together
         # The size of the input to the nn.Linear layer is twice that of the hidden dimension size
-        self.predictor = nn.Linear(hidden_dim*2, output_dim)
+        self.predictor = nn.Linear(hidden_dim*2, hidden_dim)
 
         # Initialize dropout layer for regularization
         self.dropout = nn.Dropout(dropout)
