@@ -93,15 +93,15 @@ def data_preprocess(max_vocab_size, device, batch_size):
 def main():
     create_csv()
     train = True
-    batch_size = 128
+    batch_size = 512
     hidden_size = 256
-    drop_prob = 0.5
+    drop_prob = 0.2
     learning_rate = 1e-2 # TODO: hyper
     num_epochs = 100
     beta1, beta2 = 0.9, 0.999 # for Adam
     alpha = 0.2 # for ELU # TODO: hyper
-    max_grad_norm = 1.0
-    print_every = 100
+    max_grad_norm = 5.0
+    print_every = 10
     save_dir = 'results/model.path_lr_{:.4}_drop_prob_{:.4}_alpha_{:.4}.tar'.format(learning_rate, drop_prob, alpha)
 
     device, gpu_ids = get_available_devices()
@@ -129,12 +129,12 @@ def main():
     optimizer = optim.Adam(model.parameters(), lr=learning_rate, betas=(beta1, beta2))
     #scheduler = sched.LambdaLR(optimizer, lambda s: 1.)
 
-    iter = 0
     checkpoint = 0
 
     # Training Loop
     if train:
         for epoch in range(num_epochs):
+            iter = 0
             with torch.enable_grad():
                 for vector in train_iterator:
                     optimizer.zero_grad()
@@ -166,7 +166,7 @@ def main():
                     loss_val, accuracy = evaluate(model, test_iterator, device)
                     print("dev loss: ", loss_val, "dev accuracy: ", accuracy)
                     checkpoint += 1
-                
+            iter = 0
     else: 
         # testing case
         print("testing data, loading from path" + save_dir + " ...")
