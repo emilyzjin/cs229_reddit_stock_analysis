@@ -9,6 +9,7 @@ nltk.download('stopwords')
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 import torch
+import torch.nn as nn
 
 lemmatizer = WordNetLemmatizer()
 
@@ -79,56 +80,9 @@ def timer(start_time, end_time):
     return mins, secs
 
 
-def train(model, iterator, optimizer, criterion):
-    """
-    Function to evaluate training loss and accuracy.
-
-    iterator - train iterator
-    """
-    
-    # Cumulated Training loss
-    training_loss = 0.0
-    # Cumulated Training accuracy
-    training_acc = 0.0
-    
-    # Set model to training mode
-    model.train()
-    
-    # For each batch in the training iterator
-    for batch in iterator:
-        
-        # 1. Zero the gradients
-        optimizer.zero_grad()
-        
-        # batch.text is a tuple (tensor, len of seq)
-        text, text_lengths = batch.text
-
-        # 2. Compute the predictions
-        predictions = model(text, text_lengths).squeeze(1)
-        
-        # 3. Compute loss
-        loss = criterion(predictions, batch.label)
-        
-        # Compute accuracy
-        accuracy = batch_accuracy(predictions, batch.label)
-        
-        # 4. Use loss to compute gradients
-        loss.backward()
-        
-        # 5. Use optimizer to take gradient step
-        optimizer.step()
-        
-        training_loss += loss.item()
-        training_acc += accuracy.item()
-    
-    # Return the loss and accuracy, averaged across each epoch
-    # len of iterator = num of batches in the iterator
-    return training_loss / len(iterator), training_acc / len(iterator)
-
-def evaluate(model, iterator, criterion):
+def evaluate(model, iterator, criterion, device):
     """
     Function to evaluate the loss and accuracy of validation and test sets.
-
     iterator - validation or test iterator
     """
     
@@ -136,21 +90,23 @@ def evaluate(model, iterator, criterion):
     eval_loss = 0.0
     # Cumulated Training accuracy
     eval_acc = 0
-    
+
     # Set model to evaluation mode
-    model.eval()
+    # model.eval()
     
     # Don't calculate the gradients
     with torch.no_grad():
-    
         for batch in iterator:
+            # text, text_lengths = batch.text
+            target = torch.zeros((5,))
+            target[iterator[:, -1]] = 1
+            # Grab other data for multimodal sentiment analysis.
+            multimodal_data = iterator[:, -3:-2]  # Upvotes + past week change
+            # Apply model
+            predictions = model(batch[:, :-4], multimodal_data)
+            target = target.to(device)
+            loss = nn.BCEWithLogitsLoss(predictions, target)
 
-            text, text_lengths = batch.text
-            
-            predictions = model(text, text_lengths).squeeze(1)
-            
-            loss = criterion(predictions, batch.label)
-            
             accuracy = batch_accuracy(predictions, batch.label)
 
             eval_loss += loss.item()
