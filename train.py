@@ -94,24 +94,15 @@ def data_preprocess(max_vocab_size, device, batch_size):
 def main():
     create_csv()
     train = True
-<<<<<<< HEAD
     batch_size = 512
-=======
-    batch_size = 449
->>>>>>> d2d4a7fc4b8f9ed37e4a0a04e983385e73f35a87
     hidden_size = 256
     drop_prob = 0.2
     learning_rate = 1e-2 # TODO: hyper
     num_epochs = 100
     beta1, beta2 = 0.9, 0.999 # for Adam
     alpha = 0.2 # for ELU # TODO: hyper
-<<<<<<< HEAD
-    max_grad_norm = 5.0
-    print_every = 10
-=======
     max_grad_norm = 2.0
     print_every = 100
->>>>>>> d2d4a7fc4b8f9ed37e4a0a04e983385e73f35a87
     save_dir = 'results/model.path_lr_{:.4}_drop_prob_{:.4}_alpha_{:.4}.tar'.format(learning_rate, drop_prob, alpha)
 
     device, gpu_ids = get_available_devices()
@@ -139,12 +130,8 @@ def main():
     optimizer = optim.Adam(model.parameters(), lr=learning_rate, betas=(beta1, beta2))
     #scheduler = sched.LambdaLR(optimizer, lambda s: 1.)
 
-<<<<<<< HEAD
-    checkpoint = 0
-=======
     iter = 0
     checkpoint = 1
->>>>>>> d2d4a7fc4b8f9ed37e4a0a04e983385e73f35a87
 
     # Training Loop
     if train:
