@@ -131,7 +131,7 @@ def main():
     #scheduler = sched.LambdaLR(optimizer, lambda s: 1.)
 
     iter = 0
-    checkpoint = 0
+    checkpoint = 1
 
     # Training Loop
     if train:
@@ -164,7 +164,7 @@ def main():
                 torch.save(model, save_dir)
                 if checkpoint % 3 == 0:
                     print("evaluating on dev split...")
-                    loss_val, accuracy = evaluate(model, test_iterator, device)
+                    loss_val, accuracy = evaluate(model, valid_iterator, device)
                     print("dev loss: ", loss_val, "dev accuracy: ", accuracy)
                     checkpoint += 1
                 
