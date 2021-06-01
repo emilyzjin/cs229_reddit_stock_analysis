@@ -13,7 +13,13 @@ from torchtext.vocab import GloVe
 import torch.nn.functional as F
 import pdb
 
-TEXT = data.Field(tokenize='spacy', lower=True, include_lengths=True)
+# spacy.load("en_core_web_sm")
+spacy_en = spacy.load('en_core_web_sm')
+
+def tokenizer(text): # create a tokenizer function
+    return [tok.text for tok in spacy_en.tokenizer(text)]
+
+TEXT = data.Field(tokenize=tokenizer, lower=True, include_lengths=True)
 UPVOTE = data.LabelField(sequential=False, use_vocab=False, dtype=torch.int64)
 CHANGE = data.LabelField(sequential=False, use_vocab=False, dtype=torch.float)
 LABEL = data.LabelField(sequential=False, use_vocab=False, dtype=torch.int64)
@@ -50,7 +56,6 @@ def create_csv():
 
 
 def data_preprocess(max_vocab_size, device, batch_size):
-    spacy.load("en_core_web_sm")
 
     # Map data to fields
     fields_text = [('text', TEXT), ('upvote', UPVOTE), ('change', CHANGE), ('label', LABEL)]
@@ -74,14 +79,6 @@ def data_preprocess(max_vocab_size, device, batch_size):
                      max_size=max_vocab_size,
                      vectors="glove.6B.100d",
                      unk_init=torch.Tensor.normal_)
-
-    # build vocab - convert words into integers
-    # UPVOTE.build_vocab(train_data,
-    #                    unk_init=torch.Tensor.normal_)
-    # CHANGE.build_vocab(train_data,
-    #                    unk_init=torch.Tensor.normal_)
-    # LABEL.build_vocab(train_data,
-    #                   unk_init=torch.Tensor.normal_)
 
     train_iterator, valid_iterator, test_iterator = data.BucketIterator.splits(
         (train_data, valid_data, test_data),
