@@ -1,22 +1,11 @@
-# import torch
-# import torch.nn as nn
-# import torchtext
-import csv
-<<<<<<< HEAD
-# import util
-# from models.sentiment_model import MovementPredictor
-# from utils.sentiment_util import evaluate
-# from torchtext.legacy import data
-# import spacy
-# import torch.optim as optim
-# import torch.optim.lr_scheduler as sched
-# from torchtext.vocab import GloVe
-# import torch.nn.functional as F
-# import pdb
-=======
-import utils.util as util
+from matplotlib.pyplot import uninstall_repl_displayhook
+import torch
+import torch.nn as nn
+import torchtext
+import csv 
+from util import *
 from models.sentiment_model import MovementPredictor
-from utils.sentiment_util import evaluate
+from sentiment_util import evaluate
 from torchtext.legacy import data
 import spacy
 import torch.optim as optim
@@ -24,7 +13,6 @@ import torch.optim.lr_scheduler as sched
 from torchtext.vocab import GloVe
 import torch.nn.functional as F
 import pdb
->>>>>>> 3a634fc920db70c5a5f16e43c05f39b8ba8f43b8
 
 
 # def data_preprocess(csv_file):
@@ -210,11 +198,24 @@ def main():
                     nn.utils.clip_grad_norm_(model.parameters(), max_grad_norm)
                     optimizer.step()
                     #scheduler.step(step // batch_size)
-
-                    # TODO: Print + Log (not sure if needed rn)
-
                     if iter % print_every == 0:
                         print('Epoch:{:.4}, Iter: {:.4}, Loss:{:.4}'.format(iter, iter, loss.item()))
+
+
+                    # TODO: Print + Log (not sure if needed rn)
+                torch.save(model, save_dir)    
+                if steps_till_eval == 0:
+                    print("evaluating on dev split...")
+                    loss, accuracy = evaluate(model, data=valid_iterator, criterion=nn.BCEWithLogitsLoss())
+                    print("dev loss: ", loss, "dev accuracy: ", accuracy)
+                    steps_till_eval = 3
+                
+    else: 
+        # testing case
+        print("testing data, loading from path" + save_dir + " ...")
+        model = torch.load(save_dir)
+        loss, accuracy = evaluate(model, test_iterator, criterion=nn.BCEWithLogitsLoss())
+        print("test loss: ", loss, "test accuracy: ", accuracy)
 
     pdb.set_trace()
 

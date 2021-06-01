@@ -1,6 +1,6 @@
 import numpy as np
 from numpy import linalg
-from utils.util import data_iter
+from util import data_iter
 
 
 class linearRegression:
