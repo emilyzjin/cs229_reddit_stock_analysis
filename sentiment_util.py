@@ -8,7 +8,9 @@ nltk.download('wordnet')
 nltk.download('stopwords')
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
+import spacy
 import torch
+import torch.nn.functional as F
 import torch.nn as nn
 
 lemmatizer = WordNetLemmatizer()
@@ -102,7 +104,7 @@ def evaluate(model, iterator, device):
             # Apply model
             y = model(batch, multimodal_data)
             target = target.to(device)
-            loss_function = nn.BCEWithLogitsLoss()
+            loss_function = F.BCELoss()
             loss = loss_function(y, target)
 
             accuracy = batch_accuracy(y, batch.label)

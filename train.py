@@ -147,7 +147,7 @@ def main():
                     # Apply model
                     y = model(vector, multimodal_data)
                     target = target.to(device)
-                    loss_function = nn.BCEWithLogitsLoss()
+                    loss_function = F.BCELoss()
                     loss = loss_function(y, target)
                     loss_val = loss.item()
 
@@ -163,7 +163,7 @@ def main():
                 torch.save(model, save_dir)
                 if checkpoint % 3 == 0:
                     print("evaluating on dev split...")
-                    loss_val, accuracy = evaluate(model, test_iterator, device)
+                    loss_val, accuracy = evaluate(model, valid_iterator, device)
                     print("dev loss: ", loss_val, "dev accuracy: ", accuracy)
                     checkpoint += 1
                 
@@ -171,7 +171,7 @@ def main():
         # testing case
         print("testing data, loading from path" + save_dir + " ...")
         model = torch.load(save_dir)
-        loss_val, accuracy = evaluate(model, test_iterator, criterion=nn.BCEWithLogitsLoss())
+        loss_val, accuracy = evaluate(model, test_iterator, criterion=F.BCELoss())
         print("test loss: ", loss_val, "test accuracy: ", accuracy)
 
 
