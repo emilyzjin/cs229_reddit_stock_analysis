@@ -1,9 +1,8 @@
-from matplotlib.pyplot import uninstall_repl_displayhook
 import torch
 import torch.nn as nn
 import torchtext
 import csv 
-import util
+from util import get_available_devices
 from sentiment_util import evaluate
 from models.sentiment_model import MovementPredictor
 from torchtext.legacy import data
@@ -108,7 +107,7 @@ def main():
     print_every = 100
     save_dir = 'results/model.path_lr_{:.4}_drop_prob_{:.4}_alpha_{:.4}.tar'.format(learning_rate, drop_prob, alpha)
 
-    device, gpu_ids = util.get_available_devices()
+    device, gpu_ids = get_available_devices()
 
     train_iterator, valid_iterator, test_iterator = data_preprocess(25000, device, batch_size)
 
