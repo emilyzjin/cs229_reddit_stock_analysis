@@ -128,14 +128,6 @@ def data_preprocess(max_vocab_size, device, batch_size):
     return train_iterator, valid_iterator, test_iterator
 
 
-def evaluate():
-    pass
-
-
-def test():
-    pass
-
-
 def main():
     create_csv()
     pdb.set_trace()
@@ -190,7 +182,7 @@ def main():
                     # Apply model
                     y = model(vector[:, :-4], multimodal_data)
                     target = target.to(device) # TODO: Unsure if this line is needed?
-                    loss = F.BCELoss(y, target)
+                    loss = nn.BCEWithLogitsLoss(y, target)
                     loss_val = loss.item()
 
                     # Backward
@@ -206,16 +198,16 @@ def main():
                 torch.save(model, save_dir)    
                 if steps_till_eval == 0:
                     print("evaluating on dev split...")
-                    loss, accuracy = evaluate(model, data=valid_iterator, criterion=nn.BCEWithLogitsLoss())
-                    print("dev loss: ", loss, "dev accuracy: ", accuracy)
+                    loss_val, accuracy = evaluate(model, data=valid_iterator, criterion=nn.BCEWithLogitsLoss())
+                    print("dev loss: ", loss_val, "dev accuracy: ", accuracy)
                     steps_till_eval = 3
                 
     else: 
         # testing case
         print("testing data, loading from path" + save_dir + " ...")
         model = torch.load(save_dir)
-        loss, accuracy = evaluate(model, test_iterator, criterion=nn.BCEWithLogitsLoss())
-        print("test loss: ", loss, "test accuracy: ", accuracy)
+        loss_val, accuracy = evaluate(model, test_iterator, criterion=nn.BCEWithLogitsLoss())
+        print("test loss: ", loss_val, "test accuracy: ", accuracy)
 
     pdb.set_trace()
 
