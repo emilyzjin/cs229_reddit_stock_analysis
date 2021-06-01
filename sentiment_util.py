@@ -97,7 +97,8 @@ def evaluate(model, iterator, device):
         for batch in iterator:
             # Grab labels.
             target = torch.zeros((batch.batch_size, 5))
-            target[torch.arange(batch.batch_size), batch.label.type(dtype=torch.int64)] = 1
+            target = batch.label.type(dtype=torch.int64)
+            #target[torch.arange(batch.batch_size), batch.label.type(dtype=torch.int64)] = 1
             # Grab other data for multimodal sentiment analysis.
             multimodal_data = torch.cat((batch.upvote.unsqueeze(dim=1),
                                          batch.change.unsqueeze(dim=1)), dim=1)  # Upvotes + past week change
