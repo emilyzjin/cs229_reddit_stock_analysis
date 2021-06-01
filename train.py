@@ -14,6 +14,10 @@ from torchtext.vocab import GloVe
 import torch.nn.functional as F
 import pdb
 
+TEXT = data.Field(tokenize='spacy', lower=True, include_lengths=True)
+UPVOTE = data.LabelField(dtype=torch.float)
+CHANGE = data.LabelField(dtype=torch.float)
+LABEL = data.LabelField(dtype=torch.float)
 
 # def data_preprocess(csv_file):
 #     data = torch.tensor(())
@@ -85,11 +89,6 @@ def create_csv():
 def data_preprocess(max_vocab_size, device, batch_size):
     spacy.load("en_core_web_sm")
 
-    TEXT = data.Field(tokenize='spacy', lower=True, include_lengths=True)
-    UPVOTE = data.LabelField(dtype=torch.float)
-    CHANGE = data.LabelField(dtype=torch.float)
-    LABEL = data.LabelField(dtype=torch.float)
-
     # Map data to fields
     fields_text = [('text', TEXT), ('upvote', UPVOTE), ('change', CHANGE), ('label', LABEL)]
 
@@ -134,27 +133,26 @@ def main():
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     train = True
     batch_size = 128
-    hidden_size = 200
-    drop_prob = 0.2
+    hidden_size = 256
+    drop_prob = 0.5
     learning_rate = 1e-3
     num_epochs = 100
-    save_dir = None # TODO: SET PATH.
-    log_dir = None # TODO: SET PATH
     beta1, beta2 = 0.9, 0.999 # for Adam
     alpha = 0.2 # for ELU
-    max_grad_norm = None # TODO: ?? WHAT IS THIS
+    max_grad_norm = 1.0 # TODO: ?? WHAT IS THIS
     print_every = 1000
+    save_dir = 'results/model.path' + '_lr_' + learning_rate + '_drop_prob_' + drop_prob + '_alpha_' + alpha + '.tar' # TODO: SET PATH.
     # create_csv()
 
     # Initialize model.
     model = MovementPredictor(
-        vocab_size=None, # TODO
-        embedding_dim=None, # TODO
+        vocab_size=287799, # TODO
+        embedding_dim=100, # TODO
         hidden_dim=hidden_size,
-        n_layers=None, # TODO
+        n_layers=2, # TODO
         bidirectional=True,
         dropout=drop_prob,
-        pad_idx=None, # TODO
+        pad_idx=TEXT.vocab.stoi[TEXT.pad_token], # TODO
         alpha=alpha
     )
     device, gpu_ids = util.get_available_devices()
