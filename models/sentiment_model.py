@@ -1,6 +1,6 @@
 # Sentiment Analysis Model from https://www.kaggle.com/arunmohan003/sentiment-analysis-using-lstm-pytorch
 
-from utils.sentiment_util import tokenize
+from sentiment_util import tokenize
 import torch
 import torch.nn as nn
 import numpy as np # linear algebra
