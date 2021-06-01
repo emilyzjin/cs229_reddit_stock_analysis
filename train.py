@@ -140,14 +140,15 @@ def main():
                     optimizer.zero_grad()
                     # Grab labels.
                     target = torch.zeros((batch_size, 5))
-                    target[torch.arange(batch_size), vector.label] = 1
+                    target = vector.label
+                    #target[torch.arange(batch_size), vector.label] = 1
                     # Grab other data for multimodal sentiment analysis.
                     multimodal_data = torch.cat((vector.upvote.unsqueeze(dim=1),
                                                  vector.change.unsqueeze(dim=1)), dim=1) # Upvotes + past week change
                     # Apply model
                     y = model(vector, multimodal_data)
                     target = target.to(device)
-                    loss_function = F.BCELoss()
+                    loss_function = nn.CrossEntropyLoss()
                     loss = loss_function(y, target)
                     loss_val = loss.item()
 
@@ -171,7 +172,7 @@ def main():
         # testing case
         print("testing data, loading from path" + save_dir + " ...")
         model = torch.load(save_dir)
-        loss_val, accuracy = evaluate(model, test_iterator, criterion=F.BCELoss())
+        loss_val, accuracy = evaluate(model, test_iterator, criterion=nn.CrossEntropyLoss())
         print("test loss: ", loss_val, "test accuracy: ", accuracy)
 
 

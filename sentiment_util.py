@@ -104,7 +104,7 @@ def evaluate(model, iterator, device):
             # Apply model
             y = model(batch, multimodal_data)
             target = target.to(device)
-            loss_function = F.BCELoss()
+            loss_function = nn.CrossEntropyLoss()
             loss = loss_function(y, target)
 
             accuracy = batch_accuracy(y, batch.label)
