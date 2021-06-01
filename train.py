@@ -18,9 +18,12 @@ TEXT = data.Field(tokenize='spacy', lower=True, include_lengths=True)
 UPVOTE = data.LabelField(dtype=torch.float)
 CHANGE = data.LabelField(dtype=torch.float)
 LABEL = data.LabelField(dtype=torch.float)
+# UPVOTE = data.Field(is_target=True, unk_token=None)
+# CHANGE = data.Field(is_target=True, unk_token=None)
+# LABEL = data.Field(is_target=True, unk_token=None)
 
 
-def create_csv():
+def create_buckets():
     with open('removed_characters.csv') as in_file:
         with open('removed_characters_buckets.csv', 'w') as out_file:
             reader = csv.reader(in_file, delimiter=',')
@@ -50,11 +53,19 @@ def create_csv():
     in_file.close()
 
 
+def split_data():
+    with open('removed_characters_buckets.csv') as in_file:
+        with open('train_data.csv', 'w') as train_file:
+            with open('valid_data.csv', 'w') as valid_file:
+                with open('test_data.csv', 'w') as test_file:
+
+
+
 def data_preprocess(max_vocab_size, device, batch_size):
     spacy.load("en_core_web_sm")
 
     # Map data to fields
-    fields_text = [('text', TEXT), ('upvote', UPVOTE), ('change', CHANGE), ('label', LABEL)]
+    fields_text = [('text', TEXT), ('upvote', None), ('change', None), ('label', None)]
 
     # Apply field definition to create torch dataset
     dataset = data.TabularDataset(
@@ -78,14 +89,14 @@ def data_preprocess(max_vocab_size, device, batch_size):
                      unk_init=torch.Tensor.normal_)
 
     # build vocab - convert words into integers
-    UPVOTE.build_vocab(train_data)
-    CHANGE.build_vocab(train_data)
-    LABEL.build_vocab(train_data)
+    # UPVOTE.build_vocab(train_data)
+    # CHANGE.build_vocab(train_data)
+    # LABEL.build_vocab(train_data)
 
     train_iterator, valid_iterator, test_iterator = data.BucketIterator.splits(
         (train_data, valid_data, test_data),
         device=device,
-        batch_size=batch_size,
+        batch_sizes=(batch_size, batch_size, batch_size),
         sort_key=lambda x: len(x.text),
         sort_within_batch=False)
 
@@ -121,6 +132,9 @@ def main():
         pad_idx=TEXT.vocab.stoi[TEXT.pad_token],
         alpha=alpha
     )
+
+    # pretrained_embeddings = TEXT.vocab.vectors
+    # model.embedding.weight.data.copy_(pretrained_embeddings)
 
     model = nn.DataParallel(model, gpu_ids)
 
@@ -159,13 +173,13 @@ def main():
                         print('Epoch:{}, Iter: {}, Loss:{:.4}'.format(epoch, iter, loss.item()))
                     iter += 1
 
-                    if iter == 10:
+                    if iter == 1:
                         break
 
                 torch.save(model, save_dir)
                 if steps_till_eval % 3 == 0:
                     print("evaluating on dev split...")
-                    loss_val, accuracy = evaluate(model, valid_iterator, device)
+                    loss_val, accuracy = evaluate(model, test_iterator, device)
                     print("dev loss: ", loss_val, "dev accuracy: ", accuracy)
                     steps_till_eval += 1
                 
