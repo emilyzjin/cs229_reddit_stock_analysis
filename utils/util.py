@@ -4,7 +4,6 @@ import random
 import ujson as json
 from preprocessing import get_data, write_csv
 import regex as re
-import util
 import string
 
 
