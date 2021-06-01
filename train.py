@@ -14,12 +14,13 @@ import torch.nn.functional as F
 import pdb
 
 # spacy.load("en_core_web_sm")
-spacy_en = spacy.load('en_core_web_sm')
+# spacy_en = spacy.load('en_core_web_sm')
+spacy.load('en', disable=['ner', 'parser', 'tagger'])
 
-def tokenizer(text): # create a tokenizer function
-    return [tok.text for tok in spacy_en.tokenizer(text)]
+def tokenize(s):
+    return s.split(' ')
 
-TEXT = data.Field(tokenize=tokenizer, lower=True, include_lengths=True)
+TEXT = data.Field(tokenize=tokenize, lower=True, include_lengths=True)
 UPVOTE = data.LabelField(sequential=False, use_vocab=False, dtype=torch.int64)
 CHANGE = data.LabelField(sequential=False, use_vocab=False, dtype=torch.float)
 LABEL = data.LabelField(sequential=False, use_vocab=False, dtype=torch.int64)
@@ -93,14 +94,14 @@ def data_preprocess(max_vocab_size, device, batch_size):
 def main():
     create_csv()
     train = True
-    batch_size = 128
+    batch_size = 449
     hidden_size = 256
-    drop_prob = 0.5
+    drop_prob = 0.2
     learning_rate = 1e-2 # TODO: hyper
     num_epochs = 100
     beta1, beta2 = 0.9, 0.999 # for Adam
     alpha = 0.2 # for ELU # TODO: hyper
-    max_grad_norm = 1.0
+    max_grad_norm = 2.0
     print_every = 100
     save_dir = 'results/model.path_lr_{:.4}_drop_prob_{:.4}_alpha_{:.4}.tar'.format(learning_rate, drop_prob, alpha)
 
