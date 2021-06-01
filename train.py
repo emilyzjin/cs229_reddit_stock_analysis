@@ -4,8 +4,6 @@ import torch.nn as nn
 import torchtext
 import csv 
 import util
-import os
-import random
 from sentiment_util import evaluate
 from models.sentiment_model import MovementPredictor
 from torchtext.legacy import data
@@ -17,18 +15,14 @@ import torch.nn.functional as F
 import pdb
 
 TEXT = data.Field(tokenize='spacy', lower=True, include_lengths=True)
-UPVOTE = data.LabelField(dtype=torch.float)
-CHANGE = data.LabelField(dtype=torch.float)
-LABEL = data.LabelField(dtype=torch.float)
-# UPVOTE = data.Field(is_target=True, unk_token=None)
-# CHANGE = data.Field(is_target=True, unk_token=None)
-# LABEL = data.Field(is_target=True, unk_token=None)
+UPVOTE = data.LabelField(sequential=False, use_vocab=False, dtype=torch.int64)
+CHANGE = data.LabelField(sequential=False, use_vocab=False, dtype=torch.float)
+LABEL = data.LabelField(sequential=False, use_vocab=False, dtype=torch.int64)
 
 
-def create_buckets(filename):
-    with open('filename') as in_file:
-        file_title, csv_tag = filename.split()
-        with open(file_title + 'labels' + csv_tag, 'w') as out_file:
+def create_csv():
+    with open('removed_characters.csv') as in_file:
+        with open('removed_characters_buckets.csv', 'w') as out_file:
             reader = csv.reader(in_file, delimiter=',')
             writer = csv.writer(out_file)
             for row in reader:
@@ -39,51 +33,28 @@ def create_buckets(filename):
                 label = 1 - float(row[-1])
                 # Strong buy
                 if label >= .03:
-                    label = 1
+                    label = 0
                 # Buy
                 elif .01 < label < .03:
-                    label = 2
+                    label = 1
                 # Hold
                 elif -.01 <= label <= .01:
-                    label = 3
+                    label = 2
                 # Sell
                 elif -.01 > label > -.03:
-                    label = 4
+                    label = 3
                 else:
-                    label = 5
+                    label = 4
                 row_data.append(label)
                 writer.writerow(row_data)
     in_file.close()
-
-
-def split_data():
-    train_split, val_split = 0.8, 0.1
-    if not os.path.isfile('shuffled.csv'):
-        with open('removed_characters_buckets.csv', 'r') as r:
-            data = r.readlines()
-            random.shuffle(data)
-            rows = '\n'.join([row.strip() for row in data])
-            train_len = len(rows) * train_split
-            val_len = len(rows) * val_split
-            test_len = len(rows) - train_len - val_len
-            with open('train_data.csv', 'w') as train_file:
-                train_file.write(rows[:train_len])
-                train_file.close()
-            with open('valid_data.csv', 'w') as valid_file:
-                valid_file.write(rows[train_len:train_len + val_len])
-                valid_file.close()
-            with open('test_data.csv', 'w') as test_file:
-                test_file.write(rows[train_len + val_len:])
-                test_file.close()
-    r.close()
-    print('Train Split: {}, Val Split: {}, Test Split: {}'.format(train_len, val_len, test_len))
 
 
 def data_preprocess(max_vocab_size, device, batch_size):
     spacy.load("en_core_web_sm")
 
     # Map data to fields
-    fields_text = [('text', TEXT), ('upvote', None), ('change', None), ('label', None)]
+    fields_text = [('text', TEXT), ('upvote', UPVOTE), ('change', CHANGE), ('label', LABEL)]
 
     # Apply field definition to create torch dataset
     dataset = data.TabularDataset(
@@ -91,7 +62,6 @@ def data_preprocess(max_vocab_size, device, batch_size):
         format="CSV",
         fields=fields_text,
         skip_header=False)
-
 
     # Split data into train, test, validation sets
     (train_data, test_data, valid_data) = dataset.split(split_ratio=[0.8, 0.1, 0.1])
@@ -107,9 +77,12 @@ def data_preprocess(max_vocab_size, device, batch_size):
                      unk_init=torch.Tensor.normal_)
 
     # build vocab - convert words into integers
-    # UPVOTE.build_vocab(train_data)
-    # CHANGE.build_vocab(train_data)
-    # LABEL.build_vocab(train_data)
+    # UPVOTE.build_vocab(train_data,
+    #                    unk_init=torch.Tensor.normal_)
+    # CHANGE.build_vocab(train_data,
+    #                    unk_init=torch.Tensor.normal_)
+    # LABEL.build_vocab(train_data,
+    #                   unk_init=torch.Tensor.normal_)
 
     train_iterator, valid_iterator, test_iterator = data.BucketIterator.splits(
         (train_data, valid_data, test_data),
@@ -171,7 +144,7 @@ def main():
                     optimizer.zero_grad()
                     # Grab labels.
                     target = torch.zeros((batch_size, 5))
-                    target[torch.arange(batch_size), vector.label.type(dtype=torch.int64)] = 1
+                    target[torch.arange(batch_size), vector.label] = 1
                     # Grab other data for multimodal sentiment analysis.
                     multimodal_data = torch.cat((vector.upvote.unsqueeze(dim=1),
                                                  vector.change.unsqueeze(dim=1)), dim=1) # Upvotes + past week change
@@ -190,9 +163,6 @@ def main():
                     if iter % print_every == 0:
                         print('Epoch:{}, Iter: {}, Loss:{:.4}'.format(epoch, iter, loss.item()))
                     iter += 1
-
-                    if iter == 1:
-                        break
 
                 torch.save(model, save_dir)
                 if steps_till_eval % 3 == 0:
