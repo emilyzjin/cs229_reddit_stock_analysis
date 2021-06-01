@@ -1,6 +1,6 @@
 import numpy as np
 from preprocessing import get_data
-from utils.util import create_buckets, get_tweets_change
+from util import create_buckets, get_tweets_change
 
 results_files = ['results_learn_rate=0.1', 'results_learn_rate=0.01',
                  'results_learn_rate=0.001', 'results_learn_rate=0.0001']
@@ -28,7 +28,7 @@ def calc_one_v_many_metrics(y_hat, y):
     recalls = []
     f1s = []
     mccs = []
-    for i in range(1, 6):
+    for i in range(5):
         y_hat_binary = np.where(y_hat == i, 1, 0)
         y_binary = np.where(y == i, 1, 0)
         precisions.append(calc_precision(y_hat_binary, y_binary))

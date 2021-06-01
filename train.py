@@ -167,17 +167,17 @@ def main():
                 torch.save(model, save_dir)
                 if checkpoint % 3 == 0:
                     print("evaluating on dev split...")
-                    loss_val, accuracy = evaluate(model, valid_iterator, device)
-                    print("dev loss: ", loss_val, "dev accuracy: ", accuracy)
+                    loss_val, accuracy, precision, recall, f1, mcc = evaluate(model, valid_iterator, device)
+                    print("dev loss: ", loss_val, "dev accuracy: ", accuracy, "precision: ", precision, "recall: ", recall, "f1: ", f1, "mcc: ", mcc)
                     checkpoint += 1
             iter = 0
     else: 
         # testing case
         print("testing data, loading from path" + save_dir + " ...")
         model = torch.load(save_dir)
-        loss_val, accuracy = evaluate(model, test_iterator, criterion=nn.BCEWithLogitsLoss())
-        print("test loss: ", loss_val, "test accuracy: ", accuracy)
-
+        loss_val, accuracy, precision, recall, f1, mcc = evaluate(model, test_iterator, device)
+        print("dev loss: ", loss_val, "dev accuracy: ", accuracy, "precision: ", precision, "recall: ", recall, "f1: ", f1, "mcc: ", mcc)
+                    
 
 if __name__=="__main__":
     main()
