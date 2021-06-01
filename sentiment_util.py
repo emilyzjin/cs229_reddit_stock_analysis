@@ -80,7 +80,7 @@ def timer(start_time, end_time):
     return mins, secs
 
 
-def evaluate(model, iterator, criterion, device):
+def evaluate(model, iterator, device):
     """
     Function to evaluate the loss and accuracy of validation and test sets.
     iterator - validation or test iterator
@@ -91,23 +91,22 @@ def evaluate(model, iterator, criterion, device):
     # Cumulated Training accuracy
     eval_acc = 0
 
-    # Set model to evaluation mode
-    # model.eval()
-    
     # Don't calculate the gradients
     with torch.no_grad():
         for batch in iterator:
-            # text, text_lengths = batch.text
-            target = torch.zeros((5,))
-            target[iterator[:, -1]] = 1
+            # Grab labels.
+            target = torch.zeros((batch.batch_size, 5))
+            target[torch.arange(batch.batch_size), batch.label.type(dtype=torch.int64)] = 1
             # Grab other data for multimodal sentiment analysis.
-            multimodal_data = iterator[:, -3:-2]  # Upvotes + past week change
+            multimodal_data = torch.cat((batch.upvote.unsqueeze(dim=1),
+                                         batch.change.unsqueeze(dim=1)), dim=1)  # Upvotes + past week change
             # Apply model
-            predictions = model(batch[:, :-4], multimodal_data)
+            y = model(batch, multimodal_data)
             target = target.to(device)
-            loss = nn.BCEWithLogitsLoss(predictions, target)
+            loss_function = nn.BCEWithLogitsLoss()
+            loss = loss_function(y, target)
 
-            accuracy = batch_accuracy(predictions, batch.label)
+            accuracy = batch_accuracy(y, batch.label)
 
             eval_loss += loss.item()
             eval_acc += accuracy.item()

@@ -28,7 +28,7 @@ class SentimentLSTM(nn.Module):
 
         # 1. Feed the tweets in the embedding layer
         # padding_idx set to not learn the emedding for the <pad> token - irrelevant to determining sentiment
-        self.embedding = nn.Embedding(vocab_size, embedding_dim, padding_idx = pad_idx)
+        self.embedding = nn.Embedding(vocab_size, embedding_dim, padding_idx=pad_idx)
 
         # 2. LSTM layer
         # returns the output and a tuple of the final hidden state and final cell state
@@ -59,7 +59,7 @@ class SentimentLSTM(nn.Module):
 
         # Pack the embeddings - cause RNN to only process non-padded elements
         # Speeds up computation
-        packed_embedded = nn.utils.rnn.pack_padded_sequence(embedded, text_lengths.cpu())
+        packed_embedded = nn.utils.rnn.pack_padded_sequence(embedded, text_lengths.cpu(), enforce_sorted=False)
 
         # output of encoder
         packed_output, (hidden, cell) = self.encoder(packed_embedded)
@@ -87,6 +87,8 @@ class OutputLayer(nn.Module):
     To be used after sentiment analysis.
     """
     def __init__(self, input_size, hidden_size, alpha):
+        super().__init__()
+
         self.model = nn.Sequential(
             nn.Linear(input_size, hidden_size),
             nn.ELU(alpha),
@@ -97,7 +99,7 @@ class OutputLayer(nn.Module):
     def forward(self, sentiment_output, y):
         # sentiment_output - output from sentiment analysis model
         # y - other input
-        x = torch.cat(sentiment_output, y, dim=1)
+        x = torch.cat((sentiment_output, y), dim=1)
         return self.model(x)
 
 
@@ -106,9 +108,12 @@ class MovementPredictor(nn.Module):
     Full model for predicting stock movements.
     """
     def __init__(self, vocab_size, embedding_dim, hidden_dim, n_layers, bidirectional, dropout, pad_idx, alpha):
+        super().__init__()
         self.sentiment_analysis = SentimentLSTM(vocab_size, embedding_dim, hidden_dim, n_layers, 
                                                 bidirectional, dropout, pad_idx)
-        self.out = OutputLayer(hidden_dim, hidden_dim, alpha)
+        self.out = OutputLayer(hidden_dim + 2, hidden_dim, alpha)
 
     def forward(self, converted_text, multimodal_data):
-        return self.out(self.sentiment_analysis(converted_text), multimodal_data)
+        converted_text_text, converted_text_lengths = converted_text.text
+        sentiments = self.sentiment_analysis(converted_text_text, converted_text_lengths)
+        return self.out(sentiments, multimodal_data)
