@@ -4,6 +4,8 @@ import torch.nn as nn
 import torchtext
 import csv 
 import util
+import os
+import random
 from sentiment_util import evaluate
 from models.sentiment_model import MovementPredictor
 from torchtext.legacy import data
@@ -54,11 +56,26 @@ def create_buckets():
 
 
 def split_data():
-    with open('removed_characters_buckets.csv') as in_file:
-        with open('train_data.csv', 'w') as train_file:
+    train_split, val_split = 0.8, 0.1
+    if not os.path.isfile('shuffled.csv'):
+        with open('removed_characters_buckets.csv', 'r') as r:
+            data = r.readlines()
+            random.shuffle(data)
+            rows = '\n'.join([row.strip() for row in data])
+            train_len = len(rows) * train_split
+            val_len = len(rows) * val_split
+            test_len = len(rows) - train_len - val_len
+            with open('train_data.csv', 'w') as train_file:
+                train_file.write(rows[:train_len])
+                train_file.close()
             with open('valid_data.csv', 'w') as valid_file:
-                with open('test_data.csv', 'w') as test_file:
-
+                valid_file.write(rows[train_len:train_len + val_len])
+                valid_file.close()
+            with open('test_data.csv', 'w') as test_file:
+                test_file.write(rows[train_len + val_len:])
+                test_file.close()
+    r.close()
+    print('Train Split: {}, Val Split: {}, Test Split: {}'.format(train_len, val_len, test_len))
 
 
 def data_preprocess(max_vocab_size, device, batch_size):
