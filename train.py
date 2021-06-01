@@ -25,9 +25,10 @@ LABEL = data.LabelField(dtype=torch.float)
 # LABEL = data.Field(is_target=True, unk_token=None)
 
 
-def create_buckets():
-    with open('removed_characters.csv') as in_file:
-        with open('removed_characters_buckets.csv', 'w') as out_file:
+def create_buckets(filename):
+    with open('filename') as in_file:
+        file_title, csv_tag = filename.split()
+        with open(file_title + 'labels' + csv_tag, 'w') as out_file:
             reader = csv.reader(in_file, delimiter=',')
             writer = csv.writer(out_file)
             for row in reader:
