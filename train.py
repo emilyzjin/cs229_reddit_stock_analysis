@@ -94,8 +94,9 @@ def data_preprocess(max_vocab_size, device, batch_size):
 def main():
     create_csv()
     train = True
-    batch_size = 449
+    batch_size = 512
     hidden_size = 256
+    output_dim = 1
     drop_prob = 0.2
     learning_rate = 1e-2 # TODO: hyper
     num_epochs = 100
@@ -111,9 +112,10 @@ def main():
 
     # Initialize model.
     model = MovementPredictor(
-        vocab_size=287799,
+        vocab_size=len(TEXT.vocab),
         embedding_dim=100,
         hidden_dim=hidden_size,
+        output_dim=output_dim,
         n_layers=2,
         bidirectional=True,
         dropout=drop_prob,
@@ -131,11 +133,12 @@ def main():
     #scheduler = sched.LambdaLR(optimizer, lambda s: 1.)
 
     iter = 0
-    checkpoint = 0
+    checkpoint = 1
 
     # Training Loop
     if train:
         for epoch in range(num_epochs):
+            iter = 0
             with torch.enable_grad():
                 for vector in train_iterator:
                     optimizer.zero_grad()
@@ -164,10 +167,10 @@ def main():
                 torch.save(model, save_dir)
                 if checkpoint % 3 == 0:
                     print("evaluating on dev split...")
-                    loss_val, accuracy = evaluate(model, test_iterator, device)
+                    loss_val, accuracy = evaluate(model, valid_iterator, device)
                     print("dev loss: ", loss_val, "dev accuracy: ", accuracy)
                     checkpoint += 1
-                
+            iter = 0
     else: 
         # testing case
         print("testing data, loading from path" + save_dir + " ...")

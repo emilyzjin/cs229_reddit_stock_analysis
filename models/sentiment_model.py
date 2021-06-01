@@ -9,8 +9,7 @@ import torch
 
 
 class SentimentLSTM(nn.Module):
-    def __init__(self, vocab_size, embedding_dim, hidden_dim, n_layers, 
-                 bidirectional, dropout, pad_idx):
+    def __init__(self, vocab_size, embedding_dim, hidden_dim, output_dim, n_layers, bidirectional, dropout, pad_idx):
         """
         Define the layers of the module.
 
@@ -41,10 +40,11 @@ class SentimentLSTM(nn.Module):
         # 3. Fully-connected layer
         # Final hidden state has both a forward and a backward component concatenated together
         # The size of the input to the nn.Linear layer is twice that of the hidden dimension size
-        self.predictor = nn.Linear(hidden_dim*2, hidden_dim)
+        self.predictor = nn.Linear(hidden_dim*2, output_dim)
 
         # Initialize dropout layer for regularization
         self.dropout = nn.Dropout(dropout)
+        
       
     def forward(self, text, text_lengths):
         """
@@ -107,13 +107,18 @@ class MovementPredictor(nn.Module):
     """
     Full model for predicting stock movements.
     """
-    def __init__(self, vocab_size, embedding_dim, hidden_dim, n_layers, bidirectional, dropout, pad_idx, alpha):
+    def __init__(self, vocab_size, embedding_dim, hidden_dim, n_layers, bidirectional, dropout, pad_idx, alpha, pretrained_embeddings, unk_idx, device):
         super().__init__()
-        self.sentiment_analysis = SentimentLSTM(vocab_size, embedding_dim, hidden_dim, n_layers, 
+        self.sentiment_analysis = SentimentLSTM(vocab_size, embedding_dim, hidden_dim, output_dim, n_layers,
                                                 bidirectional, dropout, pad_idx)
+        self.sentiment_analysis.embedding.weight.data.copy_(pretrained_embeddings)
+        self.sentiment_analysis.embedding.weight.data[unk_idx] = torch.zeros(embedding_dim)
+        self.sentiment_analysis.embedding.weight.data[pad_idx] = torch.zeros(embedding_dim)
+        self.sentiment_analysis.load_state_dict(torch.load('model-small.pt', map_location=torch.device(device)))
         self.out = OutputLayer(hidden_dim + 2, hidden_dim, alpha)
 
     def forward(self, converted_text, multimodal_data):
         converted_text_text, converted_text_lengths = converted_text.text
         sentiments = self.sentiment_analysis(converted_text_text, converted_text_lengths)
         return self.out(sentiments, multimodal_data)
+
