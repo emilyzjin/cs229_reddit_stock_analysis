@@ -1,10 +1,10 @@
 import torch
 import torch.nn as nn
 import torchtext
-import csv 
+import csv
 from util import get_available_devices
 from sentiment_util import evaluate
-from models.sentiment_model import MovementPredictor, WithoutSentiment
+from models.sentiment_model import MovementPredictor, WithoutSentiment, WithSentiment
 from torchtext.legacy import data
 import spacy
 import torch.optim as optim
@@ -104,7 +104,8 @@ def main():
     alpha = 0.2 # for ELU # TODO: hyper
     max_grad_norm = 2.0
     print_every = 100
-    use_sentiment = False
+    train_sentiment = False
+    use_sentiment = True
     save_dir = 'results/model.path_lr_{:.4}_drop_prob_{:.4}_alpha_{:.4}.tar'.format(learning_rate, drop_prob, alpha)
 
     device, gpu_ids = get_available_devices()
@@ -112,7 +113,7 @@ def main():
     train_iterator, valid_iterator, test_iterator = data_preprocess(25000, device, batch_size)
 
     # Initialize model.
-    if use_sentiment:
+    if train_sentiment:
         model = MovementPredictor(
             vocab_size=len(TEXT.vocab),
             embedding_dim=100,
@@ -122,6 +123,11 @@ def main():
             bidirectional=True,
             dropout=drop_prob,
             pad_idx=TEXT.vocab.stoi[TEXT.pad_token],
+            alpha=alpha
+        )
+    elif use_sentiment:
+        model = WithSentiment(
+            hidden_dim=hidden_size,
             alpha=alpha
         )
     else:
@@ -170,6 +176,10 @@ def main():
                     #scheduler.step(step // batch_size)
                     if iter % print_every == 0:
                         print('Epoch:{}, Iter: {}, Loss:{:.4}'.format(epoch, iter, loss.item()))
+                        with open('results/model.path_lr_{:.4}_drop_prob_{:.4}_alpha_{:.4}.csv'.format(learning_rate, drop_prob, alpha), 'a', encoding='utf-8') as f:
+                            writer = csv.writer(f)
+                            writer.writerow([loss_val, accuracy, precision, recall, f1, mcc])
+                            f.close
                     iter += 1
 
                 torch.save(model, save_dir)
@@ -177,15 +187,15 @@ def main():
                     print("evaluating on dev split...")
                     loss_val, accuracy, precision, recall, f1, mcc = evaluate(model, valid_iterator, device)
                     print("dev loss: ", loss_val, "dev accuracy: ", accuracy, "precision: ", precision, "recall: ", recall, "f1: ", f1, "mcc: ", mcc)
-                    checkpoint += 1
-            iter = 0
-    else: 
+                checkpoint += 1
+
+    else:
         # testing case
         print("testing data, loading from path" + save_dir + " ...")
         model = torch.load(save_dir)
         loss_val, accuracy, precision, recall, f1, mcc = evaluate(model, test_iterator, device)
         print("dev loss: ", loss_val, "dev accuracy: ", accuracy, "precision: ", precision, "recall: ", recall, "f1: ", f1, "mcc: ", mcc)
-                    
+
 
 if __name__=="__main__":
     main()
