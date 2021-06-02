@@ -122,3 +122,11 @@ class MovementPredictor(nn.Module):
         sentiments = self.sentiment_analysis(converted_text_text, converted_text_lengths)
         return self.out(sentiments, multimodal_data)
 
+
+class WithoutSentiment(nn.Module):
+    def __init__(self, hidden_dim, alpha):
+        super().__init__()
+        self.out = OutputLayer(2, hidden_dim, alpha)
+
+    def forward(self, multimodal_data):
+        return self.out(multimodal_data)
