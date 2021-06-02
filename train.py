@@ -107,15 +107,15 @@ def main():
 
                 if checkpoint % 3 == 0:
                     print("evaluating on dev split...")
-                    # loss_val, accuracy, precision, recall, f1, mcc = evaluate(model, valid_iterator, device)
-                    loss_val, accuracy, closeness = evaluate(model, valid_iterator, device)
+                    loss_val, accuracy, precision, closeness, recall, f1, mcc = evaluate(model, valid_iterator, device)
+                    # loss_val, accuracy, closeness = evaluate(model, valid_iterator, device)
                     with open('results/model.path_lr_{:.4}_drop_prob_{:.4}_alpha_{:.4}.csv'.format(learning_rate, drop_prob, alpha), 'a', encoding='utf-8') as f:
                         writer = csv.writer(f)
-                        # writer.writerow([loss_val, accuracy, precision, recall, f1, mcc])
-                        writer.writerow([loss_val, accuracy, closeness])
+                        writer.writerow([loss_val, accuracy, closeness, precision, recall, f1, mcc])
+                        # writer.writerow([loss_val, accuracy, closeness])
                     f.close()
-                    # print("dev loss: ", loss_val, "dev accuracy: ", accuracy, "precision: ", precision, "recall: ", recall, "f1: ", f1, "mcc: ", mcc)
-                    print("dev loss: ", loss_val, "dev accuracy: ", accuracy, "closeness: ", closeness)
+                    print("dev loss: ", loss_val, "dev accuracy: ", accuracy, "closeness: ", closeness, "precision: ", precision, "recall: ", recall, "f1: ", f1, "mcc: ", mcc)
+                    # print("dev loss: ", loss_val, "dev accuracy: ", accuracy, "closeness: ", closeness)
                 checkpoint += 1
 
                 torch.save(model, save_dir)

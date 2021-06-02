@@ -65,17 +65,11 @@ def calc_mcc(y_hat_binary, y_binary):
     return mcc
 
 
-def calc_numbers(y_hat_binary, y_binary):
-    pos_pred = torch.where(y_hat_binary == 1)
-    neg_pred = torch.where(y_hat_binary == 0)
-    p_preds = y_hat_binary[pos_pred]
-    p_labels = y_binary[pos_pred]
-    n_preds = y_hat_binary[neg_pred]
-    n_labels = y_binary[neg_pred]
-    tp = torch.sum(p_preds == p_labels)
-    fp = torch.sum(p_preds != p_preds)
-    tn = torch.sum(n_preds == n_labels)
-    fn = torch.sum(n_preds != n_labels)
+def calc_numbers(preds_binary, labels_binary):
+    tp = torch.sum(torch.logical_and(preds_binary == 1, labels_binary == 1))
+    fp = torch.sum(torch.logical_and(preds_binary == 1, labels_binary == 0))
+    tn = torch.sum(torch.logical_and(preds_binary == 0, labels_binary == 0))
+    fn = torch.sum(torch.logical_and(preds_binary == 0, labels_binary == 1))
 
     return tp, fp, tn, fn
 
