@@ -12,6 +12,7 @@ import spacy
 import torch
 import torch.nn.functional as F
 import torch.nn as nn
+from evaluate import *
 
 lemmatizer = WordNetLemmatizer()
 
@@ -91,6 +92,7 @@ def evaluate(model, iterator, device):
     eval_loss = 0.0
     # Cumulated Training accuracy
     eval_acc = 0
+    tp, fp, tn, fn = 0, 0, 0, 0
 
     # Don't calculate the gradients
     with torch.no_grad():
@@ -110,10 +112,23 @@ def evaluate(model, iterator, device):
 
             accuracy = batch_accuracy(y, batch.label)
 
+            for i in range(5):
+                preds_binary = np.where(y == i, 1, 0)
+                labels_binary = np.where(batch.label == i, 1, 0)
+                tpi, fpi, tni, fni = calc_numbers(preds_binary, labels_binary)
+                tp += tpi
+                fp += fpi 
+                tn += tni 
+                fn += fni
+
             eval_loss += loss.item()
             eval_acc += accuracy.item()
-        
-    return eval_loss / len(iterator), eval_acc / len(iterator)
+        print("calculating scores...")
+        precision = (tp + 1) / (tp + fp + 1)
+        recall = (tp + 1) / (tp + fn + 1)
+        f1 = (2 * precision * recall + 1) / (precision + recall + 1)
+        mcc = (tp * tn - fp * fn + 1) / np.sqrt((tp + fp) * (tp + fn) * (tn + fp) * (tn + fn) + 1)
+    return eval_loss / len(iterator), eval_acc / len(iterator), precision, recall, f1, mcc
 
 
 def predict(model, text, tokenized=True):

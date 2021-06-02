@@ -164,8 +164,12 @@ def main():
                 torch.save(model, save_dir)
                 if checkpoint % 3 == 0:
                     print("evaluating on dev split...")
-                    loss_val, accuracy = evaluate(model, valid_iterator, device)
-                    print("dev loss: ", loss_val, "dev accuracy: ", accuracy)
+                    loss_val, accuracy, precision, recall, f1, mcc = evaluate(model, valid_iterator, device)
+                    with open('results/model.path_lr_{:.4}_drop_prob_{:.4}_alpha_{:.4}.csv', 'a', encoding='utf-8') as f:
+                        writer = csv.writer(f)
+                        writer.writerow([loss_val, accuracy, precision, recall, f1, mcc])
+                    f.close()
+                    print("dev loss: ", loss_val, "dev accuracy: ", accuracy, "precision: ", precision, "recall: ", recall, "f1: ", f1, "mcc: ", mcc)
                 checkpoint += 1
                 
     else: 
