@@ -162,8 +162,8 @@ def main():
                     target = vector.label
                     # Grab other data for multimodal sentiment analysis.
                     multimodal_data = torch.cat((vector.upvote.unsqueeze(dim=1), # upvotes
-                                                 vector.change.unsqueeze(dim=1)), # past week change
-                                                 vector.sent.unsqueeze(dim=1), # sentiment
+                                                 vector.change.unsqueeze(dim=1), # past week change
+                                                 vector.sent.unsqueeze(dim=1)), # sentiment
                                                  dim=1)
                     # Apply model
                     y = model(vector, multimodal_data)
