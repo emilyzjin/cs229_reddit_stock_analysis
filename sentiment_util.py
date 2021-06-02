@@ -101,7 +101,8 @@ def evaluate(model, iterator, device):
             #target[torch.arange(batch.batch_size), batch.label.type(dtype=torch.int64)] = 1
             # Grab other data for multimodal sentiment analysis.
             multimodal_data = torch.cat((batch.upvote.unsqueeze(dim=1),
-                                         batch.change.unsqueeze(dim=1)), dim=1)  # Upvotes + past week change
+                                         batch.change.unsqueeze(dim=1), 
+                                         batch.sent.unsqueeze(dim=1)), dim=1)  # Upvotes + past week change
             # Apply model
             y = model(batch, multimodal_data)
             target = target.to(device)
