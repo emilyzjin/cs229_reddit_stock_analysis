@@ -125,7 +125,7 @@ def evaluate(model, iterator, device):
         precision = (tp + 1) / (tp + fp + 1)
         recall = (tp + 1) / (tp + fn + 1)
         f1 = (2 * precision * recall + 1) / (precision + recall + 1)
-        mcc = (tp * tn - fp * fn + 1) / np.sqrt((tp + fp) * (tp + fn) * (tn + fp) * (tn + fn) + 1)    
+        mcc = (tp * tn - fp * fn + 1) / torch.sqrt((tp + fp) * (tp + fn) * (tn + fp) * (tn + fn) + 1)    
     return eval_loss / len(iterator), eval_acc / len(iterator), precision, recall, f1, mcc
 
 

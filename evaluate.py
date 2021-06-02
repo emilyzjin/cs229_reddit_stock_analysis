@@ -61,21 +61,21 @@ def calc_f1(y_hat_binary, y_binary):
 
 def calc_mcc(y_hat_binary, y_binary):
     tp, fp, tn, fn = calc_numbers(y_hat_binary, y_binary)
-    mcc = (tp * tn - fp * fn + 1) / np.sqrt((tp + fp) * (tp + fn) * (tn + fp) * (tn + fn) + 1)
+    mcc = (tp * tn - fp * fn + 1) / torch.sqrt((tp + fp) * (tp + fn) * (tn + fp) * (tn + fn) + 1)
     return mcc
 
 
 def calc_numbers(y_hat_binary, y_binary):
-    pos_pred = np.where(y_hat_binary == 1)
-    neg_pred = np.where(y_hat_binary == 0)
+    pos_pred = torch.where(y_hat_binary == 1)
+    neg_pred = torch.where(y_hat_binary == 0)
     p_preds = y_hat_binary[pos_pred]
     p_labels = y_binary[pos_pred]
     n_preds = y_hat_binary[neg_pred]
     n_labels = y_binary[neg_pred]
-    tp = np.sum(p_preds == p_labels)
-    fp = np.sum(p_preds != p_preds)
-    tn = np.sum(n_preds == n_labels)
-    fn = np.sum(n_preds != n_labels)
+    tp = torch.sum(p_preds == p_labels)
+    fp = torch.sum(p_preds != p_preds)
+    tn = torch.sum(n_preds == n_labels)
+    fn = torch.sum(n_preds != n_labels)
 
     return tp, fp, tn, fn
 
