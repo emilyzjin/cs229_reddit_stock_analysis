@@ -128,5 +128,5 @@ class WithoutSentiment(nn.Module):
         super().__init__()
         self.out = OutputLayer(2, hidden_dim, alpha)
 
-    def forward(self, multimodal_data):
+    def forward(self, _, multimodal_data):
         return self.out(multimodal_data)

@@ -4,7 +4,7 @@ import torchtext
 import csv 
 from util import get_available_devices
 from sentiment_util import evaluate
-from models.sentiment_model import MovementPredictor
+from models.sentiment_model import MovementPredictor, WithoutSentiment
 from torchtext.legacy import data
 import spacy
 import torch.optim as optim
@@ -104,6 +104,7 @@ def main():
     alpha = 0.2 # for ELU # TODO: hyper
     max_grad_norm = 2.0
     print_every = 100
+    use_sentiment = False
     save_dir = 'results/model.path_lr_{:.4}_drop_prob_{:.4}_alpha_{:.4}.tar'.format(learning_rate, drop_prob, alpha)
 
     device, gpu_ids = get_available_devices()
@@ -111,17 +112,23 @@ def main():
     train_iterator, valid_iterator, test_iterator = data_preprocess(25000, device, batch_size)
 
     # Initialize model.
-    model = MovementPredictor(
-        vocab_size=len(TEXT.vocab),
-        embedding_dim=100,
-        hidden_dim=hidden_size,
-        output_dim=output_dim,
-        n_layers=2,
-        bidirectional=True,
-        dropout=drop_prob,
-        pad_idx=TEXT.vocab.stoi[TEXT.pad_token],
-        alpha=alpha
-    )
+    if use_sentiment:
+        model = MovementPredictor(
+            vocab_size=len(TEXT.vocab),
+            embedding_dim=100,
+            hidden_dim=hidden_size,
+            output_dim=output_dim,
+            n_layers=2,
+            bidirectional=True,
+            dropout=drop_prob,
+            pad_idx=TEXT.vocab.stoi[TEXT.pad_token],
+            alpha=alpha
+        )
+    else:
+        model = WithoutSentiment(
+            hidden_dim=hidden_size,
+            alpha=alpha
+        )
 
     # pretrained_embeddings = TEXT.vocab.vectors
     # model.embedding.weight.data.copy_(pretrained_embeddings)
@@ -143,15 +150,16 @@ def main():
                 for vector in train_iterator:
                     optimizer.zero_grad()
                     # Grab labels.
-                    target = torch.zeros((batch_size, 5))
-                    target[torch.arange(batch_size), vector.label] = 1
+                    #target = torch.zeros((batch_size, 5))
+                    #target[torch.arange(batch_size), vector.label] = 1
+                    target = vector.label
                     # Grab other data for multimodal sentiment analysis.
                     multimodal_data = torch.cat((vector.upvote.unsqueeze(dim=1),
                                                  vector.change.unsqueeze(dim=1)), dim=1) # Upvotes + past week change
                     # Apply model
                     y = model(vector, multimodal_data)
                     target = target.to(device)
-                    loss_function = nn.BCEWithLogitsLoss()
+                    loss_function = nn.CrossEntropyLoss()
                     loss = loss_function(y, target)
                     loss_val = loss.item()
 

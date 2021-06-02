@@ -96,15 +96,16 @@ def evaluate(model, iterator, device):
     with torch.no_grad():
         for batch in iterator:
             # Grab labels.
-            target = torch.zeros((batch.batch_size, 5))
-            target[torch.arange(batch.batch_size), batch.label.type(dtype=torch.int64)] = 1
+            #target = torch.zeros((batch.batch_size, 5))
+            target = batch.label.type(dtype=torch.int64)
+            #target[torch.arange(batch.batch_size), batch.label.type(dtype=torch.int64)] = 1
             # Grab other data for multimodal sentiment analysis.
             multimodal_data = torch.cat((batch.upvote.unsqueeze(dim=1),
                                          batch.change.unsqueeze(dim=1)), dim=1)  # Upvotes + past week change
             # Apply model
             y = model(batch, multimodal_data)
             target = target.to(device)
-            loss_function = nn.BCEWithLogitsLoss()
+            loss_function = nn.CrossEntropyLoss()
             loss = loss_function(y, target)
 
             accuracy = batch_accuracy(y, batch.label)
