@@ -66,10 +66,10 @@ def calc_mcc(y_hat_binary, y_binary):
 
 
 def calc_numbers(preds_binary, labels_binary):
-    tp = torch.sum(torch.logical_and(preds_binary == 1, labels_binary == 1))
-    fp = torch.sum(torch.logical_and(preds_binary == 1, labels_binary == 0))
-    tn = torch.sum(torch.logical_and(preds_binary == 0, labels_binary == 0))
-    fn = torch.sum(torch.logical_and(preds_binary == 0, labels_binary == 1))
+    tp = torch.sum(torch.logical_and(preds_binary, labels_binary))
+    fp = torch.sum(torch.logical_and(preds_binary, labels_binary == torch.zeros_like(labels_binary)))
+    tn = torch.sum(torch.logical_and(preds_binary == torch.zeros_like(preds_binary), labels_binary == torch.zeros_like(labels_binary)))
+    fn = torch.sum(torch.logical_and(preds_binary == torch.zeros_like(preds_binary), labels_binary == 1))
 
     return tp, fp, tn, fn
 
