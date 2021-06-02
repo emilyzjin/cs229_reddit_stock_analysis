@@ -63,11 +63,12 @@ def batch_accuracy(predictions, label):
     # Round predictions to the closest integer using the sigmoid function
     preds = torch.argmax(predictions, dim=1)
     # If prediction is equal to label
-    correct = 0.5 - (torch.abs(preds - label).float() / 8) + ((preds == label).float() / 2)
+    close = 0.5 - (torch.abs(preds - label).float() / 8) + ((preds == label).float() / 2)
+    correct = (preds == label).float()
     # Average correct predictions
     accuracy = correct.sum() / len(correct)
-
-    return accuracy
+    closeness = close.sum() / len(correct)
+    return accuracy, closeness
 
 def timer(start_time, end_time):
     """
@@ -90,6 +91,7 @@ def evaluate(model, iterator, device):
     eval_loss = 0.0
     # Cumulated Training accuracy
     eval_acc = 0
+    eval_closeness = 0
     tp, fp, tn, fn = 0, 0, 0, 0
             
     # Don't calculate the gradients
@@ -109,7 +111,7 @@ def evaluate(model, iterator, device):
             loss_function = nn.CrossEntropyLoss()
             loss = loss_function(y, target)
 
-            accuracy = batch_accuracy(y, batch.label)
+            accuracy, closeness = batch_accuracy(y, batch.label)
             """
             for i in range(5):
                 preds_binary = torch.where(y == i, 1, 0)
@@ -122,6 +124,7 @@ def evaluate(model, iterator, device):
             """
             eval_loss += loss.item()
             eval_acc += accuracy.item()
+            eval_closeness += closeness.item()
         print("calculating scores...")
         """
         precision = (tp + 1) / (tp + fp + 1)
@@ -129,7 +132,7 @@ def evaluate(model, iterator, device):
         f1 = (2 * precision * recall + 1) / (precision + recall + 1)
         mcc = (tp * tn - fp * fn + 1) / torch.sqrt((tp + fp) * (tp + fn) * (tn + fp) * (tn + fn) + 1)  
         """  
-    return eval_loss / len(iterator), eval_acc / len(iterator)#, precision, recall, f1, mcc
+    return eval_loss / len(iterator), eval_acc / len(iterator), eval_closeness / len(iterator)#, precision, recall, f1, mcc
 
 
 def predict(model, text, tokenized=True):

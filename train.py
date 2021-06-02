@@ -94,7 +94,7 @@ def data_preprocess(max_vocab_size, device, batch_size):
 
 def main():
     create_csv()
-    train = False
+    train = True
     batch_size = 2048
     hidden_size = 256
     output_dim = 1
@@ -185,22 +185,22 @@ def main():
                 if checkpoint % 3 == 0:
                     print("evaluating on dev split...")
                     # loss_val, accuracy, precision, recall, f1, mcc = evaluate(model, valid_iterator, device)
-                    loss_val, accuracy = evaluate(model, valid_iterator, device)
+                    loss_val, accuracy, closeness = evaluate(model, valid_iterator, device)
                     with open('results/model.path_lr_{:.4}_drop_prob_{:.4}_alpha_{:.4}.csv'.format(learning_rate, drop_prob, alpha), 'a', encoding='utf-8') as f:
                         writer = csv.writer(f)
                         # writer.writerow([loss_val, accuracy, precision, recall, f1, mcc])
-                        writer.writerow([loss_val, accuracy])
+                        writer.writerow([loss_val, accuracy, closeness])
                     f.close()
                     # print("dev loss: ", loss_val, "dev accuracy: ", accuracy, "precision: ", precision, "recall: ", recall, "f1: ", f1, "mcc: ", mcc)
-                    print("dev loss: ", loss_val, "dev accuracy: ", accuracy)
+                    print("dev loss: ", loss_val, "dev accuracy: ", accuracy, "closeness: ", closeness)
                 checkpoint += 1
 
     else:
         # testing case
         print("testing data, loading from path" + save_dir + " ...")
         model = torch.load(save_dir)
-        loss_val, accuracy = evaluate(model, test_iterator, device)
-        print("dev loss: ", loss_val, "dev accuracy: ", accuracy)
+        loss_val, accuracy, closeness = evaluate(model, test_iterator, device)
+        print("dev loss: ", loss_val, "dev accuracy: ", accuracy, "closeness: ", closeness)
 
 
 if __name__=="__main__":
