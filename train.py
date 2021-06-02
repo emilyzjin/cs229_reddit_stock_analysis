@@ -53,18 +53,17 @@ def main():
                         device=device
         )
         sent_model.load_state_dict(torch.load('trained_sentiment.pt', map_location=torch.device(device)))
-        sen_model = sent_model.to(device)
         model = WithSentiment(
             hidden_dim=hidden_size,
             alpha=alpha
         )
     else:
+        sent_model = None
         model = WithoutSentiment(
             hidden_dim=hidden_size,
             alpha=alpha
         )
-
-    # model = nn.DataParallel(model, gpu_ids)
+    sent_model = sent_model.to(device)
     model = model.to(device)
     # Initialize optimizer
     optimizer = optim.Adam(model.parameters(), lr=learning_rate, betas=(beta1, beta2))
@@ -103,14 +102,14 @@ def main():
                     loss.backward()
                     nn.utils.clip_grad_norm_(model.parameters(), max_grad_norm)
                     optimizer.step()
-                    #scheduler.step(step // batch_size)
+
                     if iter % print_every == 0:
                         print('Epoch:{}, Iter: {}, Loss:{:.4}'.format(epoch, iter, loss.item()))
                     iter += 1
 
                 if checkpoint % 3 == 0:
                     print("evaluating on dev split...")
-                    loss_val, accuracy, precision, closeness, recall, f1, mcc = evaluate(model, valid_iterator, device)
+                    loss_val, accuracy, precision, closeness, recall, f1, mcc = evaluate(model, valid_iterator, device, use_sentiment, sent_model)
                     # loss_val, accuracy, closeness = evaluate(model, valid_iterator, device)
                     with open('results/model.path_lr_{:.4}_drop_prob_{:.4}_alpha_{:.4}.csv'.format(learning_rate, drop_prob, alpha), 'a', encoding='utf-8') as f:
                         writer = csv.writer(f)
