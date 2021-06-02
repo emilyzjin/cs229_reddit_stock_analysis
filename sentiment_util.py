@@ -112,6 +112,7 @@ def evaluate(model, iterator, device):
             loss = loss_function(y, target)
 
             accuracy, closeness = batch_accuracy(y, batch.label)
+            """
             for i in range(5):
                 preds_binary = torch.where(y == i, 1, 0)
                 labels_binary = torch.where(batch.label == i, 1, 0)
@@ -120,17 +121,18 @@ def evaluate(model, iterator, device):
                 fp += fpi 
                 tn += tni 
                 fn += fni
+            """
             eval_loss += loss.item()
             eval_acc += accuracy.item()
             eval_closeness += closeness.item()
         print("calculating scores...")
-        
+        """
         precision = (tp + 1) / (tp + fp + 1)
         recall = (tp + 1) / (tp + fn + 1)
         f1 = (2 * precision * recall + 1) / (precision + recall + 1)
         mcc = (tp * tn - fp * fn + 1) / torch.sqrt((tp + fp) * (tp + fn) * (tn + fp) * (tn + fn) + 1)  
-         
-    return eval_loss / len(iterator), eval_acc / len(iterator), eval_closeness / len(iterator), precision, recall, f1, mcc
+        """
+    return eval_loss / len(iterator), eval_acc / len(iterator), eval_closeness / len(iterator) #, precision, recall, f1, mcc
 
 
 def create_csv():
