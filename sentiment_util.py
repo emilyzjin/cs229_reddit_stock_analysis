@@ -81,7 +81,8 @@ def timer(start_time, end_time):
 
     return mins, secs
 
-def evaluate(model, iterator, device):
+
+def evaluate(model, iterator, device, use_sentiment=False, sent_model=None):
     """
     Function to evaluate the loss and accuracy of validation and test sets.
     iterator - validation or test iterator
@@ -97,14 +98,20 @@ def evaluate(model, iterator, device):
     # Don't calculate the gradients
     with torch.no_grad():
         for batch in iterator:
-            # Grab labels.
-            #target = torch.zeros((batch.batch_size, 5))
-            target = batch.label.type(dtype=torch.int64)
-            #target[torch.arange(batch.batch_size), batch.label.type(dtype=torch.int64)] = 1
-            # Grab other data for multimodal sentiment analysis.
-            multimodal_data = torch.cat((batch.upvote.unsqueeze(dim=1),
-                                         batch.change.unsqueeze(dim=1), 
-                                         batch.sent.unsqueeze(dim=1)), dim=1)  # Upvotes + past week change
+            target = batch.label
+            # Grab multimodal data
+            if use_sentiment:
+                text, text_lengths = batch.text
+                text, text_lengths = text.to(device), text_lengths.to(device)
+                sent = sent_model(text, text_lengths)
+                multimodal_data = torch.cat((batch.upvote.unsqueeze(dim=1),  # upvotes
+                                             batch.change.unsqueeze(dim=1),  # past week change
+                                             sent),  # sentiments
+                                            dim=1)
+            else:
+                multimodal_data = torch.cat((batch.upvote.unsqueeze(dim=1),  # upvotes
+                                             batch.change.unsqueeze(dim=1)),  # past week change
+                                            dim=1)
             # Apply model
             y = model(batch, multimodal_data)
             target = target.to(device)

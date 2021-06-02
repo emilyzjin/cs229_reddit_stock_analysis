@@ -58,13 +58,13 @@ def main():
             alpha=alpha
         )
     else:
+        sent_model = None
         model = WithoutSentiment(
             hidden_dim=hidden_size,
             alpha=alpha
         )
-
-    model = nn.DataParallel(model, gpu_ids)
-
+    sent_model = sent_model.to(device)
+    model = model.to(device)
     # Initialize optimizer
     optimizer = optim.Adam(model.parameters(), lr=learning_rate, betas=(beta1, beta2))
 
@@ -81,6 +81,7 @@ def main():
                     # Grab multimodal data
                     if use_sentiment:
                         text, text_lengths = batch.text
+                        text, text_lengths = text.to(device), text_lengths.to(device)
                         sent = sent_model(text, text_lengths)
                         multimodal_data = torch.cat((batch.upvote.unsqueeze(dim=1), # upvotes
                                                      batch.change.unsqueeze(dim=1), # past week change
@@ -101,7 +102,7 @@ def main():
                     loss.backward()
                     nn.utils.clip_grad_norm_(model.parameters(), max_grad_norm)
                     optimizer.step()
-                    #scheduler.step(step // batch_size)
+
                     if iter % print_every == 0:
                         print('Epoch:{}, Iter: {}, Loss:{:.4}'.format(epoch, iter, loss.item()))
                     iter += 1
