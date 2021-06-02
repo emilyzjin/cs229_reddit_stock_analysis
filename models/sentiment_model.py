@@ -22,7 +22,7 @@ class SentimentLSTM(nn.Module):
         dropout - dropout probability
         pad_idx -  string representing the pad token
         """
-        
+
         super().__init__()
 
         # 1. Feed the tweets in the embedding layer
@@ -31,12 +31,12 @@ class SentimentLSTM(nn.Module):
 
         # 2. LSTM layer
         # returns the output and a tuple of the final hidden state and final cell state
-        self.encoder = nn.LSTM(embedding_dim, 
-                               hidden_dim, 
+        self.encoder = nn.LSTM(embedding_dim,
+                               hidden_dim,
                                num_layers=n_layers,
                                bidirectional=bidirectional,
                                dropout=dropout)
-        
+
         # 3. Fully-connected layer
         # Final hidden state has both a forward and a backward component concatenated together
         # The size of the input to the nn.Linear layer is twice that of the hidden dimension size
@@ -44,8 +44,8 @@ class SentimentLSTM(nn.Module):
 
         # Initialize dropout layer for regularization
         self.dropout = nn.Dropout(dropout)
-        
-      
+
+
     def forward(self, text, text_lengths):
         """
         The forward method is called when data is fed into the model.
@@ -53,9 +53,9 @@ class SentimentLSTM(nn.Module):
         text - [tweet length, batch size]
         text_lengths - lengths of tweet
         """
-        
+
         # embedded = [sentence len, batch size, emb dim]
-        embedded = self.dropout(self.embedding(text))    
+        embedded = self.dropout(self.embedding(text))
 
         # Pack the embeddings - cause RNN to only process non-padded elements
         # Speeds up computation
@@ -69,11 +69,11 @@ class SentimentLSTM(nn.Module):
 
         # output = [sentence len, batch size, hid dim * num directions]
         # output over padding tokens are zero tensors
-        
+
         # hidden = [num layers * num directions, batch size, hid dim]
         # cell = [num layers * num directions, batch size, hid dim]
-        
-        # Get the final layer forward and backward hidden states  
+
+        # Get the final layer forward and backward hidden states
         # concat the final forward and backward hidden layers and apply dropout
         hidden = self.dropout(torch.cat((hidden[-2,:,:], hidden[-1,:,:]), dim = 1))
 
@@ -83,7 +83,7 @@ class SentimentLSTM(nn.Module):
 
 class OutputLayer(nn.Module):
     """
-    Two-stack of fully-connected output layers with 5 neurons. 
+    Two-stack of fully-connected output layers with 5 neurons.
     To be used after sentiment analysis.
     """
     def __init__(self, input_size, hidden_size, alpha):
@@ -103,24 +103,23 @@ class OutputLayer(nn.Module):
         return self.model(x)
 
 
-class MovementPredictor(nn.Module):
-    """
-    Full model for predicting stock movements.
-    """
-    def __init__(self, vocab_size, embedding_dim, hidden_dim, n_layers, output_dim, bidirectional, dropout, pad_idx, alpha, pretrained_embeddings, unk_idx, device):
-        super().__init__()
-        self.sentiment_analysis = SentimentLSTM(vocab_size, embedding_dim, hidden_dim, output_dim, n_layers,
-                                                bidirectional, dropout, pad_idx)
-        self.sentiment_analysis.embedding.weight.data.copy_(pretrained_embeddings)
-        self.sentiment_analysis.embedding.weight.data[unk_idx] = torch.zeros(embedding_dim)
-        self.sentiment_analysis.embedding.weight.data[pad_idx] = torch.zeros(embedding_dim)
-        self.sentiment_analysis.load_state_dict(torch.load('model-small.pt', map_location=torch.device(device)))
-        self.out = OutputLayer(hidden_dim + 2, hidden_dim, alpha)
-
-    def forward(self, converted_text, multimodal_data):
-        converted_text_text, converted_text_lengths = converted_text.text
-        sentiments = self.sentiment_analysis(converted_text_text, converted_text_lengths)
-        return self.out(sentiments, multimodal_data)
+# class MovementPredictor(nn.Module):
+#     """
+#     Full model for predicting stock movements.
+#     """
+#     def __init__(self, vocab_size, embedding_dim, hidden_dim, output_dim, n_layers, bidirectional,
+#                  dropout, pad_idx, alpha, device):
+#         super().__init__()
+#
+#         self.sentiment_analysis = SentimentLSTM(vocab_size, embedding_dim, hidden_dim, output_dim, n_layers,
+#                                                 bidirectional, dropout, pad_idx)
+#         self.sentiment_analysis.load_state_dict(torch.load('trained_sentiment.pt', map_location=torch.device(device)))
+#         self.out = OutputLayer(3, hidden_dim, alpha)
+#
+#     def forward(self, converted_text, multimodal_data):
+#         converted_text_text, converted_text_lengths = converted_text.text
+#         sentiments = self.sentiment_analysis(converted_text_text, converted_text_lengths)
+#         return self.out(sentiments, multimodal_data)
 
 
 class WithoutSentiment(nn.Module):
