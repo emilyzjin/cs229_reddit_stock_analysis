@@ -111,8 +111,8 @@ def evaluate(model, iterator, device):
 
             accuracy = batch_accuracy(y, batch.label)
             for i in range(5):
-                preds_binary = np.where(y == i, 1, 0)
-                labels_binary = np.where(batch.label == i, 1, 0)
+                preds_binary = torch.where(y == i, 1, 0)
+                labels_binary = torch.where(batch.label == i, 1, 0)
                 tpi, fpi, tni, fni = calc_numbers(preds_binary, labels_binary)
                 tp += tpi
                 fp += fpi 
