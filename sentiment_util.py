@@ -53,7 +53,6 @@ def tokenize_csv(input_file, output_file):
     print('done')
 
 
-
 def batch_accuracy(predictions, label):
     """
     Returns accuracy per batch.
@@ -136,39 +135,74 @@ def evaluate(model, iterator, device):
     return eval_loss / len(iterator), eval_acc / len(iterator), eval_closeness / len(iterator)#, precision, recall, f1, mcc
 
 
-def predict(model, text, tokenized=True):
-    """
-    Given a tweet, predict the sentiment.
+def create_csv():
+    with open('removed_characters.csv') as in_file:
+        with open('removed_characters_buckets.csv', 'w') as out_file:
+            reader = csv.reader(in_file, delimiter=',')
+            writer = csv.writer(out_file)
+            for row in reader:
+                text = row[0].split(', ')
+                text = ' '.join(text)
+                row_data = [text]
+                row_data.extend(row[-3:-1])
+                label = 1 - float(row[-1])
+                # Strong buy
+                if label >= .03:
+                    label = 0
+                # Buy
+                elif .01 < label < .03:
+                    label = 1
+                # Hold
+                elif -.01 <= label <= .01:
+                    label = 2
+                # Sell
+                elif -.01 > label > -.03:
+                    label = 3
+                else:
+                    label = 4
+                row_data.append(label)
+                writer.writerow(row_data)
+    in_file.close()
 
-    text - a string or a a list of tokens
-    tokenized - True if text is a list of tokens, False if passing in a string
-    """
 
-    # nlp = spacy.load('en')
-    nlp = spacy.blank("en")
+def data_preprocess(TEXT, UPVOTE, CHANGE, SENT, LABEL, data, max_vocab_size, device, batch_size):
 
-    # Sets the model to evaluation mode
-    model.eval()
+    # Map data to fields
+    fields_text = [('text', TEXT), ('upvote', UPVOTE), ('change', CHANGE), ('sent', SENT), ('label', LABEL)]
 
-    if tokenized == False:
-        # Tokenizes the sentence
-        tokens = [token.text for token in nlp.tokenizer(text)]
-    else:
-        tokens = text
+    # Apply field definition to create torch dataset
+    train_data = data.TabularDataset(
+        path="train_data.csv",
+        format="CSV",
+        fields=fields_text,
+        skip_header=False)
+    valid_data = data.TabularDataset(
+        path="valid_data.csv",
+        format="CSV",
+        fields=fields_text,
+        skip_header=False)
 
-    # Index the tokens by converting to the integer representation from the vocabulary
-    indexed_tokens = [TEXT.vocab.stoi[t] for t in tokens]
-    # Get the length of the text
-    length = [len(indexed_tokens)]
-    # Convert the indices to a tensor
-    tensor = torch.LongTensor(indexed_tokens).to(device)
-    # Add a batch dimension by unsqueezeing
-    tensor = tensor.unsqueeze(1)
-    # Converts the length into a tensor
-    length_tensor = torch.LongTensor(length)
-    # Convert prediction to be between 0 and 1 with the sigmoid function
-    prediction = torch.sigmoid(model(tensor, length_tensor))
+    test_data = data.TabularDataset(
+        path="valid_data.csv",
+        format="CSV",
+        fields=fields_text,
+        skip_header=False)
 
-    # Return a single value from the prediction
-    return prediction.item()
+    print("Number of train data: {}".format(len(train_data)))
+    print("Number of test data: {}".format(len(test_data)))
+    print("Number of validation data: {}".format(len(valid_data)))
 
+    # unk_init initializes words in the vocab using the Gaussian distribution
+    TEXT.build_vocab(train_data,
+                     max_size=max_vocab_size,
+                     vectors="glove.6B.100d",
+                     unk_init=torch.Tensor.normal_)
+
+    train_iterator, valid_iterator, test_iterator = data.BucketIterator.splits(
+        (train_data, valid_data, test_data),
+        device=device,
+        batch_sizes=(batch_size, batch_size, batch_size),
+        sort_key=lambda x: len(x.text),
+        sort_within_batch=False)
+
+    return train_iterator, valid_iterator, test_iterator
