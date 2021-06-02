@@ -126,7 +126,12 @@ class MovementPredictor(nn.Module):
 class WithoutSentiment(nn.Module):
     def __init__(self, hidden_dim, alpha):
         super().__init__()
-        self.out = OutputLayer(2, hidden_dim, alpha)
+        self.model = nn.Sequential(
+            nn.Linear(2, hidden_dim),
+            nn.ELU(alpha),
+            nn.Linear(hidden_dim, 5),
+            nn.Softmax()
+        )
 
     def forward(self, _, multimodal_data):
-        return self.out(multimodal_data)
+        return self.model(multimodal_data)
