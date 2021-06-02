@@ -53,6 +53,7 @@ def tokenize_csv(input_file, output_file):
     print('done')
 
 
+
 def batch_accuracy(predictions, label):
     """
     Returns accuracy per batch.
@@ -170,3 +171,4 @@ def predict(model, text, tokenized=True):
 
     # Return a single value from the prediction
     return prediction.item()
+

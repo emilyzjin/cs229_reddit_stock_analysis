@@ -63,14 +63,22 @@ def data_preprocess(max_vocab_size, device, batch_size):
     fields_text = [('text', TEXT), ('upvote', UPVOTE), ('change', CHANGE), ('sent', SENT), ('label', LABEL)]
 
     # Apply field definition to create torch dataset
-    dataset = data.TabularDataset(
-        path="reddit_sentiments.csv",
+    train_data = data.TabularDataset(
+        path="train_data.csv",
+        format="CSV",
+        fields=fields_text,
+        skip_header=False)
+    valid_data = data.TabularDataset(
+        path="valid_data.csv",
         format="CSV",
         fields=fields_text,
         skip_header=False)
 
-    # Split data into train, test, validation sets
-    (train_data, test_data, valid_data) = dataset.split(split_ratio=[0.8, 0.1, 0.1])
+    test_data = data.TabularDataset(
+        path="valid_data.csv",
+        format="CSV",
+        fields=fields_text,
+        skip_header=False)
 
     print("Number of train data: {}".format(len(train_data)))
     print("Number of test data: {}".format(len(test_data)))
@@ -124,7 +132,10 @@ def main():
             bidirectional=True,
             dropout=drop_prob,
             pad_idx=TEXT.vocab.stoi[TEXT.pad_token],
-            alpha=alpha
+            unk_idx=TEXT.vocab.stoi[TEXT.unk_token],
+            pretrained_embeddings=TEXT.vocab.vectors,
+            alpha=alpha,
+            device=device
         )
     elif use_sentiment:
         model = WithSentiment(
@@ -137,34 +148,33 @@ def main():
             alpha=alpha
         )
 
-    # pretrained_embeddings = TEXT.vocab.vectors
-    # model.embedding.weight.data.copy_(pretrained_embeddings)
-
     model = nn.DataParallel(model, gpu_ids)
 
     # Initialize optimizer and scheduler.
     optimizer = optim.Adam(model.parameters(), lr=learning_rate, betas=(beta1, beta2))
-    #scheduler = sched.LambdaLR(optimizer, lambda s: 1.)
 
-    iter = 0
-    checkpoint = 1
 
     # Training Loop
     if train:
+        checkpoint = 0
         for epoch in range(num_epochs):
             iter = 0
             with torch.enable_grad():
                 for vector in train_iterator:
                     optimizer.zero_grad()
-                    # Grab labels.
-                    #target = torch.zeros((batch_size, 5))
-                    #target[torch.arange(batch_size), vector.label] = 1
-                    target = vector.label
-                    # Grab other data for multimodal sentiment analysis.
-                    multimodal_data = torch.cat((vector.upvote.unsqueeze(dim=1), # upvotes
-                                                 vector.change.unsqueeze(dim=1), # past week change
-                                                 vector.sent.unsqueeze(dim=1)), # sentiment
-                                                 dim=1)
+                    # Grab labels and multimodal data.
+                    if train_sentiment:
+                        target = torch.zeros((batch_size, 5))
+                        target[torch.arange(batch_size), vector.label] = 1
+                        multimodal_data = torch.cat((vector.upvote.unsqueeze(dim=1), # upvotes
+                                                     vector.change.unsqueeze(dim=1)), # past week change
+                                                     dim=1)
+                    else:
+                        target = vector.label
+                        multimodal_data = torch.cat((vector.upvote.unsqueeze(dim=1), # upvotes
+                                                     vector.change.unsqueeze(dim=1), # past week change
+                                                     vector.sent.unsqueeze(dim=1)), # sentiment
+                                                     dim=1)
                     # Apply model
                     y = model(vector, multimodal_data)
                     target = target.to(device)
@@ -181,7 +191,6 @@ def main():
                         print('Epoch:{}, Iter: {}, Loss:{:.4}'.format(epoch, iter, loss.item()))
                     iter += 1
 
-                torch.save(model, save_dir)
                 if checkpoint % 3 == 0:
                     print("evaluating on dev split...")
                     # loss_val, accuracy, precision, recall, f1, mcc = evaluate(model, valid_iterator, device)
@@ -194,6 +203,8 @@ def main():
                     # print("dev loss: ", loss_val, "dev accuracy: ", accuracy, "precision: ", precision, "recall: ", recall, "f1: ", f1, "mcc: ", mcc)
                     print("dev loss: ", loss_val, "dev accuracy: ", accuracy, "closeness: ", closeness)
                 checkpoint += 1
+
+                torch.save(model, save_dir)
 
     else:
         # testing case
