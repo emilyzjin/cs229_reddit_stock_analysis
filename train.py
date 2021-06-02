@@ -94,12 +94,12 @@ def data_preprocess(max_vocab_size, device, batch_size):
 
 def main():
     create_csv()
-    train = True
-    batch_size = 512
+    train = False
+    batch_size = 2048
     hidden_size = 256
     output_dim = 1
-    drop_prob = 0.2
-    learning_rate = 1e-2 # TODO: hyper
+    drop_prob = 0.3
+    learning_rate = 1e-3 # TODO: hyper
     num_epochs = 100
     beta1, beta2 = 0.9, 0.999 # for Adam
     alpha = 0.2 # for ELU # TODO: hyper
@@ -199,8 +199,8 @@ def main():
         # testing case
         print("testing data, loading from path" + save_dir + " ...")
         model = torch.load(save_dir)
-        loss_val, accuracy, precision, recall, f1, mcc = evaluate(model, test_iterator, device)
-        print("dev loss: ", loss_val, "dev accuracy: ", accuracy, "precision: ", precision, "recall: ", recall, "f1: ", f1, "mcc: ", mcc)
+        loss_val, accuracy = evaluate(model, test_iterator, device)
+        print("dev loss: ", loss_val, "dev accuracy: ", accuracy)
 
 
 if __name__=="__main__":
