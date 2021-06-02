@@ -23,6 +23,7 @@ def tokenize(s):
 TEXT = data.Field(tokenize=tokenize, lower=True, include_lengths=True)
 UPVOTE = data.LabelField(sequential=False, use_vocab=False, dtype=torch.int64)
 CHANGE = data.LabelField(sequential=False, use_vocab=False, dtype=torch.float)
+SENT = data.LabelField(sequential=False, use_vocab=False, dtype=torch.int64)
 LABEL = data.LabelField(sequential=False, use_vocab=False, dtype=torch.int64)
 
 
@@ -59,11 +60,11 @@ def create_csv():
 def data_preprocess(max_vocab_size, device, batch_size):
 
     # Map data to fields
-    fields_text = [('text', TEXT), ('upvote', UPVOTE), ('change', CHANGE), ('label', LABEL)]
+    fields_text = [('text', TEXT), ('upvote', UPVOTE), ('change', CHANGE), ('sent', SENT), ('label', LABEL)]
 
     # Apply field definition to create torch dataset
     dataset = data.TabularDataset(
-        path="removed_characters_buckets.csv",
+        path="reddit_sentiments.csv",
         format="CSV",
         fields=fields_text,
         skip_header=False)
@@ -160,8 +161,10 @@ def main():
                     #target[torch.arange(batch_size), vector.label] = 1
                     target = vector.label
                     # Grab other data for multimodal sentiment analysis.
-                    multimodal_data = torch.cat((vector.upvote.unsqueeze(dim=1),
-                                                 vector.change.unsqueeze(dim=1)), dim=1) # Upvotes + past week change
+                    multimodal_data = torch.cat((vector.upvote.unsqueeze(dim=1), # upvotes
+                                                 vector.change.unsqueeze(dim=1)), # past week change
+                                                 vector.sent.unsqueeze(dim=1), # sentiment
+                                                 dim=1)
                     # Apply model
                     y = model(vector, multimodal_data)
                     target = target.to(device)
