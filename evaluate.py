@@ -1,6 +1,8 @@
 import numpy as np
 from preprocessing import get_data
 from util import create_buckets, get_tweets_change
+import torch
+import torch.nn as nn
 
 results_files = ['results_learn_rate=0.1', 'results_learn_rate=0.01',
                  'results_learn_rate=0.001', 'results_learn_rate=0.0001']
@@ -29,8 +31,8 @@ def calc_one_v_many_metrics(y_hat, y):
     f1s = []
     mccs = []
     for i in range(5):
-        y_hat_binary = np.where(y_hat == i, 1, 0)
-        y_binary = np.where(y == i, 1, 0)
+        y_hat_binary = torch.where(y_hat == i, 1, 0)
+        y_binary = torch.where(y == i, 1, 0)
         precisions.append(calc_precision(y_hat_binary, y_binary))
         recalls.append(calc_recall(y_hat_binary, y_binary))
         f1s.append(calc_f1(y_hat_binary, y_binary))
