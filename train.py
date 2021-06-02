@@ -166,7 +166,7 @@ def main():
                     print("evaluating on dev split...")
                     loss_val, accuracy = evaluate(model, valid_iterator, device)
                     print("dev loss: ", loss_val, "dev accuracy: ", accuracy)
-                    checkpoint += 1
+                checkpoint += 1
                 
     else: 
         # testing case
