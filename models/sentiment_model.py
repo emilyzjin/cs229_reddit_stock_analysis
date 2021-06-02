@@ -9,7 +9,7 @@ import torch
 
 
 class SentimentLSTM(nn.Module):
-    def __init__(self, vocab_size, embedding_dim, hidden_dim, output_dim, n_layers, bidirectional, dropout, pad_idx):
+    def __init__(self, vocab_size, embedding_dim, hidden_dim, output_dim, n_layers, bidirectional, dropout, pad_idx, device):
         """
         Define the layers of the module.
 
@@ -22,7 +22,7 @@ class SentimentLSTM(nn.Module):
         dropout - dropout probability
         pad_idx -  string representing the pad token
         """
-
+        
         super().__init__()
 
         # 1. Feed the tweets in the embedding layer
@@ -44,6 +44,8 @@ class SentimentLSTM(nn.Module):
 
         # Initialize dropout layer for regularization
         self.dropout = nn.Dropout(dropout)
+        
+        self.device = device
 
 
     def forward(self, text, text_lengths):
@@ -53,7 +55,8 @@ class SentimentLSTM(nn.Module):
         text - [tweet length, batch size]
         text_lengths - lengths of tweet
         """
-
+        text = text.to(self.device)
+        text_lengths = text_lengths.to(self.device)
         # embedded = [sentence len, batch size, emb dim]
         embedded = self.dropout(self.embedding(text))
 

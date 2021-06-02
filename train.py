@@ -49,7 +49,8 @@ def main():
                         n_layers=2,
                         bidirectional=True,
                         dropout=drop_prob,
-                        pad_idx=TEXT.vocab.stoi[TEXT.pad_token]
+                        pad_idx=TEXT.vocab.stoi[TEXT.pad_token],
+                        device=device
         )
         sent_model.load_state_dict(torch.load('trained_sentiment.pt', map_location=torch.device(device)))
         model = WithSentiment(
