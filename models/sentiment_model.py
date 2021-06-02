@@ -55,13 +55,12 @@ class SentimentLSTM(nn.Module):
         text - [tweet length, batch size]
         text_lengths - lengths of tweet
         """
-        text = text.to(self.device)
-        text_lengths = text_lengths.to(self.device)
-        # embedded = [sentence len, batch size, emb dim]
-        embedded = self.dropout(self.embedding(text))
 
+        # embedded = [sentence len, batch size, emb dim]
+        embedded = self.dropout(self.embedding(text)) 
+        embedded = embedded.to(self.device)
         # Pack the embeddings - cause RNN to only process non-padded elements
-        packed_embedded = nn.utils.rnn.pack_padded_sequence(embedded, text_lengths, enforce_sorted=False)
+        packed_embedded = nn.utils.rnn.pack_padded_sequence(embedded, text_lengths.cpu(), enforce_sorted=False)
 
         # output of encoder
         packed_output, (hidden, cell) = self.encoder(packed_embedded)

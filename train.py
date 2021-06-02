@@ -53,6 +53,7 @@ def main():
                         device=device
         )
         sent_model.load_state_dict(torch.load('trained_sentiment.pt', map_location=torch.device(device)))
+        sen_model = sent_model.to(device)
         model = WithSentiment(
             hidden_dim=hidden_size,
             alpha=alpha
@@ -63,8 +64,8 @@ def main():
             alpha=alpha
         )
 
-    model = nn.DataParallel(model, gpu_ids)
-
+    # model = nn.DataParallel(model, gpu_ids)
+    model = model.to(device)
     # Initialize optimizer
     optimizer = optim.Adam(model.parameters(), lr=learning_rate, betas=(beta1, beta2))
 
@@ -81,6 +82,7 @@ def main():
                     # Grab multimodal data
                     if use_sentiment:
                         text, text_lengths = batch.text
+                        text, text_lengths = text.to(device), text_lengths.to(device)
                         sent = sent_model(text, text_lengths)
                         multimodal_data = torch.cat((batch.upvote.unsqueeze(dim=1), # upvotes
                                                      batch.change.unsqueeze(dim=1), # past week change
