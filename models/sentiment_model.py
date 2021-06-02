@@ -58,8 +58,7 @@ class SentimentLSTM(nn.Module):
         embedded = self.dropout(self.embedding(text))
 
         # Pack the embeddings - cause RNN to only process non-padded elements
-        # Speeds up computation
-        packed_embedded = nn.utils.rnn.pack_padded_sequence(embedded, text_lengths.cpu(), enforce_sorted=False)
+        packed_embedded = nn.utils.rnn.pack_padded_sequence(embedded, text_lengths, enforce_sorted=False)
 
         # output of encoder
         packed_output, (hidden, cell) = self.encoder(packed_embedded)
@@ -67,17 +66,9 @@ class SentimentLSTM(nn.Module):
         # unpack sequence - transform packed sequence to a tensor
         output, output_lengths = nn.utils.rnn.pad_packed_sequence(packed_output)
 
-        # output = [sentence len, batch size, hid dim * num directions]
-        # output over padding tokens are zero tensors
-
-        # hidden = [num layers * num directions, batch size, hid dim]
-        # cell = [num layers * num directions, batch size, hid dim]
-
         # Get the final layer forward and backward hidden states
         # concat the final forward and backward hidden layers and apply dropout
         hidden = self.dropout(torch.cat((hidden[-2,:,:], hidden[-1,:,:]), dim = 1))
-
-        # hidden = [batch size, hid dim * num directions]
 
         return self.predictor(hidden)
 
@@ -101,25 +92,6 @@ class OutputLayer(nn.Module):
         # y - other input
         x = torch.cat((sentiment_output, y), dim=1)
         return self.model(x)
-
-
-# class MovementPredictor(nn.Module):
-#     """
-#     Full model for predicting stock movements.
-#     """
-#     def __init__(self, vocab_size, embedding_dim, hidden_dim, output_dim, n_layers, bidirectional,
-#                  dropout, pad_idx, alpha, device):
-#         super().__init__()
-#
-#         self.sentiment_analysis = SentimentLSTM(vocab_size, embedding_dim, hidden_dim, output_dim, n_layers,
-#                                                 bidirectional, dropout, pad_idx)
-#         self.sentiment_analysis.load_state_dict(torch.load('trained_sentiment.pt', map_location=torch.device(device)))
-#         self.out = OutputLayer(3, hidden_dim, alpha)
-#
-#     def forward(self, converted_text, multimodal_data):
-#         converted_text_text, converted_text_lengths = converted_text.text
-#         sentiments = self.sentiment_analysis(converted_text_text, converted_text_lengths)
-#         return self.out(sentiments, multimodal_data)
 
 
 class WithoutSentiment(nn.Module):
