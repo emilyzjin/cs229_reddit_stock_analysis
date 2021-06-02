@@ -179,16 +179,16 @@ def main():
                     #scheduler.step(step // batch_size)
                     if iter % print_every == 0:
                         print('Epoch:{}, Iter: {}, Loss:{:.4}'.format(epoch, iter, loss.item()))
-                        with open('results/model.path_lr_{:.4}_drop_prob_{:.4}_alpha_{:.4}.csv'.format(learning_rate, drop_prob, alpha), 'a', encoding='utf-8') as f:
-                            writer = csv.writer(f)
-                            writer.writerow([loss_val, accuracy, precision, recall, f1, mcc])
-                            f.close
                     iter += 1
 
                 torch.save(model, save_dir)
                 if checkpoint % 3 == 0:
                     print("evaluating on dev split...")
                     loss_val, accuracy, precision, recall, f1, mcc = evaluate(model, valid_iterator, device)
+                    with open('results/model.path_lr_{:.4}_drop_prob_{:.4}_alpha_{:.4}.csv'.format(learning_rate, drop_prob, alpha), 'a', encoding='utf-8') as f:
+                        writer = csv.writer(f)
+                        writer.writerow([loss_val, accuracy, precision, recall, f1, mcc])
+                    f.close()
                     print("dev loss: ", loss_val, "dev accuracy: ", accuracy, "precision: ", precision, "recall: ", recall, "f1: ", f1, "mcc: ", mcc)
                 checkpoint += 1
 
