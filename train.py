@@ -3,7 +3,7 @@ import torch.nn as nn
 import torchtext
 import csv
 from util import get_available_devices
-from sentiment_util import evaluate, create_csv, data_preprocess
+from sentiment_util import evaluate, data_preprocess
 from models.sentiment_model import WithoutSentiment, WithSentiment, SentimentLSTM
 from torchtext.legacy import data
 import torch.optim as optim
@@ -25,7 +25,7 @@ def main():
     batch_size = 2048
     hidden_size = 256
     output_dim = 1
-    drop_prob = 0.3
+    drop_prob = 0.5
     learning_rate = 1e-3 # TODO: hyper
     num_epochs = 100
     beta1, beta2 = 0.9, 0.999 # for Adam
