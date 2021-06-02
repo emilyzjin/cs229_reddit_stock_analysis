@@ -107,7 +107,7 @@ class MovementPredictor(nn.Module):
     """
     Full model for predicting stock movements.
     """
-    def __init__(self, vocab_size, embedding_dim, hidden_dim, n_layers, bidirectional, dropout, pad_idx, alpha, pretrained_embeddings, unk_idx, device):
+    def __init__(self, vocab_size, embedding_dim, hidden_dim, n_layers, output_dim, bidirectional, dropout, pad_idx, alpha, pretrained_embeddings, unk_idx, device):
         super().__init__()
         self.sentiment_analysis = SentimentLSTM(vocab_size, embedding_dim, hidden_dim, output_dim, n_layers,
                                                 bidirectional, dropout, pad_idx)
@@ -128,6 +128,20 @@ class WithoutSentiment(nn.Module):
         super().__init__()
         self.model = nn.Sequential(
             nn.Linear(2, hidden_dim),
+            nn.ELU(alpha),
+            nn.Linear(hidden_dim, 5),
+            nn.Softmax()
+        )
+
+    def forward(self, _, multimodal_data):
+        return self.model(multimodal_data)
+
+
+class WithSentiment(nn.Module):
+    def __init__(self, hidden_dim, alpha):
+        super().__init__()
+        self.model = nn.Sequential(
+            nn.Linear(3, hidden_dim),
             nn.ELU(alpha),
             nn.Linear(hidden_dim, 5),
             nn.Softmax()
