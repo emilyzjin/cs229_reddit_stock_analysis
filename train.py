@@ -32,7 +32,7 @@ def main():
     alpha = 0.2 # for ELU # TODO: hyper
     max_grad_norm = 2.0
     print_every = 100
-    use_sentiment = True
+    use_sentiment = False
     save_dir = 'results/model.path_lr_{:.4}_drop_prob_{:.4}_alpha_{:.4}.tar'.format(learning_rate, drop_prob, alpha)
 
     device, gpu_ids = get_available_devices()
@@ -64,7 +64,7 @@ def main():
 
     model = nn.DataParallel(model, gpu_ids)
 
-    # Initialize optimizer and scheduler.
+    # Initialize optimizer
     optimizer = optim.Adam(model.parameters(), lr=learning_rate, betas=(beta1, beta2))
 
     # Training Loop
