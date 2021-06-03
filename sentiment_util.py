@@ -119,27 +119,40 @@ def evaluate(model, iterator, device, use_sentiment=False, sent_model=None):
             loss = loss_function(y, target)
 
             accuracy, closeness = batch_accuracy(y, batch.label)
-            """
+            pred_labels = torch.argmax(y, dim=1)
+
+            precisions = []
+            recalls = []
+            f1s = []
+            mccs = []
             for i in range(5):
-                preds_binary = torch.where(y == i, 1, 0)
+                preds_binary = torch.where(pred_labels == i, 1, 0)
                 labels_binary = torch.where(batch.label == i, 1, 0)
                 tpi, fpi, tni, fni = calc_numbers(preds_binary, labels_binary)
-                tp += tpi
-                fp += fpi 
-                tn += tni 
-                fn += fni
-            """
+                # tp += tpi
+                # fp += fpi
+                # tn += tni
+                # fn += fni
+
+                precision_i = (tpi + 1) / (tpi + fpi + 1)
+                recall_i = (tpi + 1) / (tpi + fni + 1)
+                mcc_i = (tpi * tni - fpi * fni + 1) / math.sqrt((tpi + fpi) * (tpi + fni) * (tni + fpi) * (tni + fni) + 1)
+                precisions.append(precision_i)
+                recalls.append(recall_i)
+                f1s.append((2 * precision_i * recall_i + 1) / (precision_i + recall_i + 1))
+                mccs.append(mcc_i)
+
             eval_loss += loss.item()
             eval_acc += accuracy.item()
             eval_closeness += closeness.item()
         print("calculating scores...")
-        """
-        precision = (tp + 1) / (tp + fp + 1)
-        recall = (tp + 1) / (tp + fn + 1)
-        f1 = (2 * precision * recall + 1) / (precision + recall + 1)
-        mcc = (tp * tn - fp * fn + 1) / torch.sqrt((tp + fp) * (tp + fn) * (tn + fp) * (tn + fn) + 1)  
-        """
-    return eval_loss / len(iterator), eval_acc / len(iterator), eval_closeness / len(iterator) #, precision, recall, f1, mcc
+
+        # precision = (tp + 1) / (tp + fp + 1)
+        # recall = (tp + 1) / (tp + fn + 1)
+        # f1 = (2 * precision * recall + 1) / (precision + recall + 1)
+        # mcc = (tp * tn - fp * fn + 1) / math.sqrt((tp + fp) * (tp + fn) * (tn + fp) * (tn + fn) + 1)
+
+    return eval_loss / len(iterator), eval_acc / len(iterator), eval_closeness / len(iterator), precisions, recalls, f1s, mccs
 
 
 def create_csv():

@@ -2,6 +2,7 @@ import numpy as np
 from preprocessing import get_data
 from util import create_buckets, get_tweets_change
 import torch
+import math
 import torch.nn as nn
 
 results_files = ['results_learn_rate=0.1', 'results_learn_rate=0.01',
@@ -61,7 +62,7 @@ def calc_f1(y_hat_binary, y_binary):
 
 def calc_mcc(y_hat_binary, y_binary):
     tp, fp, tn, fn = calc_numbers(y_hat_binary, y_binary)
-    mcc = (tp * tn - fp * fn + 1) / torch.sqrt((tp + fp) * (tp + fn) * (tn + fp) * (tn + fn) + 1)
+    mcc = (tp * tn - fp * fn + 1) / math.sqrt((tp + fp) * (tp + fn) * (tn + fp) * (tn + fn) + 1)
     return mcc
 
 
@@ -71,7 +72,7 @@ def calc_numbers(preds_binary, labels_binary):
     tn = torch.sum(torch.logical_and(preds_binary == 0, labels_binary == 0))
     fn = torch.sum(torch.logical_and(preds_binary == 0, labels_binary == 1))
 
-    return tp, fp, tn, fn
+    return int(tp), int(fp), int(tn), int(fn)
 
 
 def macroaverage(metrics):
